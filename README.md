@@ -1,7 +1,8 @@
 # Bicicletas customizables
 ___
 
-+#___Introducción___#
+#___Introducción
+
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
 Moderna o anticuada, su existencia responde a una corriente de carácter mundial. Las principales capitales del mundo han impulsado el desarrollo y uso de la bicicleta como alternativa del transporte público y como una buena práctica para el cuidado del medioambiente. 
@@ -14,7 +15,7 @@ Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño de
 
 ___
 
-#___Definición del Producto___#
+#___Definición del Producto
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
