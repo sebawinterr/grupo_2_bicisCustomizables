@@ -60,6 +60,7 @@ Investigando un poco más sobre nuestro target encontramos una categoría bastan
 Benoit Lambert, escritor y director francés, en su libro “El retorno de la bicicleta” (link https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
 
 La frugalidad (link https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
+
 “La frugalidad no se trata de privaciones debidas a falta de medios, o de abstinencia por esfuerzo de voluntad. Se trata de una sobriedad general en el comportamiento -del cual el régimen alimentario no es más que un elemento- y que responde a la exigencia de establecer un equilibrio, una línea divisoria atinada entre lo necesario y lo superfluo”.
 
 Lambert, continúa desarrollando su re-concepción del concepto de frugalidad:
