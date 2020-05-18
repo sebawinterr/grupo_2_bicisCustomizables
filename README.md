@@ -8,7 +8,7 @@ Moderna o anticuada, su existencia responde a una corriente de carácter mundial
 
 En la actualidad, tanto en nuestro país como en el resto del mundo, su uso adquiere un nuevo estadio de interpretación. La pandemia producida por el Covid-19 nos permite realizar ciertos interrogantes sobre nuestra manera de transportarnos en la ciudad debiendo respetar el distanciamiento social como una buena práctica de prevención y es allí donde la bicicleta nuevamente se encuentra presente como una buena alternativa.
 
-Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. A su vez, la ONU (link a articulo de la ONU https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
+Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. A su vez, la [ONU](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
 
 Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del sistema de Ecobicis (link a nota del gob ciudad https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
 
@@ -148,7 +148,9 @@ ___
     - __Mariano Torrecilla__
 
         ```
-        Mariano Torrecilla Carande. 31 años. Lic en Cs de la Comunicación. Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
+        Lic en Cs de la Comunicación. 
+        Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
+        31 años.
     ___
 
     - __Juan Esperon__
