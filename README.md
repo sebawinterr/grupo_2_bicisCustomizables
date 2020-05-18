@@ -10,7 +10,7 @@ En la actualidad, tanto en nuestro país como en el resto del mundo, su uso adqu
 
 Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. A su vez, la [ONU](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
 
-Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del sistema de Ecobicis (link a nota del gob ciudad https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
+Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del [sistema de Ecobicis](https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
 
 ___
 
@@ -18,11 +18,11 @@ ___
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
-Al colocar la palabra bicicleta en el navegador de Google Chrome (link a Google https://www.google.com/search?ei=kIXCXoS9MoWX0AbMmY7oBw&q=definici%C3%B3n+de+bicicleta&oq=definici%C3%B3n+de+bicicleta&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD5ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQQzoCCAA6BQgAEIMBOgkIABBDEEYQ-QE6BAgAEAo6CAgAEBYQChAeUN4ZWMhjYMBoaAJwAHgAgAFmiAHyDpIBBDIzLjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwiExbTUur3pAhWFC9QKHcyMA30Q4dUDCAw&uact=5), podemos encontrar múltiples definiciones de bicicleta.
+Al colocar la palabra bicicleta en [Google Chrome](https://www.google.com/search?ei=kIXCXoS9MoWX0AbMmY7oBw&q=definici%C3%B3n+de+bicicleta&oq=definici%C3%B3n+de+bicicleta&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD5ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQQzoCCAA6BQgAEIMBOgkIABBDEEYQ-QE6BAgAEAo6CAgAEBYQChAeUN4ZWMhjYMBoaAJwAHgAgAFmiAHyDpIBBDIzLjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwiExbTUur3pAhWFC9QKHcyMA30Q4dUDCAw&uact=5), podemos encontrar múltiples definiciones de bicicleta.
 
 Convencionalmente, por sus características duras la definimos como un “vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales que transmiten el movimiento de las piernas a la rueda trasera mediante una cadena y un piñón”.
 
-También, si seguimos navegando, podemos encontrar otras definiciones que responden a sus características blandas o atribuidas (link a nota https://definicion.de/bicicleta/) a lo largo de la historia:
+También, si seguimos navegando, podemos encontrar otras definiciones que responden a sus [características blandas o atribuidas](https://definicion.de/bicicleta/) a lo largo de la historia:
 
 + "Un medio de transporte en entornos urbanos y rurales.
 + Se le atribuye la categoría de ecológicas ya que su uso no emite contaminación.
