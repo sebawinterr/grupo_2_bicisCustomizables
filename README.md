@@ -39,7 +39,7 @@ ___
 
 + ## ___Referentes___
     - [___Nike By You___](https://www.nike.com/nike-by-you)
-        ![Menu de personalizacion](https://ibb.co/5hjWnDx)
+        ![Menu de personalizacion](https://subefotos.com/ver/?83d67bdd3be4924605fdaf288fc9da51o.png)
         ```
         Queremos que la etapa de customizacion de la bicicleta sea parecida a la propuesta de Nike.
     ___
