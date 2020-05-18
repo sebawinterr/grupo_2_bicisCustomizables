@@ -15,7 +15,7 @@ Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño de
 
 ___
 
-# Definición del Producto
+## Definición del Producto
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
@@ -50,11 +50,11 @@ La posibilidad de encontrar una nueva interpretación de la bicicleta, nos sigui
 
 ___
 
-# Entrevistas de acercamiento al target
+## Entrevistas de acercamiento al target
 
 ___
 
-# Revalorización de la bicicleta
+## Revalorización de la bicicleta
 
 Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
 
@@ -76,7 +76,7 @@ Nos parece importante basarnos es este insight de bicicleta como símbolo de aut
 
 ___
 
-# Definición del público objetivo
+## Definición del público objetivo
 
 ### Perfil Sociodemográfico
 
@@ -107,7 +107,7 @@ Movilizados por sus ideales autónomos y libertarios, intentarían buscar y perc
 
 ___
 
-# Nueva concepción de nuestro producto
+## Nueva concepción de nuestro producto
 
 De acuerdo al perfil de nuestro público target, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde nuestra nueva concepción adquirida. 
 
@@ -146,7 +146,7 @@ ___
         DJ y Productor Musical. 24 años. 
     ___
 
-    - __Mariano Torrecilla__
+    - __Mariano Torrecilla Carande__
 
         ```
         Lic en Cs de la Comunicación. 
