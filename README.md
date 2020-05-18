@@ -38,8 +38,8 @@ ___
 ___
 
 + ## ___Referentes___
-    - [___Netflix___](https://www.netflix.com/ar/)
-        ![Netflix Pelicula](https://miro.medium.com/max/3200/0*TNPMA2YfqilwqiZ5.)
+    - [___Nike By You___](https://www.nike.com/nike-by-you)
+        ![Menu de personalizacion](https://miro.medium.com/max/3200/0*TNPMA2YfqilwqiZ5.)
         ```
         Detalle de la pelicula
     ___
