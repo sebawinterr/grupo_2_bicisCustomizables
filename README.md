@@ -22,7 +22,7 @@ ___
     - __Sebastian Winter__
 
         ```
-        Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion 
+        DJ y Productor Musical. 24 años. 
     ___
 
     - __Mariano Torrecilla__
@@ -34,7 +34,7 @@ ___
     - __Juan Esperon__
 
         ```
-        Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion 
+        Estudiante de Arquitectura. 22 años. Aficionado al diseño 3D y VR. 
 ___
 
 + ## ___Referentes___
