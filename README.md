@@ -109,7 +109,7 @@ ___
 
 ## Nueva concepción de nuestro producto
 
-De acuerdo al perfil de nuestro público target, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde nuestra nueva concepción adquirida. 
+De acuerdo al perfil de nuestro público objetivo, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y su consideración como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde una nueva concepción adquirida. 
 
 Bicicletas estilo fixie customizables que realcen el valor de libertad y autonomía a través del propio carácter personalizable. Establecemos una conexión conceptual entre la trilogía libertad-autonomía-customización. A su vez, establecemos a la bicicleta como un medio de movilización alternativo del transporte público y desde el cual nuestro target alimenta su proceso de reinterpretación de la concepción de tiempo, espacio y cuerpo.
 
