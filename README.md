@@ -1,7 +1,7 @@
 # Bicicletas customizables
 ___
 
-# Introducción
+## Introducción
 
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
