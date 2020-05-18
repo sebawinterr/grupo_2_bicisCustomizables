@@ -1,7 +1,7 @@
 # Bicicletas customizables
 ___
 
-#___Introducción
+# Introducción
 
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
@@ -15,7 +15,7 @@ Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño de
 
 ___
 
-#___Definición del Producto
+# Definición del Producto
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
@@ -50,11 +50,11 @@ La posibilidad de encontrar una nueva interpretación de la bicicleta, nos sigui
 
 ___
 
-#___Entrevistas de acercamiento al target___#
+# Entrevistas de acercamiento al target
 
 ___
 
-#___Revalorización de la bicicleta___#
+# Revalorización de la bicicleta
 
 Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
 
@@ -76,16 +76,16 @@ Nos parece importante basarnos es este insight de bicicleta como símbolo de aut
 
 ___
 
-#___Definición del público objetivo___#
+# Definición del público objetivo
 
-###___Perfil Sociodemográfico___###
+### Perfil Sociodemográfico
 
 + Nivel Socioeconómico: C1 (media alta), C2 (media media).
 + Hombres y Mujeres entre 30 y 40 años.
 + Residentes en CABA.
 
 
-###___Perfil Psicográfico___###
+### Perfil Psicográfico
 
 Serían personas con un fuerte apego a los valores y creencias que componen su pilar moral. Intentan transmitir y aplicar cada uno de ellos a las distintas instancias de su vida cotidiana.
 
@@ -107,7 +107,7 @@ Movilizados por sus ideales autónomos y libertarios, intentarían buscar y perc
 
 ___
 
-##___Nueva concepción de nuestro producto___##
++ ##___Nueva concepción de nuestro producto
 
 De acuerdo al perfil de nuestro público target, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde nuestra nueva concepción adquirida. 
 
