@@ -28,7 +28,7 @@ ___
     - __Mariano Torrecilla__
 
         ```
-        Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion 
+        Mariano Torrecilla Carande. 31 años. Lic en Cs de la Comunicación. Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
     ___
 
     - __Juan Esperon__
