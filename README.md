@@ -18,9 +18,9 @@ ___
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
-Al colocar la palabra bicicleta en [Google Chrome](https://www.google.com/search?ei=kIXCXoS9MoWX0AbMmY7oBw&q=definici%C3%B3n+de+bicicleta&oq=definici%C3%B3n+de+bicicleta&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD5ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQQzoCCAA6BQgAEIMBOgkIABBDEEYQ-QE6BAgAEAo6CAgAEBYQChAeUN4ZWMhjYMBoaAJwAHgAgAFmiAHyDpIBBDIzLjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwiExbTUur3pAhWFC9QKHcyMA30Q4dUDCAw&uact=5), podemos encontrar múltiples definiciones de bicicleta.
+Al colocar la palabra bicicleta en Google Chrome, podemos encontrar múltiples definiciones de bicicleta.
 
-Convencionalmente, por sus características duras la definimos como un “vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales que transmiten el movimiento de las piernas a la rueda trasera mediante una cadena y un piñón”.
+Convencionalmente, por sus [características duras](https://www.google.com/search?ei=kIXCXoS9MoWX0AbMmY7oBw&q=definici%C3%B3n+de+bicicleta&oq=definici%C3%B3n+de+bicicleta&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD5ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQQzoCCAA6BQgAEIMBOgkIABBDEEYQ-QE6BAgAEAo6CAgAEBYQChAeUN4ZWMhjYMBoaAJwAHgAgAFmiAHyDpIBBDIzLjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwiExbTUur3pAhWFC9QKHcyMA30Q4dUDCAw&uact=5) la definimos como un “vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales que transmiten el movimiento de las piernas a la rueda trasera mediante una cadena y un piñón”.
 
 También, si seguimos navegando, podemos encontrar otras definiciones que responden a sus [características blandas o atribuidas](https://definicion.de/bicicleta/) a lo largo de la historia:
 
@@ -30,7 +30,7 @@ También, si seguimos navegando, podemos encontrar otras definiciones que respon
 + Saludable, porque al usarla, la persona realiza actividad física.
 + Económicas ya que no llevan ningún tipo de combustible y casi no tienen gastos de mantenimiento.”
 
-En conexión con las características duras y blandas mencionadas líneas más arriba, podemos enumerar los múltiples beneficios atribuidos a la bicicleta (link a pag https://www.atletas.info/ciclismo/son-muchos-los-beneficios-de-andar-en-bicicleta/):
+En conexión con las características duras y blandas mencionadas líneas más arriba, podemos enumerar los múltiples [beneficios](https://www.atletas.info/ciclismo/son-muchos-los-beneficios-de-andar-en-bicicleta/) atribuidos a la bicicleta:
 
 + “Adelgazar: además de ayudar a acelerar tu metabolismo, se estipula que recorriendo 20 kilómetros en una hora quemamos alrededor de 600 calorías;
 + Fortalece todo el cuerpo: a pesar de ayudar principalmente los miembros inferiores, también hay un impacto en los miembros superiores, mejorando tu postura y previniendo dolores de espalda;
@@ -57,9 +57,9 @@ ___
 
 Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
 
-Benoit Lambert, escritor y director francés, en su libro “El retorno de la bicicleta” (link https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
+Benoit Lambert, escritor y director francés, en su libro [“El retorno de la bicicleta”](link https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
 
-La frugalidad (link https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
+La [frugalidad](link https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
 
 “La frugalidad no se trata de privaciones debidas a falta de medios, o de abstinencia por esfuerzo de voluntad. Se trata de una sobriedad general en el comportamiento -del cual el régimen alimentario no es más que un elemento- y que responde a la exigencia de establecer un equilibrio, una línea divisoria atinada entre lo necesario y lo superfluo”.
 
@@ -77,14 +77,14 @@ ___
 
 # Definición del público objetivo
 
-#### Perfil Sociodemográfico
+### Perfil Sociodemográfico
 
 + Nivel Socioeconómico: C1 (media alta), C2 (media media).
 + Hombres y Mujeres entre 30 y 40 años.
 + Residentes en CABA.
 
 
-#### Perfil Psicográfico
+### Perfil Psicográfico
 
 Serían personas con un fuerte apego a los valores y creencias que componen su pilar moral. Intentan transmitir y aplicar cada uno de ellos a las distintas instancias de su vida cotidiana.
 
