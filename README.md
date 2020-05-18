@@ -39,9 +39,9 @@ ___
 
 + ## ___Referentes___
     - [___Nike By You___](https://www.nike.com/nike-by-you)
-        ![Menu de personalizacion](https://miro.medium.com/max/3200/0*TNPMA2YfqilwqiZ5.)
+        ![Menu de personalizacion](https://ibb.co/5hjWnDx)
         ```
-        Detalle de la pelicula
+        Queremos que la etapa de customizacion de la bicicleta sea parecida a la propuesta de Nike.
     ___
 
     - [___CineAR Play___](https://play.cine.ar/bienvenida/)
