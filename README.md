@@ -1,7 +1,7 @@
 # Bicicletas customizables
 ___
 
-# Introducción
+#___Introducción___#
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
 Moderna o anticuada, su existencia responde a una corriente de carácter mundial. Las principales capitales del mundo han impulsado el desarrollo y uso de la bicicleta como alternativa del transporte público y como una buena práctica para el cuidado del medioambiente. 
@@ -14,7 +14,7 @@ Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño de
 
 ___
 
-# Definición del Producto
+#___Definición del Producto___#
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
@@ -49,17 +49,17 @@ La posibilidad de encontrar una nueva interpretación de la bicicleta, nos sigui
 
 ___
 
-# Entrevistas de acercamiento al target
+#___Entrevistas de acercamiento al target___#
 
 ___
 
-# Revalorización de la bicicleta
+#___Revalorización de la bicicleta___#
 
 Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
 
-Benoit Lambert, escritor y director francés, en su libro [“El retorno de la bicicleta”](link https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
+Benoit Lambert, escritor y director francés, en su libro [“El retorno de la bicicleta”](https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
 
-La [frugalidad](link https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
+La [frugalidad](https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
 
 “La frugalidad no se trata de privaciones debidas a falta de medios, o de abstinencia por esfuerzo de voluntad. Se trata de una sobriedad general en el comportamiento -del cual el régimen alimentario no es más que un elemento- y que responde a la exigencia de establecer un equilibrio, una línea divisoria atinada entre lo necesario y lo superfluo”.
 
@@ -75,16 +75,16 @@ Nos parece importante basarnos es este insight de bicicleta como símbolo de aut
 
 ___
 
-# Definición del público objetivo
+#___Definición del público objetivo___#
 
-### Perfil Sociodemográfico
+###___Perfil Sociodemográfico___###
 
 + Nivel Socioeconómico: C1 (media alta), C2 (media media).
 + Hombres y Mujeres entre 30 y 40 años.
 + Residentes en CABA.
 
 
-### Perfil Psicográfico
+###___Perfil Psicográfico___###
 
 Serían personas con un fuerte apego a los valores y creencias que componen su pilar moral. Intentan transmitir y aplicar cada uno de ellos a las distintas instancias de su vida cotidiana.
 
@@ -106,7 +106,7 @@ Movilizados por sus ideales autónomos y libertarios, intentarían buscar y perc
 
 ___
 
-## Nueva concepción de nuestro producto
+##___Nueva concepción de nuestro producto___##
 
 De acuerdo al perfil de nuestro público target, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde nuestra nueva concepción adquirida. 
 
