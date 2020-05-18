@@ -1,7 +1,7 @@
 # Bicicletas customizables
 ___
 
-#___Introducción___#
++#___Introducción___#
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
 Moderna o anticuada, su existencia responde a una corriente de carácter mundial. Las principales capitales del mundo han impulsado el desarrollo y uso de la bicicleta como alternativa del transporte público y como una buena práctica para el cuidado del medioambiente. 
