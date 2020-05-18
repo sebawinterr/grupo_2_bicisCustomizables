@@ -107,7 +107,7 @@ Movilizados por sus ideales autónomos y libertarios, intentarían buscar y perc
 
 ___
 
-+ ##___Nueva concepción de nuestro producto___
+## Nueva concepción de nuestro producto
 
 De acuerdo al perfil de nuestro público target, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde nuestra nueva concepción adquirida. 
 
