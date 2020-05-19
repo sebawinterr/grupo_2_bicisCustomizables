@@ -185,12 +185,14 @@ ___
 ___     
 
 + ## ___Paleta de colores___
-    - __Basado en la siguiente:__ [___Link___](https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557)
-        1. ![#e63946](https://via.placeholder.com/15/e63946/000000?text=+) `#e63946`
-        2. ![#f1faee](https://via.placeholder.com/15/f1faee/000000?text=+) `#f1faee`
-        3. ![#a8dadc](https://via.placeholder.com/15/a8dadc/000000?text=+) `#a8dadc`
-        4. ![#457b9d](https://via.placeholder.com/15/457b9d/000000?text=+) `#457b9d`
-        5. ![#1d3557](https://via.placeholder.com/15/1d3557/000000?text=+) `#1d3557`
+    - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-333332-fefffd-2ec4b6-da8117-011224)
+        1. ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
+	    2. ![#333332](https://via.placeholder.com/15/333332/000000?text=+) `#333332`
+	    3. ![#FEFFFD](https://via.placeholder.com/15/FEFFFD/000000?text=+) `#FEFFFD`
+        4. ![#2EC4B6](https://via.placeholder.com/15/2EC4B6/000000?text=+) `#2EC4B6`
+        5. ![#DA8117](https://via.placeholder.com/15/DA8117/000000?text=+) `#DA8117`
+        6. ![#011224](https://via.placeholder.com/15/011224/000000?text=+) `#011224`
+
 ___
 
 + ## ___Tipografia___
