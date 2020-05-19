@@ -119,17 +119,6 @@ Buscamos una resignificación del concepto movilización, siendo la bicicleta un
 
 A su vez, se nos presenta como un medio que enaltece la reinterpretación del tiempo, el espacio y el cuerpo.
 
-
-
-
-+ ## ___Sobre nuestro proyecto:___
-    ```
-    Nuestro e-commerce se enfoca en darle al cliente la herramienta para personalizar su propia bicicleta a gusto y necesidad.
-___
-
-+ ## ___Publico Objetivo___
-    ```
-    Estudiantes con afan de querer aprender y emprender en el mundo tecnológico y digital.
 ___
 
 + ## ___Caracteristicas Principales___
