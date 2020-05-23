@@ -172,7 +172,7 @@ ___
 
     ___
 
-    - [___3 D Tunning___](http://www.3dtuning.com/en-US/tuning/toyota/ae86/3.door.hatchback.1985)
+    - [___3 D Tuning___](http://www.3dtuning.com/en-US/tuning/toyota/ae86/3.door.hatchback.1985)
         ![capturas](/capturas/nike.png)
         ```
         Continuando con la customización, sumamos a otro referente más.
@@ -193,14 +193,14 @@ ___
 
     ___
 
-    - [___Adidas___](https://www.adidas.com.ar/on/demandware.store/Sites-adidas-AR-Site/es_AR/Cart-Show)
+    - [___Adidas___](https://www.adidas.com.ar/)
         ![capturas](/capturas/nike.png)
         ```
         Nos gusta la manera en q se muestra el carrito de compras con los productos incluidos. Cada producto tiene una breve descripción de sus particularidades seleccionadas. Es una estética simple y minimalista donde podés fijar la atención en los productos seleccionados con las particularidades escogidas para cada caso.
 
     ___
 
-    - [___Adidas___](https://www.adidas.com.ar/on/demandware.store/Sites-adidas-AR-Site/es_AR/CODelivery-Start)
+    - [___Adidas___](https://www.adidas.com.ar/)
         ![capturas](/capturas/nike.png)
         ```
         Nuevamente elegimos a la marca ya que al momento de efectuar una compra, presenta un formulario simple de carga para el usuario. Nos gustaría replicarlo en nuestro sitio.
