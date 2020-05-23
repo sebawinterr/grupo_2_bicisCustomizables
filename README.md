@@ -207,12 +207,6 @@ ___
   
     ___
 
-    - [___Nike By You___](https://www.nike.com/nike-by-you)
-        ![capturas](/capturas/nike.png)
-        ```
-        Queremos que la etapa de customizacion de la bicicleta sea parecida a la propuesta de Nike.
-    ___
-
 ___  
 
 + ## ___Wireframes___
