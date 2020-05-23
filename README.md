@@ -151,7 +151,7 @@ ___
 
 + ## ___Referentes___
     - [___Nike By You___](https://www.nike.com/nike-by-you)
-        ![Menu de personalizacion](https://subefotos.com/ver/?83d67bdd3be4924605fdaf288fc9da51o.png)
+        ![Menu de personalizacion](/capturas/Screen Shot 2020-05-18 at 00.22.27.png)
         ```
         Queremos que la etapa de customizacion de la bicicleta sea parecida a la propuesta de Nike.
     ___
