@@ -19,7 +19,7 @@ ___
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
-Al colocar la palabra bicicleta en Google Chrome, podemos encontrar múltiples definiciones de bicicleta.
+Al colocar la palabra bicicleta en Google Chrome, podemos encontrar múltiples definiciones.
 
 Convencionalmente, por sus [características duras](https://www.google.com/search?ei=kIXCXoS9MoWX0AbMmY7oBw&q=definici%C3%B3n+de+bicicleta&oq=definici%C3%B3n+de+bicicleta&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD5ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQQzoCCAA6BQgAEIMBOgkIABBDEEYQ-QE6BAgAEAo6CAgAEBYQChAeUN4ZWMhjYMBoaAJwAHgAgAFmiAHyDpIBBDIzLjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwiExbTUur3pAhWFC9QKHcyMA30Q4dUDCAw&uact=5) la definimos como un “vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales que transmiten el movimiento de las piernas a la rueda trasera mediante una cadena y un piñón”.
 
@@ -150,16 +150,69 @@ ___
 ___
 
 + ## ___Referentes___
+
+    - [___The Draft___](https://www.thedraft.cc/)
+        ![capturas](/capturas/nike.png)
+        ```
+        Compañía que ofrece bicicletas de un gran nivel. Es un producto de stock limitado. Nos pareció interesante poder incluir en nuestro sitio un estilo de movimiento como el que ofrece su Home con las imágenes grandes del producto y a medida que vas deslizándote hacia abajo, continua con el siguiente producto a la venta. Podríamos definirlo como un “dinamismo estático” entre cada propuesta. Luego con la misma metodología colocan distintivos de la marca para resaltar la característica personalizable de su propuesta.
+
+    ___
+
+    - [___Nike___](https://www.nike.com/nike-by-you)
+        ![capturas](/capturas/nike.png)
+        ```
+        Nos inspira la implementación de su funcionalidad personalizable, ya que queremos que nuestros clientes personalicen el producto. Nos pareció interesante la propuesta utilizada por la marca donde sus producto. Queremos darle el mismo estilo.
+    
+    ___
+
+    - [___Need For Speed Underground 2___](https://www.youtube.com/watch?v=vS6I5-N4sqE)
+        ![capturas](/capturas/nike.png)
+        ```
+        Siguiendo con la customización del producto sumamos como referente un viejo juego Need For Speed, donde podias ir eligiendo los distintos componentes del autos con sus diversas opciones.
+
+    ___
+
+    - [___3 D Tunning___](http://www.3dtuning.com/en-US/tuning/toyota/ae86/3.door.hatchback.1985)
+        ![capturas](/capturas/nike.png)
+        ```
+        Continuando con la customización, sumamos a otro referente más.
+
+    ___
+
+    - [___Travelshift___](https://travelshift.com/)
+        ![capturas](/capturas/nike.png)
+        ```
+        Al proceso de customización de la bicicleta queremos incluirle el efecto de movimiento que propone este referente en su portada.
+
+    ___
+
+    - [___Bici Urbana___](https://biciurbana.com.ar/) 
+        ![capturas](/capturas/nike.png)
+        ```
+       Apunta a un cliente con cualidades similares al nuestro basándose en las características propias de las bicis. Nosotros queremos poder comunicarnos desde las creencias que tienen nuestro público objetivo. A su vez, ofrecen customización pero solamente se puede realizar contactándote con ellos. Nosotros queremos que nuestros clientes también puedan elegir el equipamiento, cuadro, pintura y rodaje de la bicicleta de manera on line.
+
+    ___
+
+    - [___Adidas___](https://www.adidas.com.ar/on/demandware.store/Sites-adidas-AR-Site/es_AR/Cart-Show)
+        ![capturas](/capturas/nike.png)
+        ```
+        Nos gusta la manera en q se muestra el carrito de compras con los productos incluidos. Cada producto tiene una breve descripción de sus particularidades seleccionadas. Es una estética simple y minimalista donde podés fijar la atención en los productos seleccionados con las particularidades escogidas para cada caso.
+
+    ___
+
+    - [___Adidas___](https://www.adidas.com.ar/on/demandware.store/Sites-adidas-AR-Site/es_AR/CODelivery-Start)
+        ![capturas](/capturas/nike.png)
+        ```
+        Nuevamente elegimos a la marca ya que al momento de efectuar una compra, presenta un formulario simple de carga para el usuario. Nos gustaría replicarlo en nuestro sitio.
+  
+    ___
+
     - [___Nike By You___](https://www.nike.com/nike-by-you)
-        ![Menu de personalizacion](https://subefotos.com/ver/?83d67bdd3be4924605fdaf288fc9da51o.png)
+        ![capturas](/capturas/nike.png)
         ```
         Queremos que la etapa de customizacion de la bicicleta sea parecida a la propuesta de Nike.
     ___
 
-    - [___CineAR Play___](https://play.cine.ar/bienvenida/)
-        ![Captura](/Capturas/Captura.PNG)
-        ```
-        Menu Desplegable
 ___  
 
 + ## ___Wireframes___
