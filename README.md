@@ -163,28 +163,6 @@ ___
     3. Usabilidad basada en el Tree Test.
 ___
 
-+ ## ___Integrantes___
-    
-    - __Sebastian Winter__
-
-        ```
-        DJ y Productor Musical. 24 años. 
-    ___
-
-    - __Mariano Torrecilla Carande__
-
-        ```
-        Lic en Cs de la Comunicación. 
-        Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
-        31 años.
-    ___
-
-    - __Juan Esperon__
-
-        ```
-        Estudiante de Arquitectura. 22 años. Aficionado al diseño 3D y VR. 
-___
-
 + ## ___Referentes___
 
     - [___The Draft___](https://www.thedraft.cc/)
