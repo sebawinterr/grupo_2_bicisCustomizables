@@ -1,7 +1,38 @@
 # ___Bicicletas customizables___
 ___
 
-## Introducción
++ ## ___Integrantes___
+    
+    - __Sebastian Winter__
+
+        ```
+        DJ y Productor Musical. 24 años. 
+    ___
+
+    - __Mariano Torrecilla Carande__
+
+        ```
+        Lic en Cs de la Comunicación. 
+        Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
+        31 años.
+    ___
+
+    - __Juan Esperon__
+
+        ```
+        Estudiante de Arquitectura. 22 años. Aficionado al diseño 3D y VR. 
+___
+
+## ___Introducción___
+
+El producto elegido para nuestro e-commerce es la bicicleta. Para ello realizamos una investigación con el objetivo de obtener un mayor conocimiento del mismo y organizamos la presentación en diferentes secciones.
+
+En primer lugar, incluimos el contexto actual donde se enmarca nuestro producto. En segundo lugar, realizamos una definición de la bicicleta con sus características duras, características blandas y los beneficios correspondientes a su uso. Luego, nos pareció importante realizar un acercamiento al publico objetivo para conocerlo más de cerca y comprender las motivaciones que lo movilizan a elegir una bicicleta como medio de transporte.
+Con ello, buscamos nuevos insights que nos permitan interpretar desde una nueva perpectiva a la bicileta y encontrar un distintivo para su comunicación, por lo tanto que en la quinta sección incluimos la revalorización obtenida sobre la bici.
+En esta etapa, ya podemos definir con mayor profundidad nuestro público objetivo y producto; para luego introducirnos en la bajada creativa que le dará estilo a nuestro sitio donde detallamos las características principales, los referentes, los wireframes solicitados, la elección de la paleta de colores y tipografía.
+___
+
+## ___Contexto Actual___
 
 En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
@@ -15,7 +46,7 @@ Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño de
 
 ___
 
-## Definición del Producto
+## ___Definición del Producto___
 
 El producto que elegimos para la venta a través de nuestro sitio de e-commerce es la bicicleta. Antes de explayarnos puntualmente en ello, consideramos necesario realizar un recorrido por las características de las bicicletas, sus beneficios y su interpretación en la contemporaneidad. 
 
@@ -42,7 +73,7 @@ En conexión con las características duras y blandas mencionadas líneas más a
 + Evitar embotellamientos: además de conciliar el ejercicio con las obligaciones, te permite escapar el estrés de los embotellamientos;
 + Beneficios económicos: ahorrar estrés, tiempo y dinero. Ahorrar literalmente todos los costos del transporte público diariamente.”
 
-Esta información aun no nos mantiene satisfechos por lo que seguimos buscando y llegamos a una nueva etapa de interpretación de nuestro producto. De acuerdo a lo comentado en la Introducción, en el contexto actual de la pandemia mundial por el covid-19, podemos recategorizar a la bicicleta como un medio de transporte alternativo al transporte público que facilita el cumplimiento del distanciamiento social requerido para movilizarse con mayor facilidad. 
+Esta información aun no nos mantiene satisfechos por lo que seguimos buscando y llegamos a una nueva etapa de interpretación de nuestro producto. De acuerdo a lo comentado anteriormente, en el contexto actual de la pandemia mundial por el covid-19, podemos recategorizar a la bicicleta como un medio de transporte alternativo al transporte público que facilita el cumplimiento del distanciamiento social requerido para movilizarse con mayor facilidad. 
 
 Por lo tanto, podemos considerar dicha interpretación como una nueva atribución en sus características blandas.
 
@@ -50,13 +81,18 @@ La posibilidad de encontrar una nueva interpretación de la bicicleta, nos sigui
 
 ___
 
-## Entrevistas de acercamiento al target
+## ___Entrevistas de acercamiento al target___
 
+Realizamos una encuesta a través de los formularios de google drive. Dejamos el link para conocerla. Si quieres, puedes participar haciendo click [aquí](https://forms.gle/AwcjiF4aps4dFKKT9).
+
+Muchos de los encuestados mostraron interés en moviliarse de una manera distinta por la ciudad a la utilizada cotidianamente, donde la biclicleta adquirió una gran cantidad de votos. Vale destacar que al momento de consultar sobre los motivos que movilizaron su elección, gran cantidad de los interrogados indicarón su inclinación por la bicileta ya que les permite movilizarse de una manera más independiente. A su vez, un número considerable de participantes, le otorgaron a la bicicleta un sentido de independencia, libertad y autonomía.
+
+Dicho analisis, nos permitió encontrar un nuevo insight desde el cual comunicar nuestro producto, donde podemos decir que la bicicleta es un medio de transporte alternativo que con su caracter independiente nos otorga mayor libertad y autonomía al momento de movilizarnos con respecto a las estructuras de transportes mas vigentes en la sociedad.
 ___
 
-## Revalorización de la bicicleta
+## ___Revalorización de la bicicleta___
 
-Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
+Investigando un poco más sobre nuestro target encontramos una categoría bastante compartida entre los encuestados donde le otorgan un sentido de independencia, libertad y autonomía al andar en bicicleta. Dicha valoración y resignificación de la práctica de “andar en bici”, podemos relacionarla con la resignificación del concepto de frugalidad.
 
 Benoit Lambert, escritor y director francés, en su libro [“El retorno de la bicicleta”](https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
 
@@ -70,22 +106,22 @@ Lambert, continúa desarrollando su re-concepción del concepto de frugalidad:
 
 Parafraseando con el autor, nos permite alcanzar un nuevo estadio de interpretación del concepto de frugalidad desde el cual optemos por experiencias satisfactorias y enriquecedoras para el individuo, optando por un consumo basado en creencias y valores que coincidan con la cadena de ideales que nos movilizan, alejándonos de las prácticas de consumo masivo y derroche.
 
-De esta manera podemos realizar una conexión entre la nueva concepción del concepto de frugalidad con el sentido otorgado por nuestro target al uso de la bicicleta, como una actividad sinónimo de libertad y autonomía.
+De esta manera podemos realizar una conexión entre la nueva concepción del concepto de frugalidad con el sentido otorgado por nuestro target al uso de la bicicleta, como una actividad sinónimo de independencia, libertad y autonomía.
 
-Nos parece importante basarnos es este insight de bicicleta como símbolo de autonomía y libertad, ya que es una característica que responde al porqué de la inclinación de un público objetivo con respecto a la elección de una bicicleta como mero medio de transporte. Su consumo responde a sus propias creencias y valores como individuo en un intento de establecer un equilibrio desafiante entre lo necesario y lo superficialidad social.
+Nos parece importante basarnos es este insight de bicicleta como símbolo de independencia autonomía y libertad, ya que es una característica que responde al porqué de la inclinación de un público objetivo con respecto a la elección de una bicicleta como mero medio de transporte. Su consumo responde a sus propias creencias y valores como individuo en un intento de establecer un equilibrio desafiante entre lo necesario y lo superficialidad social.
 
 ___
 
-## Definición del público objetivo
+## ___Definición del público objetivo___
 
-### Perfil Sociodemográfico
+### ___Perfil Sociodemográfico___
 
 + Nivel Socioeconómico: C1 (media alta), C2 (media media).
 + Hombres y Mujeres entre 30 y 40 años.
 + Residentes en CABA.
 
 
-### Perfil Psicográfico
+### ___Perfil Psicográfico___
 
 Serían personas con un fuerte apego a los valores y creencias que componen su pilar moral. Intentan transmitir y aplicar cada uno de ellos a las distintas instancias de su vida cotidiana.
 
@@ -107,15 +143,15 @@ Movilizados por sus ideales autónomos y libertarios, intentarían buscar y perc
 
 ___
 
-## Nueva concepción de nuestro producto
+## ___Nuestro producto: La Bicicleta___
 
-De acuerdo al perfil de nuestro público objetivo, su cadena de valores, el insight obtenido – la bici como símbolo de libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y su consideración como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde una nueva concepción adquirida. 
+De acuerdo al perfil de nuestro público objetivo, su cadena de valores, el insight obtenido – la bici como símbolo de independencia, libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y su consideración como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde una nueva concepción adquirida. 
 
-Bicicletas estilo fixie customizables que realcen el valor de libertad y autonomía a través del propio carácter personalizable. Establecemos una conexión conceptual entre la trilogía libertad-autonomía-customización. A su vez, establecemos a la bicicleta como un medio de movilización alternativo del transporte público y desde el cual nuestro target alimenta su proceso de reinterpretación de la concepción de tiempo, espacio y cuerpo.
+Bicicletas customizables que realcen el valor de independencia, libertad y autonomía a través del propio carácter personalizable. Establecemos una conexión conceptual entre la trilogía libertad-autonomía-customización. A su vez, establecemos a la bicicleta como un medio de movilización alternativo del transporte público y desde el cual nuestro target alimenta su proceso de reinterpretación de la concepción de tiempo, espacio y cuerpo.
 
-Consideramos que cada una de nuestras bicicletas es un símbolo de libertad y autonomía que nos permite superar las estructuras sociales existentes del mundo actual; desafiando lo establecido por medio de una sinergia entre ideales y acción. 
+Consideramos que cada una de nuestras bicicletas debe resaltar dicha trilogía simbólica de independencia-libertad-autonomía que nos permite superar las estructuras sociales existentes del mundo actual; desafiando lo establecido por medio de una sinergia entre ideales y acción. 
 
-Buscamos una resignificación del concepto movilización, siendo la bicicleta un medio alternativo a la aglomeración del transporte público.
+Buscamos una resignificación del concepto movilización, siendo la bicicleta un medio alternativo a la aglomeración del transporte público. Y en tiempos de pandemia un medio que permite cumplir y respetar el distanciamiento social al momento de trasladarnos.
 
 A su vez, se nos presenta como un medio que enaltece la reinterpretación del tiempo, el espacio y el cuerpo.
 
