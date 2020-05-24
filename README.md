@@ -152,7 +152,7 @@ ___
 + ## ___Referentes___
 
     - [___The Draft___](https://www.thedraft.cc/)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/thedraft.PNG)
         ```
         Compañía que ofrece bicicletas de un gran nivel. Es un producto de stock limitado. Nos pareció interesante poder incluir en nuestro sitio un estilo de movimiento como el que ofrece su Home con las imágenes grandes del producto y a medida que vas deslizándote hacia abajo, continua con el siguiente producto a la venta. Podríamos definirlo como un “dinamismo estático” entre cada propuesta. Luego con la misma metodología colocan distintivos de la marca para resaltar la característica personalizable de su propuesta.
 
@@ -166,42 +166,42 @@ ___
     ___
 
     - [___Need For Speed Underground 2___](https://www.youtube.com/watch?v=vS6I5-N4sqE)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/need.PNG)
         ```
         Siguiendo con la customización del producto sumamos como referente un viejo juego Need For Speed, donde podias ir eligiendo los distintos componentes del autos con sus diversas opciones.
 
     ___
 
     - [___3 D Tuning___](http://www.3dtuning.com/en-US/tuning/toyota/ae86/3.door.hatchback.1985)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/3dtunning.PNG)
         ```
         Continuando con la customización, sumamos a otro referente más.
 
     ___
 
     - [___Travelshift___](https://travelshift.com/)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/travelshift.PNG)
         ```
         Al proceso de customización de la bicicleta queremos incluirle el efecto de movimiento que propone este referente en su portada.
 
     ___
 
     - [___Bici Urbana___](https://biciurbana.com.ar/) 
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/biciurbana.PNG)
         ```
        Apunta a un cliente con cualidades similares al nuestro basándose en las características propias de las bicis. Nosotros queremos poder comunicarnos desde las creencias que tienen nuestro público objetivo. A su vez, ofrecen customización pero solamente se puede realizar contactándote con ellos. Nosotros queremos que nuestros clientes también puedan elegir el equipamiento, cuadro, pintura y rodaje de la bicicleta de manera on line.
 
     ___
 
     - [___Adidas___](https://www.adidas.com.ar/)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/adidascarrito.PNG)
         ```
         Nos gusta la manera en q se muestra el carrito de compras con los productos incluidos. Cada producto tiene una breve descripción de sus particularidades seleccionadas. Es una estética simple y minimalista donde podés fijar la atención en los productos seleccionados con las particularidades escogidas para cada caso.
 
     ___
 
     - [___Adidas___](https://www.adidas.com.ar/)
-        ![capturas](/capturas/nike.png)
+        ![capturas](/capturas/adidasformulario.PNG)
         ```
         Nuevamente elegimos a la marca ya que al momento de efectuar una compra, presenta un formulario simple de carga para el usuario. Nos gustaría replicarlo en nuestro sitio.
   
