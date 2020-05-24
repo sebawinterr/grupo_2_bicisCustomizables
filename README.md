@@ -1,4 +1,4 @@
-#___Bicicletas customizables___
+#___Bicicletas customizables
 ___
 
 ## Introducción
