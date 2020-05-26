@@ -83,7 +83,7 @@ ___
 
 ## ___Entrevistas de acercamiento al target___
 
-Realizamos una encuesta a través de los formularios de google drive. Dejamos el link para conocerla. Si quieres, puedes participar haciendo click [aquí](https://forms.gle/AwcjiF4aps4dFKKT9).
+Realizamos una encuesta a través de los formularios de google drive. Dejamos el link para conocerla. Si quieres, puedes participar haciendo click [aquí](https://forms.gle/sePzsESsbys3E7eT9).
 
 Muchos de los encuestados mostraron interés en moviliarse de una manera distinta por la ciudad a la utilizada cotidianamente, donde la biclicleta adquirió una gran cantidad de votos. Vale destacar que al momento de consultar sobre los motivos que movilizaron su elección, gran cantidad de los interrogados indicarón su inclinación por la bicileta ya que les permite movilizarse de una manera más independiente. A su vez, un número considerable de participantes, le otorgaron a la bicicleta un sentido de independencia, libertad y autonomía.
 
@@ -223,28 +223,24 @@ ___
 ___  
 
 + ## ___Wireframes___
-    - [Para que son?](https://www.lucidchart.com/pages/es/que-es-un-wireframe-para-un-sitio-web#section_1)
-    - [Que son los Mockups](https://es.ryte.com/wiki/Mockup)
-    - ### ___Ejemplos:___
 
-        1. ***Shoping Cart*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-        ___
-        
-        2. ***Home*** : [Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
-            ![Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
-        ___
+    - Utilizamos figma para realizar nuestras piezas. A continuación las listamos:
 
-        3. ***Product Create***
-            - [List](https://cdn.dribbble.com/users/1231641/screenshots/9532014/media/bdf1f989d319bf383b36cb3c79142211.jpg)
-            - [Graficos](https://cdn.dribbble.com/users/1579320/screenshots/10990583/media/6b4b8287e91e45ddcfb4fde4700af717.png)
-            - [Ej 1 - Formulario](https://cdn.dribbble.com/users/911976/screenshots/5309136/create_event_4x.png?compress=1&resize=800x600)
-            - [Ej 2 - Formulario](https://cdn.dribbble.com/users/74921/screenshots/3519667/dribbble_shot_create_campaign.png)
-            - [Ej 3 - Formulario](https://cdn.dribbble.com/users/819177/screenshots/3359523/create_event_preview.png)
+      - Home: 
+      - Detalle de producto:
+      - Custom de producto:
+      - Carrito de compras:
+        1. Formulario de Registro:
+        2. Forma de pago:
+        3. Confirmación de compra:
+      - Formulario de carga de producto (administrador):
+      
+         
+    
 
 ___     
 
-+ ## ___Paleta de colores___
++ ## ___Paleta de colores___(opcional)
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-333332-fefffd-2ec4b6-da8117-011224)
         1. ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
 	    2. ![#333332](https://via.placeholder.com/15/333332/000000?text=+) `#333332`
@@ -255,7 +251,7 @@ ___
 
 ___
 
-+ ## ___Tipografia___
++ ## ___Tipografia___(opcional)
     | Estilo TIpografico | Ejemplo | Implementacion | Representa |
     | ------------- | ------------- | ------------- | ------------- |
     | Serif  | [Courier New](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Courier.svg/1200px-Courier.svg.png) [TImes New Roman](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Times_New_Roman-sample.svg/1200px-Times_New_Roman-sample.svg.png) | Pedioricos - Documentos Formales  | Autoridad - Sobriedad - Formalidad |
@@ -263,7 +259,7 @@ ___
     | Script  | [Vivaldi](https://d144mzi0q5mijx.cloudfront.net/img/V/I/VivaldiD.png) [Killigraphy](https://d144mzi0q5mijx.cloudfront.net/img/K/I/Killigraphy.png) [Edwardian Script](https://i.pinimg.com/originals/d6/ec/73/d6ec73daed396b4ab9b2fd1262ed2dd6.jpg)  | Firmas - Titulares |Natural - Personalidad |
 ___
 
-+ ## ___Logo___
++ ## ___Logo___(opcional)
 
     | Clasificación | Caracteriztica | Ejemplo | 
     | ------------- | ------------- | ------------- |
@@ -272,5 +268,5 @@ ___
     | Isologotipo | Tipografia y Pictograma por separado | [Ejemplo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png) |
     | Imagotipo | Tipografia y pictograma combinados | [Ejemplo](https://1000marcas.net/wp-content/uploads/2019/12/Burger-King-Logo.png) | 
 
-# ***Gracias por leer hasta acá***
+
 ___
