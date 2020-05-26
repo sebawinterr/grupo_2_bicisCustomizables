@@ -226,14 +226,19 @@ ___
 
     - Utilizamos figma para realizar nuestras piezas. A continuación las listamos:
 
-      - Home: 
-      - Detalle de producto:
-      - Custom de producto:
-      - Carrito de compras:
-        1. Formulario de Registro:
-        2. Forma de pago:
-        3. Confirmación de compra:
-      - Formulario de carga de producto (administrador):
+      - __Home:__
+         ![capturas](/capturas/1Home.PNG)
+      - __Detalle de producto:__
+         ![capturas](/capturas/2DetalleProducto.PNG)
+      - __Custom de producto:__
+         ![capturas](/capturas/3CustomProducto.PNG)
+      - __Carrito de compras:__
+        1. __Formulario de Registro:__
+        2. __Forma de pago:__
+        3. __Confirmación de compra:__
+      - __Formulario de carga de producto (administrador):__
+        1. __Opción Producto Final:__
+        2. __Opción Custom:__
       
          
     
