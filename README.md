@@ -224,7 +224,7 @@ ___
 
 + ## ___Wireframes___
 
-    - Utilizamos figma para realizar nuestras piezas. A continuación las listamos:
+    - Utilizamos figma para realizar nuestras piezas. A continuación las listamos. Tambien pueden observar su vinculación e interacciones logradas a tra ves de marvel en el siguiente [link](https://marvelapp.com/4h0aj0i)
 
       - __Home:__
          ![capturas](/capturas/1Home.png)
@@ -239,6 +239,8 @@ ___
       - __Formulario de carga de producto (administrador):__
         1. __Opción Producto Final:__
         2. __Opción Custom:__
+
+
       
          
     
