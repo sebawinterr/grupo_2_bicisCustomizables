@@ -233,9 +233,13 @@ ___
       - __Custom de producto:__
          ![capturas](/capturas/3CustomProducto.png)
       - __Carrito de compras:__
+        ![capturas](/capturas/carrito1.png)
         1. __Formulario de Registro:__
+            ![capturas](/capturas/carrito2-formularioregistro.png)
         2. __Forma de pago:__
+            ![capturas](/capturas/carrito3-formadepago.png)
         3. __Confirmación de compra:__
+            ![capturas](/capturas/carrito4-confirmaciondecompra.png)
       - __Formulario de carga de producto (administrador):__
         1. __Opción Producto Final:__
         2. __Opción Custom:__
