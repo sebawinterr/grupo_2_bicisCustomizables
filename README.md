@@ -227,11 +227,11 @@ ___
     - Utilizamos figma para realizar nuestras piezas. A continuación las listamos:
 
       - __Home:__
-         ![capturas](/capturas/1Home.PNG)
+         ![capturas](/capturas/1Home.png)
       - __Detalle de producto:__
-         ![capturas](/capturas/2DetalleProducto.PNG)
+         ![capturas](/capturas/2DetalleProducto.png)
       - __Custom de producto:__
-         ![capturas](/capturas/3CustomProducto.PNG)
+         ![capturas](/capturas/3CustomProducto.png)
       - __Carrito de compras:__
         1. __Formulario de Registro:__
         2. __Forma de pago:__
