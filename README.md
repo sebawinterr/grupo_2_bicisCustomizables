@@ -251,7 +251,7 @@ ___
 
 ___     
 
-+ ## ___Paleta de colores___(opcional)
++ ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-333332-fefffd-2ec4b6-da8117-011224)
         1. ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
 	    2. ![#333332](https://via.placeholder.com/15/333332/000000?text=+) `#333332`
@@ -262,10 +262,10 @@ ___
 
 ___
 
-+ ## ___Tipografia___(opcional)
++ ## ___Tipografia___
     | Estilo Tipografico | Ejemplo | Implementacion | Variaciones a usar |
     | ------------- | ------------- | ------------- | ------------- |
-    | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed?selection.family=Barlow+Condensed:wght@700|Poppins:wght@400;700&sidebar.open&category=Serif) [Poppins](https://fonts.google.com/specimen/Poppins?selection.family=Barlow+Condensed:wght@700|Poppins:wght@400;700&sidebar.open&category=Serif) [Montserrat](https://fonts.google.com/specimen/Montserrat?selection.family=Barlow+Condensed:wght@700|Poppins:wght@400;700&sidebar.open&category=Serif,Sans+Serif&query=mon)  | Presentaciones Digitales - Revistas | Regular 400 - Bold 700 |
+    | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) [Montserrat](https://fonts.google.com/specimen/Montserrat) [Poppins](https://fonts.google.com/specimen/Poppins) | Presentaciones Digitales - Revistas | Regular 400 - Bold 700 |
 ___
 
 + ## ___Logo___(opcional)
