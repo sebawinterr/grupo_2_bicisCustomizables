@@ -27,14 +27,16 @@ ___
 
 El producto elegido para nuestro e-commerce es la bicicleta. Para ello realizamos una investigación con el objetivo de obtener un mayor conocimiento del mismo y organizamos la presentación en diferentes secciones.
 
-En primer lugar, incluimos el contexto actual donde se enmarca nuestro producto. En segundo lugar, realizamos una definición de la bicicleta con sus características duras, características blandas y los beneficios correspondientes a su uso. Luego, nos pareció importante realizar un acercamiento al publico objetivo para conocerlo más de cerca y comprender las motivaciones que lo movilizan a elegir una bicicleta como medio de transporte.
-Con ello, buscamos nuevos insights que nos permitan interpretar desde una nueva perpectiva a la bicileta y encontrar un distintivo para su comunicación, por lo tanto que en la quinta sección incluimos la revalorización obtenida sobre la bici.
-En esta etapa, ya podemos definir con mayor profundidad nuestro público objetivo y producto; para luego introducirnos en la bajada creativa que le dará estilo a nuestro sitio donde detallamos las características principales, los referentes, los wireframes solicitados, la elección de la paleta de colores y tipografía.
+En primer lugar, incluimos el contexto actual donde se enmarca nuestro producto. En segundo lugar, realizamos una definición de la bicicleta con sus características duras, características blandas y los beneficios correspondientes a su uso. Luego, nos pareció importante realizar un acercamiento al público objetivo para conocerlo más introspectivamente y comprender las motivaciones que lo movilizan a elegir la bicicleta como medio de transporte. Para ello, realizamos una encuesta con el objetivo de buscar nuevos insights que nos permitan interpretar desde una nueva perpectiva la bicileta y encontrar un distintivo para su comunicación.
+
+Una vez, superada esta etapa, recorremos la siguiente sección en la cual desarrolamos la revalorización obtenida sobre la bici. Alcanzando dicha instancia, nos vamos acercando a la etapa final del proceso de investigación donde definimos con mayor profundidad nuestro público objetivo y producto. 
+
+Por último, nos introducimos en la bajada creativa que le dará estilo a nuestro sitio donde detallamos las características principales, los referentes, los wireframes solicitados, la elección de la paleta de colores junto con la tipografía y el diseño de nuestro logo.
 ___
 
 ## ___Contexto Actual___
 
-En la ciudad de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
+En la Ciudad Autónoma de Buenos Aires se encuentran trazados 250km de bicisendas, política pública por la cual el uso de la bicicleta se ha instalado entre las prácticas sociales porteñas.
 
 Moderna o anticuada, su existencia responde a una corriente de carácter mundial. Las principales capitales del mundo han impulsado el desarrollo y uso de la bicicleta como alternativa del transporte público y como una buena práctica para el cuidado del medioambiente. 
 
@@ -42,7 +44,7 @@ En la actualidad, tanto en nuestro país como en el resto del mundo, su uso adqu
 
 Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. A su vez, la [ONU](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
 
-Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del [sistema de Ecobicis](https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
+Como antecedente preciso, el gobierno de la Ciudad Autónoma de Buenos Aires desde el lunes 11 de Mayo del 2020, autorizó la reapertura del [sistema de Ecobicis](https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
 
 ___
 
@@ -77,17 +79,17 @@ Esta información aun no nos mantiene satisfechos por lo que seguimos buscando y
 
 Por lo tanto, podemos considerar dicha interpretación como una nueva atribución en sus características blandas.
 
-La posibilidad de encontrar una nueva interpretación de la bicicleta, nos siguió planteando la necesidad de conocer los motivos por los cuales una persona se inclinaría a su utilización. ¿Qué significa para ellos la bicicleta?; ¿Por qué la eligen y qué sentido le otorgan?
+La posibilidad de encontrar una nueva interpretación de la bicicleta, nos siguió planteando la necesidad de conocer los motivos por los cuales una persona se inclinaría a su utilización. ¿Qué significa para ellos la bicicleta?; ¿Por qué la eligen?
 
 ___
 
-## ___Entrevistas de acercamiento al target___
+## ___Encuesta de acercamiento al target___
 
 Realizamos una encuesta a través de los formularios de google drive. Dejamos el link para conocerla. Si quieres, puedes participar haciendo click [aquí](https://forms.gle/sePzsESsbys3E7eT9).
 
 Muchos de los encuestados mostraron interés en moviliarse de una manera distinta por la ciudad a la utilizada cotidianamente, donde la biclicleta adquirió una gran cantidad de votos. Vale destacar que al momento de consultar sobre los motivos que movilizaron su elección, gran cantidad de los interrogados indicarón su inclinación por la bicileta ya que les permite movilizarse de una manera más independiente. A su vez, un número considerable de participantes, le otorgaron a la bicicleta un sentido de independencia, libertad y autonomía.
 
-Dicho analisis, nos permitió encontrar un nuevo insight desde el cual comunicar nuestro producto, donde podemos decir que la bicicleta es un medio de transporte alternativo que con su caracter independiente nos otorga mayor libertad y autonomía al momento de movilizarnos con respecto a las estructuras de transportes mas vigentes en la sociedad.
+Dicho analisis, nos permitió encontrar un nuevo insight desde el cual comunicar nuestro producto, donde podemos decir que la bicicleta es un medio de transporte alternativo que con su caracter independiente nos otorga mayor libertad y autonomía al momento de movilizarnos con respecto a las estructuras de transportes más vigentes en la sociedad.
 ___
 
 ## ___Revalorización de la bicicleta___
@@ -96,7 +98,7 @@ Investigando un poco más sobre nuestro target encontramos una categoría bastan
 
 Benoit Lambert, escritor y director francés, en su libro [“El retorno de la bicicleta”](https://unesdoc.unesco.org/ark:/48223/pf0000110430_spa), desarrolla el concepto de frugalidad desde una nueva perspectiva el cual podemos relacionarlo con la actividad de “usar la bicicleta”.
 
-La [frugalidad](https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus proprias palabras: 
+La [frugalidad](https://www.google.com/search?q=frugalidad+significado&oq=frugalidad&aqs=chrome.0.69i59j69i57j0l6.3710j0j8&sourceid=chrome&ie=UTF-8) ha sido considerada en sus orígenes como una moderación alimentaria y de comportamiento. El autor indaga sobre la noción de frugalidad para explotarla en un sentido más positivo y amplio. En sus propias palabras: 
 
 “La frugalidad no se trata de privaciones debidas a falta de medios, o de abstinencia por esfuerzo de voluntad. Se trata de una sobriedad general en el comportamiento -del cual el régimen alimentario no es más que un elemento- y que responde a la exigencia de establecer un equilibrio, una línea divisoria atinada entre lo necesario y lo superfluo”.
 
@@ -145,7 +147,7 @@ ___
 
 ## ___Nuestro producto: La Bicicleta___
 
-De acuerdo al perfil de nuestro público objetivo, su cadena de valores, el insight obtenido – la bici como símbolo de independencia, libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y su consideración como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el servicio/producto que ofreceremos desde una nueva concepción adquirida. 
+De acuerdo al perfil de nuestro público objetivo, su cadena de valores, el insight obtenido – la bici como símbolo de independencia, libertad y autonomía- junto a su conexión con la revalorización del concepto de frugalidad y su consideración como un medio alternativo al transporte público en tiempos de pandemia, podemos colocar a continuación el producto que ofreceremos desde una nueva concepción adquirida. 
 
 Bicicletas customizables que realcen el valor de independencia, libertad y autonomía a través del propio carácter personalizable. Establecemos una conexión conceptual entre la trilogía libertad-autonomía-customización. A su vez, establecemos a la bicicleta como un medio de movilización alternativo del transporte público y desde el cual nuestro target alimenta su proceso de reinterpretación de la concepción de tiempo, espacio y cuerpo.
 
@@ -160,7 +162,8 @@ ___
 + ## ___Caracteristicas Principales___
     1. Minimalismo
     2. Practicidad
-    3. Usabilidad basada en el Tree Test.
+    3. Funcionalidad
+    4. Personalización
 ___
 
 + ## ___Referentes___
@@ -174,14 +177,14 @@ ___
     - [___Nike___](https://www.nike.com/nike-by-you)
         ![capturas](/capturas/nike.png)
         ```
-        Nos inspira la implementación de su funcionalidad personalizable, ya que queremos que nuestros clientes personalicen el producto. Nos pareció interesante la propuesta utilizada por la marca donde sus producto. Queremos darle el mismo estilo.
+        Nos inspira la implementación de su funcionalidad personalizable, ya que queremos que nuestros clientes personalicen el producto. Nos pareció interesante la propuesta utilizada por la marca. Queremos darle el mismo estilo.
     
     ___
 
     - [___Need For Speed Underground 2___](https://www.youtube.com/watch?v=vS6I5-N4sqE)
         ![capturas](/capturas/need.PNG)
         ```
-        Siguiendo con la customización del producto sumamos como referente un viejo juego Need For Speed, donde podias ir eligiendo los distintos componentes del autos con sus diversas opciones.
+        Siguiendo con la customización del producto sumamos como referente un viejo juego Need For Speed, donde podías ir eligiendo los distintos componentes de los autos con sus diversas opciones.
 
     ___
 
@@ -209,7 +212,7 @@ ___
     - [___Adidas___](https://www.adidas.com.ar/)
         ![capturas](/capturas/adidascarrito.PNG)
         ```
-        Nos gusta la manera en q se muestra el carrito de compras con los productos incluidos. Cada producto tiene una breve descripción de sus particularidades seleccionadas. Es una estética simple y minimalista donde podés fijar la atención en los productos seleccionados con las particularidades escogidas para cada caso.
+        Nos gusta la manera en que se muestra el carrito de compras con los productos incluidos. Cada producto tiene una breve descripción de sus particularidades seleccionadas. Es una estética simple y minimalista donde podés fijar la atención en los productos seleccionados con las particularidades escogidas para cada caso.
 
     ___
 
@@ -224,7 +227,7 @@ ___
 
 + ## ___Wireframes___
 
-    - Utilizamos figma para realizar nuestras piezas. A continuación las listamos. Tambien pueden observar su vinculación e interacciones logradas a tra ves de marvel en el siguiente [link](https://marvelapp.com/4h0aj0i)
+    - Utilizamos figma para realizar nuestras piezas. Tambien pueden observar su vinculación e interacciones logradas a traves de marvel en el siguiente [link](https://marvelapp.com/4h0aj0i). A continuación, las detallamos:
 
       - __Home:__
          ![capturas](/capturas/1Home.png)
@@ -247,10 +250,6 @@ ___
         2. __Opción Custom:__
             ![capturas](/capturas/FormularioCargaAdmin.3OpciónCustom.png)
 
-      
-         
-    
-
 ___     
 
 + ## ___Paleta de colores___
@@ -268,9 +267,8 @@ ___
     | Estilo Tipografico | Ejemplo | Implementacion | Variaciones a usar |
     | ------------- | ------------- | ------------- | ------------- |
     | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) [Montserrat](https://fonts.google.com/specimen/Montserrat) [Poppins](https://fonts.google.com/specimen/Poppins) | Presentaciones Digitales - Revistas | Regular 400 - Bold 700 |
+
 ___
-
-
 
 + ## ___Logo___
     - __Isologotipo:__ 
