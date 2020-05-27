@@ -242,11 +242,11 @@ ___
         3. __Confirmación de compra:__
             ![capturas](/capturas/carrito4-confirmaciondecompra.png)
       - __Formulario de carga de producto (administrador):__
-            ![capturas](/capturas/Formulario Carga Admin. 1.png)
+            ![capturas](\capturas\FormularioCargaAdmin1.png)
         1. __Opción Producto Final:__
-            ![capturas](/capturas/Formulario Carga Admin. 2 Opción Final.png)
+            ![capturas](\capturas\FormularioCargaAdmin.2OpciónFinal.png)
         2. __Opción Custom:__
-            ![capturas](/capturas/Formulario Carga Admin. 3 Opción Custom.png)
+            ![capturas](\capturas\FormularioCargaAdmin.3OpciónCustom.png)
 
       
          
@@ -275,15 +275,6 @@ ___
 
 + ## ___Logo___
     - __Isologotipo:__ 
-___
-+ ## ___Logo___(opcional)
-
-    | Clasificación | Caracteriztica | Ejemplo | 
-    | ------------- | ------------- | ------------- |
-    | Logotipo | Solamente Tipografico | [Ejemplo](https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-1.png) |
-    | Isotipo | Solamente Pictograma | [Ejemplo](https://i.pinimg.com/originals/1c/aa/03/1caa032c47f63d50902b9d34492e1303.jpg) |
-    | Isologotipo | Tipografia y Pictograma por separado | [Ejemplo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png) |
-    | Imagotipo | Tipografia y pictograma combinados | [Ejemplo](https://1000marcas.net/wp-content/uploads/2019/12/Burger-King-Logo.png) | 
-
+        ![capturas](/capturas/Logo.png)
 
 ___
