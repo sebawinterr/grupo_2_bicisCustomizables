@@ -27,9 +27,10 @@ ___
 
 El producto elegido para nuestro e-commerce es la bicicleta. Para ello realizamos una investigación con el objetivo de obtener un mayor conocimiento del mismo y organizamos la presentación en diferentes secciones.
 
-En primer lugar, incluimos el contexto actual donde se enmarca nuestro producto. En segundo lugar, realizamos una definición de la bicicleta con sus características duras, características blandas y los beneficios correspondientes a su uso. Luego, nos pareció importante realizar un acercamiento al publico objetivo para conocerlo más de cerca y comprender las motivaciones que lo movilizan a elegir una bicicleta como medio de transporte.
-Con ello, buscamos nuevos insights que nos permitan interpretar desde una nueva perpectiva a la bicileta y encontrar un distintivo para su comunicación, por lo tanto que en la quinta sección incluimos la revalorización obtenida sobre la bici.
-En esta etapa, ya podemos definir con mayor profundidad nuestro público objetivo y producto; para luego introducirnos en la bajada creativa que le dará estilo a nuestro sitio donde detallamos las características principales, los referentes, los wireframes solicitados, la elección de la paleta de colores y tipografía.
+En primer lugar, incluimos el contexto actual donde se enmarca nuestro producto. En segundo lugar, realizamos una definición de la bicicleta con sus características duras, características blandas y los beneficios correspondientes a su uso. Luego, nos pareció importante realizar un acercamiento al publico objetivo para conocerlo más de cerca y comprender las motivaciones que lo movilizan a elegir una bicicleta como medio de transporte, realizando para ello una encuesta. El objetivo, es buscar nuevos insights que nos permitan interpretar desde una nueva perpectiva a la bicileta y encontrar un distintivo para su comunicación. 
+
+En base a esto, en la quinta sección incluimos la revalorización obtenida sobre la bici luego de las encuestas y lo investigado.
+En esta etapa, ya podemos definir con mayor profundidad nuestro público objetivo y producto; para luego introducirnos en la bajada creativa que le dará estilo a nuestro sitio donde detallamos las características principales, los referentes, los wireframes solicitados, la elección de la paleta de colores y tipografía. Tambien realizamos un logo personalizado.
 ___
 
 ## ___Contexto Actual___
@@ -40,9 +41,9 @@ Moderna o anticuada, su existencia responde a una corriente de carácter mundial
 
 En la actualidad, tanto en nuestro país como en el resto del mundo, su uso adquiere un nuevo estadio de interpretación. La pandemia producida por el Covid-19 nos permite realizar ciertos interrogantes sobre nuestra manera de transportarnos en la ciudad debiendo respetar el distanciamiento social como una buena práctica de prevención y es allí donde la bicicleta nuevamente se encuentra presente como una buena alternativa.
 
-Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. A su vez, la [ONU](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
+Ante esta problemática, muchos gobiernos han resaltado su utilidad como una forma segura de movilizarse y Argentina no es la excepción. Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del [sistema de Ecobicis](https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
 
-Mas precisamente en la Ciudad Autónoma de Buenos Aires, el gobierno porteño desde el lunes 11 de Mayo del 2020, autorizo la reapertura del [sistema de Ecobicis](https://www.buenosaires.gob.ar/ecobici/noticias/ecobici-vuelve-operar-partir-del-lunes-11-de-mayo) para facilitar la movilidad.
+A su vez, la [ONU](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19) ha promovido dicha práctica para mantenerse en forma durante la pandemia respetando siempre el distanciamiento físico.
 
 ___
 
@@ -81,7 +82,7 @@ La posibilidad de encontrar una nueva interpretación de la bicicleta, nos sigui
 
 ___
 
-## ___Entrevistas de acercamiento al target___
+## ___Encuesta de acercamiento al target___
 
 Realizamos una encuesta a través de los formularios de google drive. Dejamos el link para conocerla. Si quieres, puedes participar haciendo click [aquí](https://forms.gle/sePzsESsbys3E7eT9).
 
