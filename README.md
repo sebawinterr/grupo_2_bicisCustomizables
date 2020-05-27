@@ -241,9 +241,11 @@ ___
         3. __Confirmación de compra:__
             ![capturas](/capturas/carrito4-confirmaciondecompra.png)
       - __Formulario de carga de producto (administrador):__
+            ![capturas](/capturas/Formulario Carga Admin. 1.png)
         1. __Opción Producto Final:__
+            ![capturas](/capturas/Formulario Carga Admin. 2 Opción Final.png)
         2. __Opción Custom:__
-
+            ![capturas](/capturas/Formulario Carga Admin. 3 Opción Custom.png)
 
       
          
@@ -268,6 +270,11 @@ ___
     | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) [Montserrat](https://fonts.google.com/specimen/Montserrat) [Poppins](https://fonts.google.com/specimen/Poppins) | Presentaciones Digitales - Revistas | Regular 400 - Bold 700 |
 ___
 
+
+
++ ## ___Logo___
+    - __Isologotipo:__ 
+___
 + ## ___Logo___(opcional)
 
     | Clasificación | Caracteriztica | Ejemplo | 
