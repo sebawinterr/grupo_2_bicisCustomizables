@@ -242,11 +242,11 @@ ___
         3. __Confirmación de compra:__
             ![capturas](/capturas/carrito4-confirmaciondecompra.png)
       - __Formulario de carga de producto (administrador):__
-            ![capturas](\capturas\FormularioCargaAdmin1.png)
+            ![capturas](/capturas/FormularioCargaAdmin1.png)
         1. __Opción Producto Final:__
-            ![capturas](\capturas\FormularioCargaAdmin.2OpciónFinal.png)
+            ![capturas](/capturas/FormularioCargaAdmin.2OpciónFinal.png)
         2. __Opción Custom:__
-            ![capturas](\capturas\FormularioCargaAdmin.3OpciónCustom.png)
+            ![capturas](/capturas/FormularioCargaAdmin.3OpciónCustom.png)
 
       
          
