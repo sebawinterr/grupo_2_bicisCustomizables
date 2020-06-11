@@ -265,7 +265,7 @@ ___
 + ## ___Tipografia___
     | Estilo Tipografico | Ejemplo | Implementacion | Variaciones a usar |
     | ------------- | ------------- | ------------- | ------------- |
-    | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) [Montserrat](https://fonts.google.com/specimen/Montserrat) [Poppins](https://fonts.google.com/specimen/Poppins) | Presentaciones Digitales - Revistas | Regular 400 - Bold 700 |
+    | Sans Serif  | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) [Montserrat](https://fonts.google.com/specimen/Montserrat)  | Barlow Condensed para Titulos y Montserrat para párrafos | Regular 400 - Bold 700 |
 
 ___
 
