@@ -253,13 +253,12 @@ ___
 ___     
 
 + ## ___Paleta de colores___
-    - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-333332-fefffd-2ec4b6-da8117-011224)
+    - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-91918d-ff6000-49d4c6-ffffff)
         1. ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
-	    2. ![#333332](https://via.placeholder.com/15/333332/000000?text=+) `#333332`
-	    3. ![#FEFFFD](https://via.placeholder.com/15/FEFFFD/000000?text=+) `#FEFFFD`
-        4. ![#2EC4B6](https://via.placeholder.com/15/2EC4B6/000000?text=+) `#2EC4B6`
-        5. ![#DA8117](https://via.placeholder.com/15/DA8117/000000?text=+) `#DA8117`
-        6. ![#011224](https://via.placeholder.com/15/011224/000000?text=+) `#011224`
+	    2. ![#91918D](https://via.placeholder.com/15/91918D/000000?text=+) `#333332`
+	    3. ![#FF6000](https://via.placeholder.com/15/FF6000/000000?text=+) `#FEFFFD`
+        4. ![#49D4C6](https://via.placeholder.com/15/49D4C6/000000?text=+) `#2EC4B6`
+        5. ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#DA8117`
 
 ___
 
