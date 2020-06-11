@@ -255,10 +255,10 @@ ___
 + ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-91918d-ff6000-49d4c6-ffffff)
         1. ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
-	    2. ![#91918D](https://via.placeholder.com/15/91918D/000000?text=+) `#333332`
-	    3. ![#FF6000](https://via.placeholder.com/15/FF6000/000000?text=+) `#FEFFFD`
-        4. ![#49D4C6](https://via.placeholder.com/15/49D4C6/000000?text=+) `#2EC4B6`
-        5. ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#DA8117`
+	    2. ![#91918D](https://via.placeholder.com/15/91918D/000000?text=+) `#91918D`
+	    3. ![#FF6000](https://via.placeholder.com/15/FF6000/000000?text=+) `#FF6000`
+        4. ![#49D4C6](https://via.placeholder.com/15/49D4C6/000000?text=+) `#49D4C6`
+        5. ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF`
 
 ___
 
