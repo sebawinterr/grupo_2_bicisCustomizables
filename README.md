@@ -234,11 +234,11 @@ ___
       - __¿Quiénes Somos?:__
          ![capturas]() 
       - __Burger:__
-         ![capturas](/capturas/11Burger.png)
+         ![capturas](/capturas/11Burger.PNG)
       - __Login:__
-         ![capturas](/capturas/12Login.png)
+         ![capturas](/capturas/12Login.PNG)
       - __Productos General:__
-         ![capturas](/capturas/13ProdGral.png)
+         ![capturas](/capturas/13ProdGral.PNG)
       - __Detalle de producto:__
          ![capturas](/capturas/2DetalleProducto.png)
       - __Custom de producto:__
