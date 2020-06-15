@@ -272,10 +272,7 @@ ___
             ![capturas](/capturas/)
         3. __Confirmación de compra:__
             ![capturas](/capturas/)
-
-
-
-
+___
 
 + ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-91918d-ff6000-49d4c6-ffffff)
