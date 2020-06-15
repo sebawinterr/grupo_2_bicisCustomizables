@@ -227,22 +227,30 @@ ___
 
 + ## ___Wireframes___
 
-    - Utilizamos figma para realizar nuestras piezas. Tambien pueden observar su vinculación e interacciones logradas a traves de marvel en el siguiente [link](https://marvelapp.com/4h0aj0i). A continuación, las detallamos:
+    - Utilizamos figma para realizar nuestras piezas. Tambien pueden observar su vinculación e interacciones logradas a traves de marvel en el siguiente [link](https://marvelapp.com/120dg23e). A continuación, las detallamos:
 
       - __Home:__
          ![capturas](/capturas/1Home.png)
+      - __¿Quiénes Somos?:__
+         ![capturas]() 
+      - __Burger:__
+         ![capturas](/capturas/11Burger.png)
+      - __Login:__
+         ![capturas](/capturas/12Login.png)
+      - __Productos General:__
+         ![capturas](/capturas/13ProdGral.png)
       - __Detalle de producto:__
          ![capturas](/capturas/2DetalleProducto.png)
       - __Custom de producto:__
          ![capturas](/capturas/3CustomProducto.png)
       - __Carrito de compras:__
-        ![capturas](/capturas/carrito1.png)
+        ![capturas](/capturas/4Carrito1.png)
         1. __Formulario de Registro:__
-            ![capturas](/capturas/carrito2-formularioregistro.png)
+            ![capturas](/capturas/5Carrito2-FormularioRegistro.png)
         2. __Forma de pago:__
-            ![capturas](/capturas/carrito3-formadepago.png)
+            ![capturas](/capturas/6Carrito3-Formadepago.png)
         3. __Confirmación de compra:__
-            ![capturas](/capturas/carrito4-confirmaciondecompra.png)
+            ![capturas](/capturas/7Carrito4-Confirmacióndecompra.png)
       - __Formulario de carga de producto (administrador):__
             ![capturas](/capturas/FormularioCargaAdmin.1.png)
         1. __Opción Producto Final:__
@@ -251,6 +259,23 @@ ___
             ![capturas](/capturas/FormularioCargaAdmin.3OpciónCustom.png)
 
 ___     
+
++ ## ___Mockups___
+    
+    - __Home:__
+         ![capturas](/capturas/)
+    - __Carrito de compras:__
+        ![capturas](/capturas/)
+        1. __Formulario de Registro:__
+            ![capturas](/capturas/)
+        2. __Forma de pago:__
+            ![capturas](/capturas/)
+        3. __Confirmación de compra:__
+            ![capturas](/capturas/)
+
+
+
+
 
 + ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/000000-91918d-ff6000-49d4c6-ffffff)
