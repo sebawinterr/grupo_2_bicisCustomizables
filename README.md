@@ -232,7 +232,7 @@ ___
       - __Home:__
          ![capturas](/capturas/1Home.png)
       - __¿Quiénes Somos?:__
-         ![capturas]() 
+         ![capturas](/capturas/quienesSomos.png) 
       - __Burger:__
          ![capturas](/capturas/11Burger.PNG)
       - __Login:__
@@ -252,11 +252,11 @@ ___
         3. __Confirmación de compra:__
             ![capturas](/capturas/7Carrito4-Confirmacióndecompra.png)
       - __Formulario de carga de producto (administrador):__
-            ![capturas](/capturas/FormularioCargaAdmin.1.png)
+            ![capturas](/capturas/formularioAdmin1.png)
         1. __Opción Producto Final:__
-            ![capturas](/capturas/FormularioCargaAdmin.2OpciónFinal.png)
+            ![capturas](/capturas/formularioAdmin2.png)
         2. __Opción Custom:__
-            ![capturas](/capturas/FormularioCargaAdmin.3OpciónCustom.png)
+            ![capturas](/capturas/formularioAdmin3.png)
 
 ___     
 
