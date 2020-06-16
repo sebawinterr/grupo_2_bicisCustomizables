@@ -263,7 +263,7 @@ ___
 + ## ___Mockups___
     
     - __Home:__
-         ![capturas](/capturas/)
+         ![capturas](/capturas/HomeMockUp.png)
     - __Carrito de compras:__
         
         1. __Formulario de Registro:__
