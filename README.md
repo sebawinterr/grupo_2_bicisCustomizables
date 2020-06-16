@@ -265,13 +265,13 @@ ___
     - __Home:__
          ![capturas](/capturas/)
     - __Carrito de compras:__
-        ![capturas](/capturas/)
+        
         1. __Formulario de Registro:__
-            ![capturas](/capturas/)
+            ![capturas](/capturas/CarritoEnvioMockUp.png)
         2. __Forma de pago:__
-            ![capturas](/capturas/)
+            ![capturas](/capturas/CarritoPagoMockUp.png)
         3. __Confirmación de compra:__
-            ![capturas](/capturas/)
+            ![capturas](/capturas/CarritoConfirMockUp.png)
 ___
 
 + ## ___Paleta de colores___
