@@ -12,9 +12,10 @@ ___
     - __Mariano Torrecilla Carande__
 
         ```
-        Lic en Cs de la Comunicación. 
+        Lic en Cs de la Comunicación. Nuestro Scrum Master
         Emprendiendo los primeros pasos en el mundo de la programación y desarrollo web.
         31 años.
+        
     ___
 
     - __Juan Esperon__
