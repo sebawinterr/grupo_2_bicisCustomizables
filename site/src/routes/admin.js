@@ -4,6 +4,6 @@ const path = require('path');
 
 const adminController = require(path.resolve(__dirname,'..','controllers','adminController'));
 
-router.get('/admin', adminController.index);
+router.get('/administrador', adminController.admin);
 
 module.exports = router;
