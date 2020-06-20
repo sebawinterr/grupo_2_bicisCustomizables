@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "marca": "trek",
+        "modelo": "5000",
+        "estilo": "fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "bicicleta1.jpg"
+    },
+    {
+        "id": 2,
+        "marca": "trek",
+        "modelo": "5000",
+        "estilo": "fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "18",
+        "imagen": "bicicleta1.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "trek",
+        "modelo": "5000",
+        "estilo": "fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "bicicleta1.jpg"
+    },
+    {
+        "id": 4,
+        "marca": "trek",
+        "modelo": "5000",
+        "estilo": "fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "bicicleta1.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "trek",
+        "modelo": "5000",
+        "estilo": "fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "bicicleta1.jpg"
+    },
+    {
+        "id": 6,
+        "marca": "trek",
+        "modelo": "6000",
+        "estilo": "urbana",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "talle, rodado, colores, equipamiento",
+        "precio": 480,
+        "descuento": 30,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "bicicleta1.jpg"
+    }
+   
+]  
