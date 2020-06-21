@@ -1,0 +1,9 @@
+#reg-log{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    padding-right: 30px;
+    padding-left: 30px;
+}
