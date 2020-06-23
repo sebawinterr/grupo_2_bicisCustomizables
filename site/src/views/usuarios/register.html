@@ -7,110 +7,205 @@
     <link rel="stylesheet" href="css/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Bykes - Make it yours</title>
 </head>
 <body>
 
     <main class="container-fluid">
-        <header class="encabezado">
-        <!--Navbar-->
-        <div class="fixed-top">
+      <!--navbar-->
+      <header class="row encabezado">
+        <div class="fixed-top col-12">
           <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
-              <h5 class="text-white h4">Collapsed content</h5>
-              <span class="text-muted">Toggleable via the navbar brand.</span>
+  
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+                <a class="navbar-brand" href="/">Bykes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse col-12" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">¿Quienes somos? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
           <nav class="navbar navbar-transparent bg-transparent">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <ion-icon name="menu-outline"></ion-icon>
             </button>
+            <div>
+               <a href="register">
+                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
+               </a>
+               <a href="/carrito/lista">
+                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+               </a>
+            </div>
           </nav>
         </div>
-        </header>
+      </header>
 
-          <div class="formularios">
-            <div class="row container d-flex justify-content-center align-items-baseline">
-                <form class="login col-6">                
-                      
-                  <h2 class="border-bottom border-dark">INICIAR SESION</h2>
 
-                  <div class="form-group">
-                          <br>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                  </div>
-                  <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>
-                </form>
-
-                  
+      <section class="row">
+        <div class="formularios">
+          <div class="row container d-flex justify-content-center align-items-baseline">
+              <form class="login col-6">                
                     
-                <form class="register col-6">                
-                      
-                  <h2 class="border-bottom border-dark">REGISTRARSE</h2>
+                <h2 class="border-bottom border-dark">INICIAR SESION</h2>
 
-                  <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                          <br>
-                          <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
-                        </div>
+                <div class="form-group">
+                        <br>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                </div>
+                <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>
+              </form>
+
+                
+                  
+              <form class="register col-6">                
+                    
+                <h2 class="border-bottom border-dark">REGISTRARSE</h2>
+
+                <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <br>
+                        <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        <br>
+                        <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
                         
-                        <div class="col-md-6 mb-3">
-                          <br>
-                          <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
-                        </div>
+                        <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
                         
-                        <div class="col-md-6 mb-3">
-                          
-                          <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
-                        </div>
-                        
-                        <div class="col-md-6 mb-3">
-                          
-                          <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
-                        </div>
-                  </div>
-                  <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                          <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                          <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                          <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <input type="password" class="form-control" id="validationServer03" placeholder="Contraseña" name="password" required>
-                        </div>
-                  </div>
-                  <div class="form-group">
-                  <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" required>
-                          <label class="terminos form-check-label">
-                            Acepto los terminos y condiciones.
-                          </label>
-                  </div>
-                  <br>
-                  <button class="btn btn-primary btn-dark" type="submit">Registrarme</button>
-                </form>
-            </div>
+                        <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
+                      </div>
+                </div>
+                <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="password" class="form-control" id="validationServer03" placeholder="Contraseña" name="password" required>
+                      </div>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="terminos form-check-label">
+                          Acepto los terminos y condiciones.
+                        </label>
+                </div>
+                <br>
+                <button class="btn btn-primary btn-dark" type="submit">Registrarme</button>
+              </form>
           </div>
+        </div>
+      </section>
+
+        
+
+          
+
+          <!--Footer-->
+          <!--<footer class="row footer">
+            <div class="contacto card text-center col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-dark" style="width: 18rem;">
+              <div class="card-body bg-dark">
+                <h6 class="card-title text-white pt-0">Contacto</h6>-->
+                <!--<p class="card-text text-white">Av Del Libertador 6200, Belgrano, CABA - Argentina</p>
+                <p class="card-text text-white">+ 54 9 11 4564-0000</p>-->
+                <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                  Encontranos aquí!
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h7 class="modal-title" id="staticBackdropLabel">Contacto - Bykes</h7>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1381.5628585945926!2d-58.44951009719536!3d-34.555359027021176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb432f7eaebf5%3A0xb2db1f3d1218ef77!2sStarbucks!5e0!3m2!1ses!2sar!4v1592924492184!5m2!1ses!2sar" width="270" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <h6>info@bykes.com</h6>
+                        <h6>+ 54 9 11 4564-0000</h6>
+                        <h6>Av Del Libertador 6200, Belgrano, CABA - Argentina</h6>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="redes card text-center col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-dark" style="width: 18rem;">
+              <div class="card-body bg-dark">
+                <h6 class="card-title text-white pt-0">Sumate a nuestras redes</h6>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <br>
+                <a href="#" class="btn btn-primary">Conocenos más!</a>
+              </div>
+            </div>
+      
+            <div class="logo card text-center col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-dark" style="width: 18rem;">
+              <div class="card-body bg-dark">-->
+                <!--<h6 class="card-title text-white pt-0">Special title treatment</h6>-->
+                <!--<a href=""><img src="img/logofooter.PNG" alt=""></a>
+                <br>
+                <a href="/" class="btn btn-primary">Go to top</a>
+              </div>
+            </div>
+          </footer>-->  
       </main>
 
 

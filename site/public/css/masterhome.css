@@ -49,13 +49,18 @@ footer div a {
 
 
 
+.btn-primary {
+    background-color: #FF6000;
+    border-color: #FF6000;
+}
+
 div a img {
-    width: 45%;
+    width: 25%;
 }
 
 .footer {
     width: 100%;
-    background-color: #000000;
+    background-color:#343a40;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
