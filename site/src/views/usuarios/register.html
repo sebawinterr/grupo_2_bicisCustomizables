@@ -4,80 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- <link rel="stylesheet" href="css/master.css"> -->
+    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="../../../public/css/register.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="row">
-        <h1 class="col-sm">BURGER</h1>
-        <h1 class="col-sm">LOGO</h1>
-        <h1 class="jutify-content-end col-sm">CARRITO</h1>
-    </header>
-    <section id="reg-log" class="row container-fluid">
-        <div class="col-sm  justify-content-center">
-            <h2>INICIAR SESION</h2>
-            <br>
-            <form action="#" method="POST">
-            <p>
-                <input type="email" name="email" placeholder="Mail">
-                <br>
-                <br>
-            </p>
-            <p>
-                <input type="password" name="password" placeholder="Contraseña">
-                <br>
-            </p>
-            <p>
-                <input type="submit" value="Iniciar Sesión">
-            </p>    
-            </form>
+
+    <main class="container-fluid">
+        <header class="encabezado">
+        <!--Navbar-->
+        <div class="fixed-top">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-transparent bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </nav>
         </div>
-        <div class="col-sm  justify-content-center">
-            <h2>REGISTRARSE</h2>
-            <form action="#" method="POST"></form>
-            <p>
-                <h4>Registrate y accede a nuestros beneficios</h4>
-            </p><br>
-            
-                <input type="text" name="nombre" placeholder="Nombre">
-            
-            
-                <input type="text" name="apellido" placeholder="Apellido">
-            <br><br>
-            
-                <input type="text" name="direccion" placeholder="Direccion">
-            <br><br>
-            
-                <input type="text" name="provincia" placeholder="Provincia">
-            
-            
-                <input type="text" name="localidad" placeholder="Localidad">
-            <br><br>
-            
-                <input type="number" name="codigo postal" placeholder="CP">
-            <br><br>
-            
-                <input type="number" name="dni" placeholder="DNI">
-            
-            
-                <input type="number" name="telefono" placeholder="Telefono">
-            <br><br>
-            
-                <input type="email" name="email" placeholder="Mail">
-            <br><br>
-            
-                <input type="password" name="password" placeholder="Contraseña">
-            <br><br>
-            
-                <input type="submit" value="Registrarse">
-            
-        </div>
-    </section>
+        </header>
+        
+        <div class="row container d-flex justify-content-center align-items-center">
+                <form class="login col-6">                
+                    
+                    <h2 class="border-bottom border-dark">INICIAR SESION</h2>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                
+                  
+                <form class="register col-6">                
+                    
+                    <h2 class="border-bottom border-dark">REGISTRARSE</h2>
+
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationServer01">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationServer02">Last name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationServer03">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationServer04">State</label>
+                        <select class="custom-select is-invalid" id="validationServer04" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationServer05">Zip</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+            </div>
+    
+      </main>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

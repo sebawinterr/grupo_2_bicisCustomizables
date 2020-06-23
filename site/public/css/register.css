@@ -1,9 +1,20 @@
-#reg-log{
-    display: flex;
-    justify-content: center;
+div{
+    position: absolute;
+    left: 30vw;
+    right: 30vw;
+    top: 30vh;
 }
 
-div{
-    padding-right: 30px;
-    padding-left: 30px;
+.encabezado{
+    height: 20px;
+}
+
+.login{
+    width: 100%;
+    
+}
+
+.register{
+    width: 100%;
+    
 }
