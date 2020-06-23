@@ -1,8 +1,14 @@
 header {
     width: 100%;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
+#login {
+    order: 1;
+}
 
 article img {
     width: 100%;
@@ -12,15 +18,36 @@ article img {
     border: 0px;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h5 {
     padding-top: 40px;
     font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
+
 div a {
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
     color: white;
 }
+
+footer h6 {
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+footer div a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 
 div a img {
     width: 45%;
@@ -28,7 +55,7 @@ div a img {
 
 .footer {
     width: 100%;
-    background-color: #343a40;
+    background-color: #000000;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
