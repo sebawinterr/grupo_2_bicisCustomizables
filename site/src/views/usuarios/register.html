@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="../../../public/css/register.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -27,91 +28,89 @@
           </nav>
         </div>
         </header>
-        
-        <div class="row container d-flex justify-content-center align-items-center">
-                <form class="login col-6">                
-                    
-                    <h2 class="border-bottom border-dark">INICIAR SESION</h2>
 
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="formularios">
+            <div class="row container d-flex justify-content-center align-items-baseline">
+                <form class="login col-6">                
+                      
+                  <h2 class="border-bottom border-dark">INICIAR SESION</h2>
+
+                  <div class="form-group">
+                          <br>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>
                 </form>
 
-                
                   
-                <form class="register col-6">                
                     
-                    <h2 class="border-bottom border-dark">REGISTRARSE</h2>
-
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer01">First name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer02">Last name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer03">City</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationServer04">State</label>
-                        <select class="custom-select is-invalid" id="validationServer04" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Please select a valid state.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationServer05">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-                        <label class="form-check-label" for="invalidCheck3">
-                          Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
+                <form class="register col-6">                
                       
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  <h2 class="border-bottom border-dark">REGISTRARSE</h2>
+
+                  <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <br>
+                          <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                          <br>
+                          <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                          
+                          <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                          
+                          <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
+                        </div>
+                  </div>
+                  <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <input type="password" class="form-control" id="validationServer03" placeholder="Contraseña" name="password" required>
+                        </div>
+                  </div>
+                  <div class="form-group">
+                  <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" required>
+                          <label class="terminos form-check-label">
+                            Acepto los terminos y condiciones.
+                          </label>
+                  </div>
+                  <br>
+                  <button class="btn btn-primary btn-dark" type="submit">Registrarme</button>
                 </form>
             </div>
-    
+          </div>
       </main>
 
 

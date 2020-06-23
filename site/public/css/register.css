@@ -1,20 +1,15 @@
-div{
-    position: absolute;
-    left: 30vw;
-    right: 30vw;
-    top: 30vh;
-}
-
-.encabezado{
-    height: 20px;
-}
-
-.login{
+.formularios{
+    position: relative;
+    top: 110px;
+    display: flex;
     width: 100%;
-    
+    justify-content: center;
 }
 
-.register{
-    width: 100%;
-    
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
 }
