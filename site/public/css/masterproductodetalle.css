@@ -1,4 +1,128 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/*contenedor padre*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*navbar*/
 header {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+/*tipografias*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6, h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*seccion perteneciente al producto*/
+.cuerpo {
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.titulo {
+    width: 100%;
+    height: 5vh;
+    background-color: #000000;
+    text-align: center;
+    color: #FF6000;
+    padding-top: 2px;
+    
+}
+
+.producto {
+    width: 100%;
+    height: 125vh;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 40px;
+    border: solid 1px black;
+
+}
+
+article img {
+    width: 50%;
+    padding: 5px;
+}
+
+figure {
+    padding: 5px;
+    width: 100%;
+}
+
+.miSeleccion {
+    font-size: 11px;
+
+}
+
+.uno{
+    margin-top: 8px;
+    font-size: 11px;
+    border: solid 1px black;
+
+}
+.dos {
+    margin-top: 8px;
+    font-size: 11px;
+    border: solid 1px black;
+}
+
+
+/*estilos del footer*/
+.footer {
+    width: 100%;
+    height: 21vh;
+    background-color: #343a40!important;
+}
+
+div figure img {
+    width: 65%;
+}
+
+footer div a {
+    color: white;
+}
+
+.contacto {
+    margin-bottom: 19px;
+    border: 0px;  
+}
+
+.logo {
+    margin-bottom: 19px;
+    border: 0px;
+}
+
+
+
+
+/*header {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -7,6 +131,7 @@ header {
     justify-content: flex-end;
     color: white;
 }
+
 
 .producto {
     display: flex;
@@ -118,4 +243,4 @@ div a img {
     }
     
     
-}
+}*/
