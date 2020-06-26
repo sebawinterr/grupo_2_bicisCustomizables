@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     index : function(req, res){
-        res.sendFile(path.resolve(__dirname, '..','views','productos','detalleProducto.html'));
+        res.sendFile(path.resolve(__dirname, '..','views','productos','productos.html'));
         
     },
     custom : function(req, res){

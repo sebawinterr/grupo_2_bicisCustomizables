@@ -6,9 +6,7 @@ header {
     justify-content: flex-end;
 }
 
-#login {
-    order: 1;
-}
+
 
 article img {
     width: 100%;
@@ -38,6 +36,10 @@ div a {
     color: white;
 }
 
+
+
+
+
 footer h6 {
     font-size: 28px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -52,9 +54,10 @@ footer div a {
 .btn-primary {
     background-color: #FF6000;
     border-color: #FF6000;
+    
 }
 
-div a img {
+div figure img {
     width: 25%;
 }
 
@@ -70,12 +73,15 @@ div a img {
 
 }
 
+.redes {
+    padding-top: 20px;
+}
+
 @media (min-width: 768px) {
     h5 {
         padding-top: 3.5rem;
         font-size: 2rem;
     }
-    
 
 }
 
