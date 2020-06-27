@@ -6,7 +6,11 @@ const path = require('path');
 module.exports = {
     admin : function(req, res){
         res.sendFile(path.resolve(__dirname, '..','views','administrador','formularioCarga.html'));
-        
+    },
+    custom: function (req, res){
+        res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
+    },
+    final: function (req, res){
+        res.sendFile(path.resolve(__dirname, '..','views','administrador','final.html'));
     }
-    
 }
