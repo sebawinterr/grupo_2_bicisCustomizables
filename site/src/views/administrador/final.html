@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/final.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Bykes - Make it yours</title>
@@ -49,20 +49,95 @@
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                   <ion-icon name="menu-outline"></ion-icon>
                 </button>
-                <div>
+                <!--<div>
                    <a href="register">
                      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
                    </a>
                    <a href="/carrito/lista">
-                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>-->
                    </a>
                 </div>
               </nav>
             </div>
           </header>
 
+          <div class="titulo d-flex justify-content-center">
+            <h1 class="border-bottom border-dark col-8">PRODUCTO FINAL</h1>
+          </div>
 
-            <h1>FINAL</h1>
+          <br><br><br>
+
+          <div class="fomrulario col-8">
+            <form>
+              <!--class="was-validated"-->
+              <div class="mb-3">
+                <select class="custom-select" required>
+                  <option value="">Elija el tipo de producto</option>
+                  <option value="biciCompleta">Bicicleta completa</option>
+                  <option value="pieza">Pieza</option>
+                </select>
+              </div>
+              <br>
+
+              <h6>Carga de imagenes segun color:</h4>
+                <br>
+
+              <input type="text" placeholder="Color 1" class="col-5 form-control">
+              <br>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Foto segun color 1</label>
+              </div>
+
+              <input type="text" placeholder="Color 2" class="col-5 form-control">
+              <br>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Foto segun color 2</label>
+              </div>
+              <br><br><br>
+
+              
+              <div class="talle-rodado">
+                
+                
+                <div class="talle custom-control custom-checkbox mb-3">
+                  <h6>Talles disponibles:</h6>
+                  <input type="checkbox" class="custom-control-input" value="small">
+                  <label class="custom-control-label">Small</label>
+
+                  <input type="checkbox" class="custom-control-input" value="medium">
+                  <label class="custom-control-label">Medium</label>
+
+                  <input type="checkbox" class="custom-control-input" value="large">
+                  <label class="custom-control-label">Large</label>
+                </div>
+              
+
+                
+                <div class="talle custom-control custom-checkbox mb-3">
+                  <h6>Rodados:</h6>
+                  <input type="checkbox" class="custom-control-input" value="27,5">
+                  <label class="custom-control-label">27,5 "</label>
+
+                  <input type="checkbox" class="custom-control-input" value="29">
+                  <label class="custom-control-label">29 "</label>
+                </div>
+              </div>
+              <br><br>
+
+              <div class="marca-modelo">
+                <input type="text" placeholder="Marca" name="marca" class="col-5 form-control">
+                <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control">
+              </div>
+
+              <div class="mb-3">
+                <br>
+                <textarea class="form-control" name="descripcionProducto" id="validationTextarea" placeholder="Descripcion del producto" required></textarea>
+              </div>
+
+            </form>
+          </div>
     </main>
     
 

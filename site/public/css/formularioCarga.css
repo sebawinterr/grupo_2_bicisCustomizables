@@ -5,6 +5,7 @@ header{
 
 h1{
     font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
 }
 
 h2{
@@ -13,4 +14,21 @@ h2{
 
 input{
     font-family: 'Montserrat', sans-serif;
+}
+
+.opciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 480px){
+    .opciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        min-height: 40vh;
+    }
+
 }

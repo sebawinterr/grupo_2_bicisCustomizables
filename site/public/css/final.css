@@ -11,6 +11,29 @@ h2{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-input{
+form{
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.titulo{
+    text-align: center;
+}
+
+.talle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.talle-rodado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.marca-modelo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
