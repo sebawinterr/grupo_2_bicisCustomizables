@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/masterproductodetalle.css">
     <title>Bykes - Make it yours</title>
 
 </head>
 <body>
   <main class="container-fluid">
     <!--Navbar-->
-    <header class="row header">
-      <div class="fixed-top col-12">
+    <header class="header row">
+      <div class="fixed-top col-12 col-sm-12">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-dark p-4">
 
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="#">¿Quienes somos? <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="">Bicicletas <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
@@ -46,113 +46,98 @@
           </div>
         </div>
         <nav class="navbar navbar-transparent bg-transparent">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <ion-icon name="menu-outline"></ion-icon>
           </button>
           <div>
              <a href="register">
-               <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log in</button>
+               <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
              </a>
              <a href="/carrito/lista">
-               <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+               <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
              </a>
           </div>
         </nav>
       </div>
-
     </header>    
     
     <!--Listado de Productos-->
-    <section class="row">
+    <section class="row cuerpo">
 
-      <article class="col-12">
-        <div class="card bg-transparent text-white border-0">
-          <img src="img/fixievioleta.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="titulo card-title text-center mt-30 pt-30">TREK 500 - KE600</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-            Ver Más</button></a>
-          </div>
+      <article class="titulo col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h5>Nombre del producto</h5>
+      </article>
+
+      <article class="fotoProducto col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <figure class="bici">
+          <img src="/img/fixievioleta.jpg" class="card-img" alt="...">
+        </figure>
+      </article>
+
+      <article class=" miSeleccion col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="form-group ">
+          <select  name="descuento" class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="#">Color</option>
+            <option value="0"><ion-icon name="ellipse-outline"></ion-icon></option>
+            <option value="15"><ion-icon name="radio-button-off-outline"></ion-icon></option>
+            <option value="30"><ion-icon name="radio-button-off-outline"></ion-icon></option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <select  name="descuento" class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="#">Talle</option>
+            <option value="0">27.5" S</option>
+            <option value="15">27.5" M</option>
+            <option value="30">27.5" L</option>
+            <option value="0">29" S</option>
+            <option value="15">29" M</option>
+            <option value="30">29" L</option>
+            <option value="30">29" XL</option>
+          </select>
         </div>
       </article>
 
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/mtbkscott.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
- 
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/aventonMataro.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
+      <article class="carta col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11">
 
+        <div class="row row-cols-1 row-cols-sm-12 row-cols-md-12 row-cols-lg-12 row-cols-xl-3">
+          <div class="cartaUno col mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text">La bicicleta Scott Prince representa la autonomía y estilo para movilizarse de manera auténtica cuando lo necesites.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cartaDos col mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Especificaciones técnicas</h6>
+                <p class="card-text">Equipada con un cambio de 8 velocidades integrado en el buje de Shimano y una transmisión de correa Gates.Frenos de disco Shimano y cubiertas Schwalbe garantizan un control total en todo tipo de condiciones. Talles del S al XL. Viene en los colores Purple, Stealth y Petrol</p>
+              </div>
+            </div>
+          </div>
+          <div class="cartaTres col mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Precio: $45.000</h6>
+                <p class="card-text">12 cuotas sin interes con Visa y Mastercard.</p>
+                <a href="/carrito/lista" class="comprar"><button type="button" class="btn btn-dark btn-lg">COMPRAR</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
       
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/aventonCordoba.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/trekRemedy.jpeg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/canyonCommuter.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/capriBerlinMan.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK 500 - KE600</h5>
-            <a href="/productos" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
     </section>
 
     <!--Footer-->
     <footer class="row footer">
-      
       <article class="contacto col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
         <div class="cartaFooter card text-center bg-dark">
           <div class="card-body bg-dark">
-            <h4 class="card-title text-white pt-0">Contacto</h4>
+            <h6 class="card-title text-white pt-0">Contacto</h6>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"><ion-icon name="navigate-circle-outline"></ion-icon>
             </button>
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -215,13 +200,15 @@
         <div class="cartaFooter card text-center bg-dark">
           <div class="card-body bg-dark">
             <figure>
-              <img src="img/logofooter.PNG" alt="">
-            </figure><a href="/" class="btn btn-primary"><ion-icon name="arrow-up-outline"></ion-icon></a>
+              <img src="/img/logofooter.PNG" alt="">
+            </figure><a href="/productos/detalle" class="btn btn-primary"><ion-icon name="arrow-up-outline"></ion-icon></a>
           </div>
         </div>
       </article>
 
     </footer>
+    
+  
 
   </main>
     
