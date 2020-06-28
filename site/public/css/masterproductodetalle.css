@@ -1,11 +1,9 @@
-
 * {
     box-sizing: border-box;
 
 }
 
 /*tipografias*/
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,24 +30,22 @@ div a {
 main {
     display: flex;
     flex-wrap: wrap;
-    /*max-width: 100%;
-    max-height: 100vh;*/
     flex-direction: row;
     justify-content: center;
 }
 
 /*navbar*/
 header {
-    min-width: 100%;
-    min-height: 12vh;
+    width: 100%;
+    height: 12vh;
     background-color: white;
 }
 
 /*seccion perteneciente al producto*/
 
 .cuerpo {
-    max-width: 100%;
-    max-height: 160vh;
+    width: 100%;
+    height: 160vh;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +54,8 @@ header {
 }
 
 .titulo {
-    max-width: 100%;
-    max-height: 7vh;
+    width: 100%;
+    height: 7vh;
     background-color: #000000;
     text-align: center;
     color: #FF6000;
@@ -68,8 +64,8 @@ header {
 }
 
 .fotoProducto {
-    max-width: 100%;
-    max-height: 100vh;
+    width: 100%;
+    height: 100vh;
     background-color: white;
     border: solid 1px black;
     margin: 40px;
@@ -87,7 +83,7 @@ header {
 .miSeleccion {
     font-size: 11px;
     border: solid 1px black;
-    max-height: 18vh;
+    height: 18vh;
     padding: 7px;
     margin-top: 40px;
 
@@ -96,7 +92,7 @@ header {
 /*ancho de los detalles del producto*/
 
 .carta {
-    max-width: 100%;
+    width: 100%;
     border: solid 1px black;
     margin-left: 40px;
     padding: 10px;
@@ -105,8 +101,8 @@ header {
 
 /*estilos del footer*/
 .footer {
-    min-width: 100%;
-    min-height: 24vh;
+    width: 100%;
+    height: 24vh;
     background-color: #343a40!important;
     margin-top: 100px;
 }
@@ -132,480 +128,9 @@ footer div a {
 }
 
 
-@media (max-width: 320px) {
- 
-    /*tipografias*/
-  
-    h5 {
-        font-size: 20px;
-    }
     
-    h6 {
-        font-size: 20px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    div a {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 20px;
-    }
-    
-    /*contenedor padre*/
-    
-    /*navbar*/
-    header {
-        min-height: 15vh;
-    }
-    
-    /*seccion perteneciente al producto*/
-    
-    .cuerpo {
-        max-width: 100%;
-        min-height: 220vh;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .fotoProducto {
-        max-width: 100%;
-        min-height: 20vh;
-        background-color: white;
-        border: solid 1px black;
-        margin-top: 0px;
-        display: flex;
-    
-    }
-    
-    .bici {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    
-    .miSeleccion {
-        font-size: 11px;
-        border: solid 1px black;
-        max-height: 0vh;
-        padding: 7px;
-        margin-top: -35px;
-    
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        max-width: 100%;
-        border: solid 1px black;
-        padding: 10px;
-        margin-left: 0px;
-        margin-top: 40px;
-    
-    }
-    
-    /*estilos del footer*/
-    .footer {
-        max-width: 100%;
-        background-color: #343a40!important;
-        margin-top: 100px;
-    }
-    
-    div figure img {
-        width: 25%;
-    }
-    
-    footer div a {
-        color: white;
-    }
-    
-    .cartaFooter {
-        border: 0px;
-        font-size: 14px;
-    }
-    
-    .contacto {
-        margin: 0px;
-    }
-
-    .redes {
-        margin: 0px;
-        padding-top: 0px;
-    }
-    
-    .logo {
-        margin: 0px;
-        margin-bottom: 80px;
-    }
-
-}
-
-@media (max-width: 360px) {
-
-    /*tipografias*/
-  
-    h5 {
-        font-size: 20px;
-    }
-    
-    h6 {
-        font-size: 20px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    div a {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 20px;
-    }
-    
-    /*contenedor padre*/
-    
-    /*navbar*/
-    header {
-        min-height: 15vh;
-    }
-    
-    /*seccion perteneciente al producto*/
-    
-    .cuerpo {
-        max-width: 100%;
-        max-height: 180vh;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .fotoProducto {
-        max-width: 100%;
-        max-height: 50vh;
-        background-color: white;
-        border: solid 1px black;
-        margin-top: 40px;
-        display: flex;
-    
-    }
-    
-    .bici {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    
-    .miSeleccion {
-        font-size: 11px;
-        border: solid 1px black;
-        min-height: 18vh;
-        padding: 7px;
-        margin-top: 0px;
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        max-width: 100%;
-        border: solid 1px black;
-        padding: 10px;
-        margin-left: 0px;
-        margin-top: 10px;
-    
-    }
-    
-    /*estilos del footer*/
-    .footer {
-        max-width: 100%;
-        max-height: 65vh;
-        background-color: #343a40!important;
-        margin-top: 100px;
-    }
-    
-    div figure img {
-        width: 25%;
-    }
-    
-    footer div a {
-        color: white;
-    }
-    
-    .cartaFooter {
-        border: 0px;
-        font-size: 14px;
-    }
-    
-    .contacto {
-        margin: 0px;
-    }
-
-    .redes {
-        margin: 0px;
-        padding-top: 0px;
-    }
-    
-    .logo {
-        margin: 0px;
-    }
-
-}
-
-@media (max-width: 414px) {
-    /*tipografias*/
-  
-    h5 {
-        font-size: 20px;
-    }
-    
-    h6 {
-        font-size: 20px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    div a {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 20px;
-    }
-    
-    /*contenedor padre*/
-    
-    /*navbar*/
-    header {
-        min-height: 15vh;
-    }
-    
-    /*seccion perteneciente al producto*/
-    
-    .cuerpo {
-        max-width: 100%;
-        max-height: 180vh;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .fotoProducto {
-        max-width: 100%;
-        max-height: 50vh;
-        background-color: white;
-        border: solid 1px black;
-        margin-top: 40px;
-        display: flex;
-    
-    }
-    
-    .bici {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    
-    .miSeleccion {
-        font-size: 11px;
-        border: solid 1px black;
-        min-height: 25vh;
-        padding: 7px;
-        margin-top: 0px;
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        max-width: 100%;
-        border: solid 1px black;
-        padding: 10px;
-        margin-left: 0px;
-        margin-top: 10px;
-    
-    }
-    
-    /*estilos del footer*/
-    .footer {
-        max-width: 100%;
-        max-height: 65vh;
-        background-color: #343a40!important;
-        margin-top: 100px;
-    }
-    
-    div figure img {
-        width: 25%;
-    }
-    
-    footer div a {
-        color: white;
-    }
-    
-    .cartaFooter {
-        border: 0px;
-        font-size: 14px;
-    }
-    
-    .contacto {
-        margin: 0px;
-    }
-
-    .redes {
-        margin: 0px;
-        padding-top: 0px;
-    }
-    
-    .logo {
-        margin: 0px;
-    }
 
 
-}
-
-@media (max-width: 768px) {
-
-     /*tipografias*/
-  
-     h5 {
-        font-size: 25px;
-    }
-    
-    h6 {
-        font-size: 25px;
-    }
-    
-    p {
-        font-size: 16px;
-    }
-    
-    div a {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 20px;
-    }
-    
-    /*contenedor padre*/
-    
-    /*navbar*/
-    header {
-        min-height: 15vh;
-    }
-    
-    /*seccion perteneciente al producto*/
-    
-    .cuerpo {
-        max-width: 100%;
-        max-height: 180vh;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .fotoProducto {
-        max-width: 100%;
-        max-height: 50vh;
-        background-color: white;
-        border: solid 1px black;
-        margin-top: 40px;
-        display: flex;
-    
-    }
-    
-    .bici {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    
-    .miSeleccion {
-        border: solid 1px black;
-        min-height: 12vh;
-        padding: 7px;
-        margin-top: 40px;
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        max-width: 100%;
-        border: solid 1px black;
-        padding: 10px;
-        margin-left: 0px;
-        margin-top: 10px;
-    
-    }
-    
-    /*estilos del footer*/
-    .footer {
-        min-width: 100%;
-        min-height: 15vh;
-        background-color: #343a40!important;
-        margin-top: 100px;
-    }
-    
-    div figure img {
-        width: 30%;
-    }
-    
-    footer div a {
-        color: white;
-    }
-    
-    .cartaFooter {
-        border: 0px;
-        font-size: 14px;
-    }
-    
-    .contacto {
-        margin-top: 5px;
-    }
-
-    .redes {
-        margin-top: 5px;
-        padding-top: 10px;
-    }
-    
-    .logo {
-        margin-top: 5px;
-    }
-
-}
-
-@media (max-width: 1024px) {
-
-    .miSeleccion {
-        border: solid 1px black;
-        max-height: 8vh;
-        padding: 7px;
-        margin-top: 40px;
-    }
-
-    .footer {
-        min-height: 10vh;   
-    }
-
-    .contacto {
-        margin-top: 7px;
-    }
-
-    .redes {
-        margin-top: 7px;
-        padding-top: 14px;
-    }
-    
-    .logo {
-        margin-top: 7px;
-    }
-}
 
 
 

@@ -1,0 +1,867 @@
+
+/* arranca por el dispositivo mas pequeño, 320px de width  - mobile first*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+/*tipografias*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6, h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+/*contenedor padre*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /*max-width: 100%;
+    max-height: 100vh;*/
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*navbar*/
+header {
+    min-width: 100%;
+    min-height: 15vh;
+    background-color: white;
+}
+
+/*seccion perteneciente al producto*/
+
+.cuerpo {
+    width: 100%;
+    height: 190vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+    height: 7vh;
+    background-color: #000000;
+    text-align: center;
+    color: #FF6000;
+    padding-top: 2px;
+    
+}
+
+.fotoProducto {
+    width: 100%;
+    height: 32vh;
+    background-color: white;
+    border: solid 1px black;
+    margin-top: 0px;
+
+}
+
+.bici {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.miSeleccion {
+    font-size: 11px;
+    border: solid 1px black;
+    height: 20vh;
+    padding: 7px;
+    margin-top: -5px;
+
+}
+
+/*ancho de los detalles del producto*/
+
+.carta {
+    width: 100%;
+    border: solid 1px black;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+/*estilos del footer*/
+
+.footer {
+    width: 100%;
+    height: 65vh;
+    background-color: #343a40!important;
+    margin-top: 10px;
+}
+
+div figure img {
+    width: 25%;
+}
+
+footer div a {
+    color: white;
+}
+
+.cartaFooter {
+    border: 0px;
+    font-size: 14px;
+}
+
+.contacto {
+    margin-top: 10px;
+}
+
+.redes {
+    margin: 0px;
+}
+
+.logo {
+    margin: 0px;
+}
+
+@media (min-width: 360px) {
+    * {
+        box-sizing: border-box;
+    
+    }
+    
+    /*tipografias*/
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h6, h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    h5 {
+        font-size: 25px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    div a {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
+    
+    /*contenedor padre*/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /*max-width: 100%;
+        max-height: 100vh;*/
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /*navbar*/
+    header {
+        min-width: 100%;
+        min-height: 15vh;
+        background-color: white;
+    }
+    
+    /*seccion perteneciente al producto*/
+    
+    .cuerpo {
+        width: 100%;
+        height: 170vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .titulo {
+        width: 100%;
+        height: 7vh;
+        background-color: #000000;
+        text-align: center;
+        color: #FF6000;
+        padding-top: 2px;
+        
+    }
+    
+    .fotoProducto {
+        width: 100%;
+        height: 32vh;
+        background-color: white;
+        border: solid 1px black;
+        margin-top: 0px;
+    
+    }
+    
+    .bici {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    
+    .miSeleccion {
+        font-size: 11px;
+        border: solid 1px black;
+        height: 20vh;
+        padding: 7px;
+        margin-top: 0px;
+    
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        width: 100%;
+        border: solid 1px black;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+    
+    }
+    
+    /*estilos del footer*/
+    
+    .footer {
+        width: 100%;
+        height: 65vh;
+        background-color: #343a40!important;
+        margin-top: 10px;
+    }
+    
+    div figure img {
+        width: 25%;
+    }
+    
+    footer div a {
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 10px;
+    }
+    
+    .redes {
+        margin: 0px;
+    }
+    
+    .logo {
+        margin: 0px;
+    }
+
+}
+
+@media (min-width: 375px) {
+    * {
+        box-sizing: border-box;
+    
+    }
+    
+    /*tipografias*/
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h6, h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    h5 {
+        font-size: 30px;
+    }
+        
+    /*seccion perteneciente al producto*/
+    
+    .cuerpo {
+        height: 160vh;
+        
+    }
+    
+    .fotoProducto {
+        height: 34vh;
+    }
+        
+    .miSeleccion {
+        height: 18vh;
+    }   
+    /*estilos del footer*/
+    
+    .footer {
+        height: 55vh;
+        margin-top: 10px;
+    }
+
+    .contacto {
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (min-width: 411px) {
+    * {
+        box-sizing: border-box;
+    
+    }
+    
+    /*tipografias*/
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h6, h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    h5 {
+        font-size: 30px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    div a {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
+    
+    /*contenedor padre*/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /*max-width: 100%;
+        max-height: 100vh;*/
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /*navbar*/
+    header {
+        min-width: 100%;
+        min-height: 15vh;
+        background-color: white;
+    }
+    
+    /*seccion perteneciente al producto*/
+    
+    .cuerpo {
+        width: 100%;
+        height: 140vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .titulo {
+        width: 100%;
+        height: 7vh;
+        background-color: #000000;
+        text-align: center;
+        color: #FF6000;
+        padding-top: 2px;
+        
+    }
+    
+    .fotoProducto {
+        width: 100%;
+        height: 32vh;
+        background-color: white;
+        border: solid 1px black;
+        margin-top: 0px;
+    
+    }
+    
+    .bici {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    
+    .miSeleccion {
+        font-size: 11px;
+        border: solid 1px black;
+        height: 15vh;
+        padding: 7px;
+        margin-top: 0px;
+    
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        width: 100%;
+        border: solid 1px black;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+    
+    }
+    
+    /*estilos del footer*/
+    
+    .footer {
+        width: 100%;
+        height: 65vh;
+        background-color: #343a40!important;
+        margin-top: 10px;
+    }
+    
+    div figure img {
+        width: 25%;
+    }
+    
+    footer div a {
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 10px;
+    }
+    
+    .redes {
+        margin: 0px;
+    }
+    
+    .logo {
+        margin: 0px;
+    }
+
+}
+
+@media (min-width: 414px) {
+
+    * {
+        box-sizing: border-box;
+    
+    }
+    
+    /*tipografias*/
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h6, h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    h5 {
+        font-size: 30px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    div a {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
+    
+    /*contenedor padre*/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /*max-width: 100%;
+        max-height: 100vh;*/
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /*navbar*/
+    header {
+        min-width: 100%;
+        min-height: 15vh;
+        background-color: white;
+    }
+    
+    /*seccion perteneciente al producto*/
+    
+    .cuerpo {
+        width: 100%;
+        height: 140vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .titulo {
+        width: 100%;
+        height: 7vh;
+        background-color: #000000;
+        text-align: center;
+        color: #FF6000;
+        padding-top: 2px;
+        
+    }
+    
+    .fotoProducto {
+        width: 100%;
+        height: 32vh;
+        background-color: white;
+        border: solid 1px black;
+        margin-top: 0px;
+    
+    }
+    
+    .bici {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    
+    .miSeleccion {
+        font-size: 11px;
+        border: solid 1px black;
+        height: 15vh;
+        padding: 7px;
+        margin-top: 0px;
+    
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        width: 100%;
+        border: solid 1px black;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+    
+    }
+    
+    /*estilos del footer*/
+    
+    .footer {
+        width: 100%;
+        height: 65vh;
+        background-color: #343a40!important;
+        margin-top: 10px;
+    }
+    
+    div figure img {
+        width: 25%;
+    }
+    
+    footer div a {
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 10px;
+    }
+    
+    .redes {
+        margin: 0px;
+    }
+    
+    .logo {
+        margin: 0px;
+    }
+}
+  
+@media (min-width: 768px) {
+
+     /*tipografias*/
+  
+    h5 {
+        font-size: 40px;
+    }
+    
+    h6 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    div a {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
+    
+    /*contenedor padre*/
+    
+    /*navbar*/
+    header {
+        min-height: 12vh;
+    }
+    
+    /*seccion perteneciente al producto*/
+    
+    .cuerpo {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .fotoProducto {
+        width: 100%;
+        height: 31vh;
+        background-color: white;
+        border: solid 1px black;
+        margin-top: 40px;
+        display: flex;
+    
+    }
+        
+    .miSeleccion {
+        border: solid 1px black;
+        height: 12vh;
+        padding: 7px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        margin-top: 10px;
+    
+    }
+    
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 15vh;
+        background-color: #343a40!important;
+        margin-top: 40px;
+    }
+    
+    div figure img {
+        width: 30%;
+    }
+    
+    footer div a {
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 5px;
+    }
+
+    .redes {
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        margin-top: 5px;
+    }
+
+}
+
+@media (min-width: 993px) {
+    .cuerpo {
+        height: 110vh;
+    }
+
+    .fotoProducto {
+        width: 100%;
+        height: 40vh;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /*tipografias*/
+  
+    h5 {
+        font-size: 50px;
+    }
+    
+    p {
+        font-size: 25px;
+    }
+
+    /*navbar*/
+    header {
+        min-height: 10vh;
+    }
+    
+    /*seccion perteneciente al producto*/
+
+    .cuerpo {
+        height: 100vh;
+    }
+    
+    .fotoProducto {
+        height: 32vh;
+        margin-top: 10px;
+    }
+        
+    .miSeleccion {
+        height: 9vh;
+        margin-top: 10px;
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        margin-top: 0px;
+    }
+    
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 12vh;
+        margin-top: 20px;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 5px;
+    }
+
+    .redes {
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /*tipografias*/
+  
+    h5 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    /*navbar*/
+    header {
+        min-height: 10vh;
+    }
+    
+    /*seccion perteneciente al producto*/
+
+    .cuerpo {
+        height: 120vh;
+    }
+    
+    .fotoProducto {
+        height: 68vh;
+        margin-top: 20px;
+    }
+        
+    .miSeleccion {
+        height: 12vh;
+        margin-top: 20px;
+    }
+    
+    /*ancho de los detalles del producto*/
+    
+    .carta {
+        margin-top: 20px;
+    }
+    
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 20vh;
+        margin-top: 70px;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .contacto {
+        margin-top: 5px;
+    }
+
+    .redes {
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        margin-top: 5px;
+    }
+
+}
