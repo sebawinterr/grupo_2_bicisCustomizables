@@ -1,0 +1,13 @@
+#items {
+    background-color: black;
+}
+.fondoNegro {
+    background-color: black;
+}
+.letraBlanca{
+    color: white;
+}
+li:hover {
+    border:orange;
+    border-bottom: black 2px;
+}
