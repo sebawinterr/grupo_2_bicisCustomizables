@@ -13,144 +13,166 @@
     <!--Paginación-->
     <nav aria-label="...">
         <ul class="pagination pagination-lg justify-content-center">
-          <li class="page-item active" aria-current="page">
-            <a class="page-link" href="#">Envío <span class="sr-only">(current)</span></a></li>
-          <li class="page-item"><a class="page-link" href="/carrito/pago">Pago</a></li>
-          <li class="page-item"><a class="page-link" href="/carrito/confirmacion">Confirmación</a></li>
+          <li class="page-item active bg-dark" aria-current="page">
+            <a class="page-link" href="#">Envío</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="/carrito/pago">Pago</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="/carrito/confirmacion">Confirmación</a>
+          </li>
         </ul>
       </nav>
       
-    <div class="forms">        
-    <!--Formulario Datos 1-->
-    <form class="register col-md-6">
+      <section class="row justify-content-center">
+        <div class="formulario forms row col-6">        
+          <!--Register y envio-->
+          <form class="register col-12">
 
-                        
-        
-        <h2 class="border-bottom border-dark">Ingresá tus datos</h2>
-
-            <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <br>
-                                <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
-                            </div>
-                            
-                            <div class="col-md-6 mb-3">
-                                <br>
-                                <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
-                            </div>
-                            
-                            <div class="col-md-6 mb-3">
-                                
-                                <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
-                            </div>
-                            
-                            <div class="col-md-6 mb-3">
-                                
-                                <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
-                            </div>
-            </div>
-            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
-                                </div>
-            </div>           
-            <div class="form-group">
-                            <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" required>
-                                    <label class="terminos form-check-label">
-                                    Acepto los terminos y condiciones.
-                                    </label>
-                            </div>
-            </div>
-
-        <!--Formas de Envío-->
-        <h2>Formas de envío</h2>                                
-            <div class="form-group">
-
-          
-                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="retiroEnLocal" id="retiroEnLocal" name="tipoDeEnvio">
-                                        <label class="form-check-label" for="retiroEnLocal">Retiro en local</label>
-                    </div>
-                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="envioStandar" id="envioStandar" name="tipoDeEnvio">
-                                        <label class="form-check-label" for="envioStandar">Envío Standar</label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" value="envioExpress" id="retiroEnLocal" name="tipoDeEnvio">
-                    <label class="form-check-label" for="retiroEnLocal">Envío express</label>
-                    </div>
-
-            </div>
-        <button class="btn btn-primary btn-dark" type="submit">Continuar con el Pago</button>
-    </form>            
-    <!--Formulario Datos 2-->
-
-    <!--<form class="register col-md-6">
-        <h2 class="border-bottom border-dark">INICIAR SESION</h2>
+                              
               
-            <div class="form-group">
-        <br>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-            </div>
-            <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-            </div>
+              <h2 class="border-bottom border-dark">Ingresá tus datos</h2>
 
-        <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>-->
-    <!--Resumen del pedido-->
-        
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Resumen del pedido</h5>
+                  <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                      <br>
+                                      <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      <br>
+                                      <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      
+                                      <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      
+                                      <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
+                                  </div>
+                  </div>
+                  <div class="form-row">
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
+                                      </div>
+                                      <div class="col-md-3 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
+                                      </div>
+                                      <div class="col-md-3 mb-3">
+                                          <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
+                                      </div>
+                  </div>           
+                  <div class="form-group">
+                                  <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" required>
+                                          <label class="terminos form-check-label">
+                                          Acepto los terminos y condiciones.
+                                          </label>
+                                  </div>
+                  </div>
+
+              <!--Formas de Envío-->
+              <h2>Formas de envío</h2>                                
+                  <div class="form-group">
+
+                
+                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" value="retiroEnLocal" id="retiroEnLocal" name="tipoDeEnvio">
+                                              <label class="form-check-label" for="retiroEnLocal">Retiro en local</label>
+                          </div>
+                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" value="envioStandar" id="envioStandar" name="tipoDeEnvio">
+                                              <label class="form-check-label" for="envioStandar">Envío Standar</label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="radio" value="envioExpress" id="retiroEnLocal" name="tipoDeEnvio">
+                          <label class="form-check-label" for="retiroEnLocal">Envío express</label>
+                          </div>
+
+                  </div>
+              <button class="btn btn-primary btn-dark" type="submit">Continuar con el Pago</button>
+          </form>            
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Costo <br> Descuento <br> Envío </li>
-        </ul>
-        <li class="list-group-item">Valor <br> Valor <br> Valor </li>
-      </div>   
-    
-    <!--Imagen y links-->
-    <div class="card mb-3 " style="max-width: 18rem;">
-            <div class="row no-gutters">   
-              <div class="col-md-4">
-                <img src="img/trekFuel.jpeg" class="card-img" alt="No se puede mostrar la imagen">
+
+        <div class="column col-6">
+          <!--Iniciar Sesion-->
+          <form class="login col-12">
+            <h2 class="border-bottom border-dark">INICIAR SESION</h2>
+                  
+                <div class="form-group">
+            <br>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                </div>
+                <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                </div>
+
+            <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>
+          </form>  
+          <br>
+          <!--Resumen con foto-->
+          <div class="resumen card col-12">
+            <div class="card-body">
+              <h5 class="card-title">Resumen del pedido</h5>
+            </div>
+            <article class="valores row">
+              <div class="col-6">
+                <h6>Costo</h6>
+                <br>
+                <h6>Descuento</h6>
+                <br>
+                <h6>Envío</h6>
+                <br>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Trek Fuel</h5>
+              <div class="col-6">
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+              </div>
+            </article>
+
+            <div class="card mb-3">
+              <div class="row no-gutters">   
+                <div class="col-md-4">
+                  <img src="/img/trekFuel.jpeg" class="card-img" alt="No se puede mostrar la imagen">
+                </div>
+                <div class="col-md-8">
                   <div class="card-body">
-                    <a href="/productos" class="nav-link">Detalle del Producto</a>
+                    <h5 class="card-title">Trek Fuel</h5>
+                    <div class="card-body">
+                      <a href="/productos" class="nav-link">Detalle del Producto</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-    </div>
-                 
+      </div>
 
-    </form>
-    </div>
+          </div>
+        </div>
+      </section>
 
+         
+        
 
+        
 
     </main>
       <!--Scripts-->

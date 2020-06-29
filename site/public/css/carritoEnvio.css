@@ -16,3 +16,7 @@ h2{
 input{
     font-family: 'Montserrat', sans-serif;
 }
+
+.valores{
+    justify-content: space-between;
+}
