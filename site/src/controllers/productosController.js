@@ -11,7 +11,7 @@ module.exports = {
         
     },   
     custom : function(req, res){
-        res.sendFile(path.resolve(__dirname, '..','views','productos','custom.html'));
+        res.sendFile(path.resolve(__dirname, '..','views','productos','customizacion.html'));
         
     }   
 }

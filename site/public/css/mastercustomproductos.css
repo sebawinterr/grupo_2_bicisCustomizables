@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/*tipografias*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6, h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 30px;
+}
+
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+/*contenedor padre*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*navbar*/
+header {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+}
+
+/*seccion perteneciente al producto*/
+
+.cuerpo {
+    width: 100%;
+    height: 160vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.titulo {
+    width: 100%;
+    height: 7vh;
+    background-color: #000000;
+    text-align: center;
+    color: #FF6000;
+    padding-top: 2px;
+    
+}
+
+.fotoProducto {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border: solid 1px black;
+    margin: 40px;
+    display: flex;
+}
+
+.bici {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.miSeleccion {
+    font-size: 11px;
+    margin-top: 40px;
+
+}
+
+/*ancho de los detalles del producto*/
+
+.carta {
+    width: 50%;
+    border: solid 1px black;
+    margin-left: 40px;
+    padding: 10px;
+
+}
+
+/*estilos del footer*/
+.footer {
+    width: 100%;
+    height: 24vh;
+    background-color: #343a40!important;
+    margin-top: 100px;
+}
+
+div figure img {
+    width: 25%;
+}
+
+footer div a {
+    color: white;
+}
+
+.cartaFooter {
+    border: 0px
+}
+
+.redes {
+    padding-top: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
