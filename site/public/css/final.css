@@ -13,11 +13,17 @@ h2{
 
 form{
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 .titulo{
     text-align: center;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .talle{
@@ -36,4 +42,11 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.seccion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }

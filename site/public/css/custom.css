@@ -11,6 +11,53 @@ h2{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-input{
+form{
     font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pieza{
+    display: flex;
+    justify-content: space-around;
+}
+
+.talle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.talle-rodado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.marca-modelo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seccion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
