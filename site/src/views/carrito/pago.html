@@ -10,33 +10,100 @@
 </head>
 <body>
 <!--Paginación-->
-    <div>
-    <nav aria-label="...">
-        <ul class="pagination pagination-lg justify-content-center">
-            <li class="fondoNegro"><a class="page-link page-item active fondoNegro letraBlanca border" href="/carrito/envio">Envío</a></li>
-            <li aria-current="page"><a class="page-link fondoNegro letraBlanca" href="#">Pago<span>(current)</span></a></li>            
-            <li><a class="page-link page-item fondoNegro letraBlanca" href="/carrito/confirmacion">Confirmación</a></li>
-        </ul>
-    </nav>
-    </div>
+<nav aria-label="...">
+  <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item"><a class="page-link" href="/carrito/envio">Envío</a>
+    </li>
+    
+    <li class="page-item active bg-dark" aria-current="page">
+      <a class="page-link" href="#">Pago</a>
+    </li>
 
-<!--Imagen y links-->
-<div class="card mb-3">
-    <div class="row no-gutters">   
-      <div class="col-md-4">
-        <img src="img/trekFuel.jpeg" class="card-img" alt="No se puede mostrar la imagen">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Trek Fuel</h5>
-          <div class="card-body">
-            <a href="/productos" class="nav-link">Detalle del Producto</a>
+    
+
+    <li class="page-item"><a class="page-link" href="/carrito/confirmacion">Confirmación</a>
+    </li>
+  </ul>
+</nav>
+
+<h2 class="border-bottom border-dark">Método de pago</h2>
+<br>
+<br>
+<div class="row">
+
+                  <div class="form-row">
+                    
+                    <form class="col-6">
+                      <h2>Ingresa tus datos</h2>
+                                <div class="form-row border-bottom border-dark">
+                                  <div class="col-md-6 mb-3">
+                                      <input type="text" class="form-control" id="validationServer01" name="numeroTarjeta" required placeholder="N° de la Tarjeta">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      <input type="text" class="form-control" id="validationServer02" placeholder="Titular de la tarjeta" name="nombreTitular" required>
+                                  </div>                              
+                                  <div class="col-md-6 mb-3">
+                                      <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <input type="date" class="form-control" id="validationServer01" name="fechaVencimiento" required placeholder="">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <input type="text" class="form-control" id="validationServer01" name="codigoSeguridad" required placeholder="Codigo de Seguridad">
+                              </div>                                     
+                                </div>                                          
+                                <br>
+                                <div class="col-md-12 mb-3">
+                                  <input type="tel" class="form-control" id="validationServer02" placeholder="Suma tu codigo promocional!" name="codigoPromo" value="">
+                              </div>                              
+                                <button class="col-md-12 btn btn-primary btn-dark" type="submit">Finalizar compra</button>
+                            </form>
+                  </div>
+                  <br>
+
+          <!--Resumen con foto-->
+          <div class="resumen card col-6">
+            <div class="card-body">
+              <h5 class="card-title">Resumen del pedido</h5>
+            </div>
+            <article class="valores row">
+              <div class="col-6">
+                <h6>Costo</h6>
+                <br>
+                <h6>Descuento</h6>
+                <br>
+                <h6>Envío</h6>
+                <br>
+              </div>
+              <div class="col-6">
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+              </div>
+            </article>
+
+            <div class="card mb-3">
+              <div class="row no-gutters">   
+                <div class="col-md-4">
+                  <img src="/img/trekFuel.jpeg" class="card-img" alt="No se puede mostrar la imagen">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Trek Fuel</h5>
+                    <div class="card-body">
+                      <a href="/productos" class="nav-link">Detalle del Producto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </div>
-    </div>
-</div>
-
+          </div>
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
