@@ -1,0 +1,54 @@
+*{
+    justify-content: space-around;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h6{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+.valores{
+    justify-content: space-between;
+}
+
+.footer {
+    width: 100%;
+    height: 25vh;
+    background-color: #343a40!important;
+}
+
+div figure img {
+    width: 25%;
+}
+
+footer div a {
+    font-size: 20px;
+    color: white;
+}
+
+.cartaFooter {
+    border: 0px;
+}
+
+.redes {
+    padding-top: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
