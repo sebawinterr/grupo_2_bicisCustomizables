@@ -10,10 +10,36 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/aventonMataro.jpg"
+        "imagen": "../../public/img/fixievioleta.jpg"
     },
     {
         "id": 2,
+        "marca": "Aventon",
+        "modelo": "Mataro",
+        "estilo": "Fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "Cuadro de aluminio 6061 ultra liviano. Horquilla de fibra de carbono y stem de aluminio. Vela y silla aerodinamicos y liviandos. Fixie o single-speed gracias a una maza Flip-Flop. Talles desde 49 cm a 61 cm. Viene en los colores Midnight Blue o Mataro White",
+        "precio": 80000,
+        "descuento": 0,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "../../public/img/mtbkscott.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "Aventon",
+        "modelo": "Mataro",
+        "estilo": "Fixie",
+        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "descripcionTecnica": "Cuadro de aluminio 6061 ultra liviano. Horquilla de fibra de carbono y stem de aluminio. Vela y silla aerodinamicos y liviandos. Fixie o single-speed gracias a una maza Flip-Flop. Talles desde 49 cm a 61 cm. Viene en los colores Midnight Blue o Mataro White",
+        "precio": 80000,
+        "descuento": 0,
+        "cuotas": "si",
+        "cantCuotas": "12",
+        "imagen": "../../public/img/aventonMataro.jpg"
+    },
+    {
+        "id": 4,
         "marca": "Aventon",
         "modelo": "Cordoba",
         "estilo": "Fixie",
@@ -26,7 +52,7 @@
         "imagen": "../../public/img/aventonCordoba.jpg"
     },
     {
-        "id": 3,
+        "id": 5,
         "marca": "Trek",
         "modelo": "Remedy 9.7",
         "estilo": "Mountain",
@@ -39,20 +65,7 @@
         "imagen": "../../public/img/trekRemedy.jpeg"
     },
     {
-        "id": 4,
-        "marca": "Trek",
-        "modelo": "Fuel EX 9.9",
-        "estilo": "Mountain",
-        "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "descripcionTecnica": "Cuadro y ruedas de fibra de carbono de alta resistencia. Transmision SRAM X01 Eagle de 12 velocidades. Suspensiones traseras y delanteras de Fox Factory Float. Talles desde S a XL. Viene en los colores Raw Carbon Fade y Gloss Purple Haze",
-        "precio": 90000,
-        "descuento": 0,
-        "cuotas": "si",
-        "cantCuotas": "12",
-        "imagen": "../../public/img/trekFuel.jpeg"
-    },
-    {
-        "id": 5,
+        "id": 6,
         "marca": "Canyon",
         "modelo": "Commuter 5.0",
         "estilo": "Urban",
@@ -65,11 +78,11 @@
         "imagen": "../../public/img/canyonCommuter.jpg"
     },
     {
-        "id": 6,
+        "id": 7,
         "marca": "Capri",
         "modelo": "Berlin Man",
         "estilo": "Urban",
-        "descripcion": "SUna bicicleta comoda y versatil con un diseño clasico holandes atemporal. Es un modelo pensado especialmente para atravesar la ciudad con estilo.",
+        "descripcion": "Una bicicleta comoda y versatil con un diseño clasico holandes atemporal. Es un modelo pensado especialmente para atravesar la ciudad con estilo.",
         "descripcionTecnica": "Cambios Shimano SIS TX35 de 6 velocidades. Cuadro de acero con soldadura TIG. Talle unico de 58 cm. Horquilla de acero conificada. Biela de aluminio con plato de 44 dientes. Sillin de semipiel hecho en Italia y puños de goma a juego. Portabultos trasero del mismo color que el cuadro. Viene solo en color Negro con Marron Torino.",
         "precio": 48000,
         "descuento": 0,
