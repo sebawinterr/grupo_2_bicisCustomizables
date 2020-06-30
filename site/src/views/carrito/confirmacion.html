@@ -3,66 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoConfirmacion.css">
     <title>Document</title>
 
 </head>
 <body>
-    
-    <h2>confirmacion</h2>
-
-
-    <!--Paginación-->
-    <nav aria-label="...">
+  <main class="container-fluid">
+      <br>
+      <br>   
+      <!--Paginación-->
+      <nav aria-label="...">
         <ul class="pagination pagination-lg justify-content-center">
-          <li class="page-item active" aria-current="page">
-            <a class="page-link" href="#">Envío <span class="sr-only">(current)</span></a></li>
+          <li class="page-item"><a class="page-link" href="/carrito/envio">Envío</a></li>
           <li class="page-item"><a class="page-link" href="/carrito/pago">Pago</a></li>
-          <li class="page-item"><a class="page-link" href="/carrito/confirmacion">Confirmación</a></li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#">Confirmación<span class="sr-only">(current)</span></a></li>        
         </ul>
       </nav>
+    <section class="column">
+      <h2 class="col md-6">Confirmación de compra</h2>
+      <br>
+      <h6>Muchas Gracias por confiar en nosotros. A continuación, detallamos lo adquirido:</h6>
+      <br>      
+      
+      <!--Resumen del pedido-->
 
-<!--Formulario Datos 2-->
-
-    <form class="register col-md-6">
-        <h2 class="border-bottom border-dark">INICIAR SESION</h2>
-              
-            <div class="form-group">
-        <br>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-            </div>
-            <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-            </div>
-
-        <button type="submit" class="btn btn-primary btn-dark">Iniciar Sesión</button>
-    <!--Resumen del pedido-->
-        
-    <div class="card" style="width: 18rem;">
+      <!--Resumen con foto-->
+      <div class="resumen card col-5 border-dark">
         <div class="card-body">
-          <h5 class="card-title">Resumen del pedido</h5>
+          <h2 class="card-title">Resumen del pedido</h2>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Costo <br> Descuento <br> Envío </li>
-        </ul>
-        <li class="list-group-item">Valor <br> Valor <br> Valor </li>
-      </div>   
+        <article class="valores row">
+          <div class="col-6">
+            <h6>Costo</h6>
+            <br>
+            <h6>Descuento</h6>
+            <br>
+            <h6>Desc. Codig. Promo</h6>
+            <br>
+            <h6>Envío</h6>
+            
+          </div>
+          <div class="col-6">
+            <h6>Valor</h6>
+            <br>
+            <h6>(Valor)</h6>
+            <br>
+            <h6>(Valor)</h6>
+            <br>
+            <h6>Valor</h6>
+          </div>
 
+        </article>
+        <article class="valores row border-top border-bottom border-dark">
+          <div class="col-6">
+            <h2>TOTAL</h2>
+            <h6>Op. Financiación</h6>
+          </div>
+          <div class="col-6">
+            <h2>Precio Final</h2>
+            <h6>Detalle Cuotas</h6>
+          </div>
+        </article>
+        <br>
 
+        <div>
+          <div class="row  border-bottom border-dark">   
+            <div class="col-6">
+              <img src="/img/trekFuel.jpeg" class="card-img" alt="No se puede mostrar la imagen">
+            </div>
+            <div class="col-6">            
+                <h5 class="card-title">Trek Fuel</h5>                
+                <a href="/productos" class="nav-link btn btn-dark">Detalle del Producto</a>
+                <br>
+                <br>
+            </div>            
+          </div>
+        </div>
+            <div class="col-12 border-bottom border-dark">
+              <h2>Datos de envío</h2>
+              <h6>Nombre</h6>
+              <h6>Dirección</h6>
+              <h6>Localidad, Provincia, CP</h6>
+              <h6>Teléfono</h6>
+              <h6>Mail</h6>
+            </div>
+            <div class="col-12">
+              <h2>Forma de envío</h2>
+              <h6>Detalle</h6>
+            </div>
+      </div>
 
-
-
-
-
-
-
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </section>
+  </main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
