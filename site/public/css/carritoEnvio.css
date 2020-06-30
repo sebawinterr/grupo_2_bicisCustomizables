@@ -1,3 +1,7 @@
+*{
+    justify-content: space-around;
+}
+
 .formulariosDatos{
     background-color: black;
     position: relative;
@@ -10,6 +14,14 @@
 }
 
 h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h6{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5{
     font-family: 'Barlow Condensed', sans-serif;
 }
 

@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/carritoEnvio">
-    <title>Envío</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoEnvio.css">        
+    <title>Bykes - Make it yours</title>
 </head>
 <body>
 <main class="container-fluid">
+
+      <br>
+      <br>
     <!--Paginación-->
     <nav aria-label="...">
         <ul class="pagination pagination-lg justify-content-center">
@@ -22,6 +25,8 @@
           </li>
         </ul>
       </nav>
+      <br>
+
       
       <section class="row justify-content-center">
         <div class="formulario forms row col-6">        
@@ -101,7 +106,7 @@
                           </div>
 
                   </div>
-              <button class="btn btn-primary btn-dark" type="submit">Continuar con el Pago</button>
+              <a type="submit" href="/carrito/pago" class="btn btn-dark btn-lg btn-block">Continuar con el Pago</a>
           </form>            
         </div>
 
@@ -128,7 +133,7 @@
           <!--Resumen con foto-->
           <div class="resumen card col-12">
             <div class="card-body">
-              <h5 class="card-title">Resumen del pedido</h5>
+              <h2 class="card-title">Resumen del pedido</h2>
             </div>
             <article class="valores row">
               <div class="col-6">
@@ -168,13 +173,7 @@
           </div>
         </div>
       </section>
-
-         
-        
-
-        
-
-    </main>
+</main>
       <!--Scripts-->
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,13 +1,34 @@
-#items {
+*{
+    justify-content: space-around;
+}
+
+.formulariosDatos{
     background-color: black;
+    position: relative;
+    top: 110px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
-.fondoNegro {
-    background-color: black;
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
 }
-.letraBlanca{
-    color: white;
+
+h6{
+    font-family: 'Barlow Condensed', sans-serif;
 }
-li:hover {
-    border:orange;
-    border-bottom: black 2px;
+
+h5{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valores{
+    justify-content: space-between;
 }
