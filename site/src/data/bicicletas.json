@@ -2,10 +2,10 @@
     {
         "id": 1,
         "marca": "Scott",
-        "modelo": "Scott Speedster - 10",
+        "modelo": "SCOTT - SPEEDSTER 10",
         "estilo": "Fixie",
         "descripcion": "Scott Speedster 10 es la mejor representación de la autonomía. Podrás movilizarte libremente cada día.",
-        "descripcionTecnica": "La NUEVA Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed. Disponible en rodado 27.5 y talle de cuadro S y M",
+        "descripcionTecnica": "La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed. Disponible en rodado 27.5 y 29 en talle de cuadro del S al XL",
         "precio": 60000,
         "descuento": 0,
         "cuotas": "si",
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "marca": "Scott",
-        "modelo": "Scott - Scale 970",
+        "modelo": "SCOTT - SCALE 970",
         "estilo": "Mountain",
         "descripcion": "Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.",
         "descripcionTecnica": "La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades. Disponible en rodado 29 y talle de cuadro S al XL.",
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "marca": "Aventon",
-        "modelo": "Aventon Mataro",
+        "modelo": "AVENTON MATARO",
         "estilo": "Fixie",
         "descripcion": "La Aventon Mataro es la bicicleta que por sus caracteristicas te permite desafiar lo establecido superando tus propios límites",
         "descripcionTecnica": "Cuadro de aluminio 6061 ultra liviano. Horquilla de fibra de carbono y stem de aluminio. Vela y silla aerodinamicos y liviandos. Fixie o single-speed gracias a una maza Flip-Flop. Talles desde 49 cm a 61 cm. Viene en los colores Midnight Blue o Mataro White",
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "marca": "Aventon",
-        "modelo": "Aventon Cordoba",
+        "modelo": "AVENTON CORDOBA",
         "estilo": "Fixie",
         "descripcion": "La Aventon Cordoba te permite encontrar una nueva interpretación del tiempo, espacio y cuerpo en cada una de tus salidas.",
         "descripcionTecnica": "Cuadro de aluminio 6061 ultra liviano. Horquilla de fibra de carbono y stem de aluminio. El nuevo Dropout forjado permite un mas amplio rango de ajuste de tension para la cadena. Fixie o single-speed gracias a una maza Flip-Flop. Talles desde 49 cm a 61 cm. Viene en los colores Desert y Cool Smoke",
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "marca": "Trek",
-        "modelo": "Trek - Remedy 9.7",
+        "modelo": "TREK - REMEDY 9.7",
         "estilo": "Mountain",
         "descripcion": "Trek Remedy 9.7 representa tu propio afan por lo desconocido. Desafiá tus límites!",
         "descripcionTecnica": "Cuadro de fibra de carbono full OCLV. Horquilla RockShox premium de largo recorrido. Suspension trasera de 150mm. 150mm rear suspension. Transmision SRAM de 12 velocidades. Talles desde S a XL. Viene en los colores Battleship Blue y Volt Green Fade",
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "marca": "Canyon",
-        "modelo": "Canyon - Commuter 5.0",
+        "modelo": "CANYON - COMMUTER 5.0",
         "estilo": "Urban",
         "descripcion": "Una nueva forma de transimar con mayor libertad. Podrás ir al trabajo cada mañana sin preocupaciones y disfrutando de tu bicicleta.",
         "descripcionTecnica": "Equipada con un cambio de 8 velocidades integrado en el buje de Shimano y una transmisión de correa Gates.Frenos de disco Shimano y cubiertas Schwalbe garantizan un control total en todo tipo de condiciones. Talles del XS al XL. Viene en los colores Stealth y Petrol",
@@ -80,7 +80,7 @@
     {
         "id": 7,
         "marca": "Capri",
-        "modelo": "Capri - Berlin Man",
+        "modelo": "CAPRI - BERLIN MAN",
         "estilo": "Urban",
         "descripcion": "Capri Berlin es sinónimo de experiencia. Aquí el pasado se convierte en la llave y ruta de acceso para rememorar momentos épicos y buscar buenos nuevos gratificantes.",
         "descripcionTecnica": "Cambios Shimano SIS TX35 de 6 velocidades. Cuadro de acero con soldadura TIG. Talle unico de 58 cm. Horquilla de acero conificada. Biela de aluminio con plato de 44 dientes. Sillin de semipiel hecho en Italia y puños de goma a juego. Portabultos trasero del mismo color que el cuadro. Viene solo en color Negro con Marron Torino.",
@@ -93,7 +93,7 @@
     {
         "id": 8,
         "marca": "Kona",
-        "modelo": "Kona - Process 134 DL",
+        "modelo": "KONA - PROCESS 134 DL",
         "estilo": "Mountain",
         "descripcion": "La Kona Process 134 es tu sentimiento de libertad. Su autonomía te permite transitar libremente cualquier tipo de terreno.",
         "descripcionTecnica": "Cuadro de aluminio. Amortiguador trasero RockShox Deluxe Ultimate. Horquilla RockShox Pike Select RC Charger DebonAir 140mm. Frenos Guide R con rotores delanteros y traseros de 180mm. Disponible en rodado 29 y talle del S al XL.",
@@ -106,7 +106,7 @@
     {
         "id": 9,
         "marca": "Black Label",
-        "modelo": "Balck Label - 6061 v2",
+        "modelo": "BLACK LABEL - 6061 V2",
         "estilo": "Fixie",
         "descripcion": "La Black Label 6061 v2 es la resignificación del concepto de movilización. La máxima expresión de la bicicleta como medio alternativo independiente al transporte público.",
         "descripcionTecnica": "Cuadro de aluminio 6061, doble conificado y soldado. Horquilla de fibra de carbono. Disponible en rodado 27.5 y 29 en los talles S al XL.",
@@ -119,7 +119,7 @@
     {
         "id": 10,
         "marca": "Cinelli",
-        "modelo": "Cinelli - Pista 19",
+        "modelo": "CINELLI - PISTA 19",
         "estilo": "Fixie",
         "descripcion": "Es la bicicleta pensada especialmente para atravesar la ciudad con estilo e imponer tu propia impronta en el camino.",
         "descripcionTecnica": "La Tipo Pista es una bicicleta sin cambios perfecta para iniciarse con las bicis de piñon fijo.Ideal tanto para la pista como la ciudad, viene equipada con frenos a pedal. Cubiertas Duro 700x25 y cadena KMC. Cuadro y horquilla de aluminio. Disponible en rodado 27.5 y 29, talle del S al L",
