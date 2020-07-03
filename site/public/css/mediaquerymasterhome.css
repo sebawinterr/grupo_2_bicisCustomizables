@@ -171,6 +171,10 @@ footer div a {
     h4 {
         font-size: 20px;
     }
+
+    div a {
+        font-size: 20px;
+    }
     
     /*estilos del footer*/
     .footer {
@@ -225,6 +229,7 @@ footer div a {
     h4 {
         font-size: 30px;
     }
+
 
     .footer {
         width: 100%;
