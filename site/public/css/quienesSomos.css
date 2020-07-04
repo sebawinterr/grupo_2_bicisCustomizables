@@ -1,0 +1,51 @@
+header{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 65vh;
+    margin-left: 24vw;
+}
+
+.footer {
+    width: 100%;
+    height: 65vh;
+    background-color: black;
+}
+
+div figure img {
+    width: 25%;
+}
+
+
+/*Estilos del footer*/
+footer div a {
+    font-size: 15px;
+    color: white;
+}
+
+.cartaFooter {
+    border: 0px;
+}
+
+.redes {
+    padding-top: 0px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}

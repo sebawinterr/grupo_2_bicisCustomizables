@@ -6,5 +6,6 @@ const webController = require(path.resolve(__dirname,'..','controllers','webCont
 
 router.get('/', webController.index);
 router.get('/contacto', webController.contacto);
+router.get('/quienesSomos', webController.quienesSomos)
 
 module.exports = router;

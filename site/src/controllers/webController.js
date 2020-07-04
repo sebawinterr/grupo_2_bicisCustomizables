@@ -7,8 +7,8 @@ module.exports = {
     },
     contacto : function(req, res){
         res.sendFile(path.resolve(__dirname, '..','views','web','contacto.html'));
-        
+    },
+    quienesSomos : function(req, res){
+        res.sendFile(path.resolve(__dirname, '..','views','web','quienesSomos.html')); 
     }
-
-    
 }
