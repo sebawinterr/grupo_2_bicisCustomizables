@@ -5,5 +5,6 @@ const path = require('path');
 const webController = require(path.resolve(__dirname,'..','controllers','webController'));
 
 router.get('/', webController.index);
+router.get('/contacto', webController.contacto);
 
 module.exports = router;

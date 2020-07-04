@@ -247,6 +247,34 @@ footer div a {
 
 }
 
+@media (min-width: 1080px) {
+
+    h5 {
+        margin-top: 185px;
+        font-size: 50px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    footer div a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .redes {
+        padding-top: 20px;
+    }
+
+}
+
 @media (min-width: 1440px){
 
     /*tipografias*/
@@ -267,7 +295,7 @@ footer div a {
     /*estilos del footer*/
     .footer {
         width: 100%;
-        height: 24vh;
+        height: 20vh;
         background-color: black;
     }
     

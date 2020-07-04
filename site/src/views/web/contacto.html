@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mastercontacto.css">
+    <title>Bykes - Make it yours</title>
+
+</head>
+<body>
+  <main class="container-fluid">
+    <!--Navbar-->
+    <header class="header row">
+        <div class="fixed-top col-12 col-sm-12">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4 navbar-expand-md navbar-expand-lg navbar-dark col-12" style="background-color: black">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">¿Quienes somos? <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-transparent bg-transparent">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <div>
+               <a href="/register">
+                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
+               </a>
+               <a href="/carrito/lista">
+                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+               </a>
+            </div>
+          </nav>
+        </div>
+      </header> 
+    
+      
+
+    <!--CONTACTO-->
+    <section class="row col-12">
+
+        <article class=" titulo col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h5>Contacto - Bykes</h5>
+        </article>
+
+        
+
+        <article class="formulario col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <form  action="#" method="POST">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre y apellido</label>
+                  <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Observaciones</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark" style="background-color: black">Enviar la consulta</button>
+            </form>
+
+        </article>
+
+        <article class="mapa col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1381.5628585945926!2d-58.44951009719536!3d-34.555359027021176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb432f7eaebf5%3A0xb2db1f3d1218ef77!2sStarbucks!5e0!3m2!1ses!2sar!4v1592924492184!5m2!1ses!2sar" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h6>info@bykes.com</h6>
+                <h6>+ 54 9 11 4564-0000</h6>
+                <h6>Av Del Libertador 6200, Belgrano, CABA - Argentina</h6>
+              </div>
+
+        </article>
+        
+
+
+    </section>
+
+    <!--Footer-->
+    <footer class="row footer">
+      
+      <article class="contacto col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+        <div class="cartaFooter card text-center" style="background-color:black">
+          <div class="card-body" style="background-color:black">
+            <h4 class="card-title text-white pt-0">Contacto</h4>
+            <button type="button" class="btn btn-primary" style="background-color: #FF6000 ; border: orangered" data-toggle="modal" data-target="#staticBackdrop"><ion-icon name="navigate-circle-outline"></ion-icon>
+            </button>
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h7 class="modal-title" id="staticBackdropLabel">Contacto - Bykes</h7>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form  action="#" method="POST">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="nombre">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Observaciones</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-dark" style="background-color: black">Enviar la consulta</button>
+                    </form> 
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1381.5628585945926!2d-58.44951009719536!3d-34.555359027021176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb432f7eaebf5%3A0xb2db1f3d1218ef77!2sStarbucks!5e0!3m2!1ses!2sar!4v1592924492184!5m2!1ses!2sar" width="270" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <h6>info@bykes.com</h6>
+                    <h6>+ 54 9 11 4564-0000</h6>
+                    <h6>Av Del Libertador 6200, Belgrano, CABA - Argentina</h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" style="background-color: #FF6000 ; border: orangered" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="redes col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+        <div class="cartaFooter card text-center" style="background-color:black">
+          <div class="card-body" style="background-color: black">
+            <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+            <br>
+            <a href="/" class="btn btn-primary" style="background-color: #FF6000 ; border: orangered"><ion-icon name="bicycle-outline"></ion-icon></a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="logo col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cartaFooter card text-center" style="background-color:black">
+          <div class="card-body" style="background-color:black">
+            <figure>
+              <img src="img/logofooter.PNG" alt="">
+            </figure><a href="/contacto" class="btn btn-primary" style="background-color: #FF6000 ; border: orangered"><ion-icon name="arrow-up-outline"></ion-icon></a>
+          </div>
+        </div>
+      </article>
+
+    </footer>
+
+  </main>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
