@@ -1,0 +1,19 @@
+header{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 50%;
+}
