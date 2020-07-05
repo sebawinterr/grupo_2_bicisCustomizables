@@ -1,3 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article img {
+    width: 100%;
+}
+
+.card {
+    border: 0px;
+}
+
 header{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
@@ -11,6 +30,11 @@ h2{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
+.div-texto{
+    width: 50%; 
+    height: 50%;
+}
+
 p{
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
@@ -21,9 +45,10 @@ p{
     margin-left: 24vw;
 }
 
+/*estilos del footer*/
 .footer {
     width: 100%;
-    height: 45vh;
+    height: 65vh;
     background-color: black;
 }
 
@@ -31,8 +56,6 @@ div figure img {
     width: 25%;
 }
 
-
-/*Estilos del footer*/
 footer div a {
     font-size: 15px;
     color: white;
@@ -48,4 +71,325 @@ footer div a {
 
 .logo {
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 360px) {
+
+    /*tipografias*/
+    
+    h5 {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    
+    h6 {
+        font-size: 14px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 65vh;
+    }
+    
+    .contacto {
+        margin: 0px
+    }
+    .redes {
+        margin: 0px;
+        padding-top: 0px;
+    }
+    
+    .logo {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .div-texto{
+        width: 90%;
+        height: 30%;
+    }
+
+    p{
+        font-size: 8px;
+        position: relative;
+        margin-top: 12vh;
+        margin-left: 2vh;
+    }
+
+}
+
+@media (min-width: 411px) {
+
+    .footer {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .div-texto{
+        width: 90%;
+        height: 30%;
+    }
+
+    p{
+        font-size: 9px;
+        position: relative;
+        margin-top: 15vh;
+        margin-left: 2vh;
+    }
+
+}
+
+@media (min-width: 425px) {
+
+    /*tipografias*/
+
+    h5 {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    
+    h6 {
+        font-size: 14px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+        
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .div-texto{
+        width: 90%;
+        height: 30%;
+    }
+
+    p{
+        font-size: 10px;
+        position: relative;
+        margin-top: 20vh;
+        margin-left: 2vh;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    /*tipografias*/
+    
+    
+    h5 {
+        margin-top: 75px;
+        font-size: 50px;
+    }
+    
+    h6 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    div a {
+        font-size: 20px;
+    }
+    
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 20vh;
+    }
+    
+    footer div a {
+        font-size: 15px;
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+    }
+    
+    .contacto {
+        margin: 0px
+    }
+    .redes {
+        margin: 0px;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .div-texto{
+        width: 70%;
+        height: 50%;
+    }
+
+    p{
+        position: relative;
+        margin-top: 42vh;
+        margin-left: 15vh;
+    }
+
+}
+
+@media (min-width: 993px) {
+
+    h5 {
+        margin-top: 65px;
+        font-size: 50px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .div-texto{
+        width: 70%;
+        height: 50%;
+    }
+
+    p{
+        position: relative;
+        margin-top: 42vh;
+        margin-left: 15vh;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h5 {
+        margin-top: 65px;
+        font-size: 50px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 20vh;
+    }
+    
+    footer div a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .redes {
+        padding-top: 20px;
+    }
+
+    .div-texto{
+        width: 70%;
+        height: 50%;
+    }
+
+    p{
+        position: relative;
+        margin-top: 50vh;
+        margin-left: 15vh;
+    }
+
+}
+
+@media (min-width: 1080px) {
+
+    h5 {
+        margin-top: 185px;
+        font-size: 50px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    footer div a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .redes {
+        padding-top: 20px;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    /*tipografias*/
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h6, h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    h5 {
+        margin-top: 185px;
+        font-size: 50px;
+    }
+    
+    /*estilos del footer*/
+    .footer {
+        width: 100%;
+        height: 20vh;
+        background-color: black;
+    }
+    
+    div figure img {
+        width: 25%;
+    }
+    
+    footer div a {
+        font-size: 20px;
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px;
+    }
+    
+    .redes {
+        padding-top: 20px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .div-texto{
+        width: 70%;
+        height: 50%;
+    }
+
+    p{
+        font-size: 150%;
+        position: relative;
+        margin-top: 65vh;
+        margin-left: 19vh;
+    }
 }
