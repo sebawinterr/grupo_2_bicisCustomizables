@@ -67,13 +67,8 @@ header {
 }
 
 .fotoProducto {
-    width: 100%;
-    height: 35vh;
-    background-color: white;
-    border: solid 1px black;
-    border-radius: 10px;
     margin: 40px;
-    display: flex;
+
 }
 
 .bici {
@@ -110,9 +105,6 @@ header {
 
 .carta {
     width: 50%;
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 10px;
     margin-top: 10px;
 
 }
@@ -199,7 +191,6 @@ footer div a {
     }
     
     .fotoProducto {
-        height: 25vh;
         margin-left: 0px;
         margin-top: 0px;
     }
@@ -259,12 +250,7 @@ footer div a {
         padding-top: 7px;
         
     }
-    
-    .fotoProducto {
-        height: 30vh;
-        margin-left: 0px;
-    }
-    
+     
     .miSeleccion {
         font-size: 11px;
         margin-top: 40px;
@@ -353,13 +339,7 @@ footer div a {
     }
     
     .fotoProducto {
-        width: 100%;
-        height: 80vh;
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
         margin-top: 40px;
-        display: flex;
     }
     
     .bici {
@@ -375,17 +355,7 @@ footer div a {
         border-radius: 10px;
     
     }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        width: 50%;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 10px;
-    
-    }
-    
+      
     /*estilos del footer*/
     .footer {
         width: 100%;
@@ -450,7 +420,6 @@ footer div a {
     }
     
     .fotoProducto {
-        height: 60vh;
         margin-left: 0px;
     }
     

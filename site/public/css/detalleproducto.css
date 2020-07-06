@@ -73,14 +73,8 @@ header {
     
 }
 
-.fotoProducto {
-    width: 100%;
-    height: 32vh;
-    background-color: white;
-    border: solid 1px black;
-    border-radius: 10px;
+.fotoProducto { 
     margin-top: 0px;
-
 }
 
 .bici {
@@ -92,21 +86,14 @@ header {
 
 .miSeleccion {
     font-size: 11px;
-    border: solid 1px black;
-    border-radius: 10px;
-    height: 20vh;
     padding: 7px;
     margin-top: -5px;
-
 }
 
 /*ancho de los detalles del producto*/
 
 .carta {
     width: 100%;
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 10px;
     margin-left: 0px;
     margin-top: 0px;
 
@@ -183,8 +170,6 @@ footer div a {
     main {
         display: flex;
         flex-wrap: wrap;
-        /*max-width: 100%;
-        max-height: 100vh;*/
         flex-direction: row;
         justify-content: center;
     }
@@ -218,17 +203,7 @@ footer div a {
         padding-top: 2px;
         
     }
-    
-    .fotoProducto {
-        width: 100%;
-        height: 32vh;
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin-top: 0px;
-    
-    }
-    
+
     .bici {
         width: 100%;
         padding: 10px;
@@ -238,22 +213,7 @@ footer div a {
     
     .miSeleccion {
         font-size: 11px;
-        border: solid 1px black;
-        border-radius: 10px;
-        height: 20vh;
         padding: 7px;
-        margin-top: 0px;
-    
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        width: 100%;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 10px;
-        margin-left: 0px;
         margin-top: 0px;
     
     }
@@ -320,11 +280,11 @@ footer div a {
         height: 160vh;
         
     }
-    
+
     .fotoProducto {
-        height: 34vh;
+        margin-top: 10px;
     }
-        
+    
     .miSeleccion {
         height: 18vh;
     }   
@@ -379,8 +339,6 @@ footer div a {
     main {
         display: flex;
         flex-wrap: wrap;
-        /*max-width: 100%;
-        max-height: 100vh;*/
         flex-direction: row;
         justify-content: center;
     }
@@ -416,15 +374,9 @@ footer div a {
     }
     
     .fotoProducto {
-        width: 100%;
-        height: 32vh;
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin-top: 0px;
-    
+        margin-top: 10px;
     }
-    
+
     .bici {
         width: 100%;
         padding: 10px;
@@ -434,22 +386,7 @@ footer div a {
     
     .miSeleccion {
         font-size: 11px;
-        border: solid 1px black;
-        border-radius: 10px;
-        height: 15vh;
         padding: 7px;
-        margin-top: 0px;
-    
-    }
-    
-    /*ancho de los detalles del producto*/
-    
-    .carta {
-        width: 100%;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 10px;
-        margin-left: 0px;
         margin-top: 0px;
     
     }
@@ -528,8 +465,6 @@ footer div a {
     main {
         display: flex;
         flex-wrap: wrap;
-        /*max-width: 100%;
-        max-height: 100vh;*/
         flex-direction: row;
         justify-content: center;
     }
@@ -563,17 +498,7 @@ footer div a {
         padding-top: 2px;
         
     }
-    
-    .fotoProducto {
-        width: 100%;
-        height: 32vh;
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin-top: 0px;
-    
-    }
-    
+      
     .bici {
         width: 100%;
         padding: 10px;
@@ -583,10 +508,6 @@ footer div a {
     
     .miSeleccion {
         font-size: 11px;
-        border: solid 1px black;
-        border-radius: 10px;
-        height: 15vh;
-        padding: 7px;
         margin-top: 0px;
     
     }
@@ -594,10 +515,6 @@ footer div a {
     /*ancho de los detalles del producto*/
     
     .carta {
-        width: 100%;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 10px;
         margin-left: 0px;
         margin-top: 0px;
     
@@ -675,23 +592,14 @@ footer div a {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     .fotoProducto {
-        width: 100%;
-        height: 31vh;
-        background-color: white;
-        border: solid 1px black;
         margin-top: 40px;
-        display: flex;
-    
     }
         
     .miSeleccion {
-        border: solid 1px black;
-        height: 12vh;
-        padding: 7px;
         margin-left: 20px;
         margin-top: 40px;
     }
@@ -744,11 +652,6 @@ footer div a {
         height: 110vh;
     }
 
-    .fotoProducto {
-        width: 100%;
-        height: 40vh;
-    }
-
 }
 
 @media (min-width: 1024px) {
@@ -775,12 +678,10 @@ footer div a {
     }
     
     .fotoProducto {
-        height: 32vh;
         margin-top: 10px;
     }
         
     .miSeleccion {
-        height: 9vh;
         margin-top: 10px;
     }
     
@@ -875,14 +776,7 @@ footer div a {
     }
     
     .fotoProducto {
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
         margin: 40px;
-        display: flex;
-    
     }
     
     .bici {
@@ -894,9 +788,6 @@ footer div a {
     
     .miSeleccion {
         font-size: 11px;
-        border: solid 1px black;
-        border-radius: 10px;
-        height: 18vh;
         padding: 7px;
         margin-top: 40px;
     
@@ -905,11 +796,7 @@ footer div a {
     /*ancho de los detalles del producto*/
     
     .carta {
-        width: 100%;
-        border: solid 1px black;
-        border-radius: 10px;
         margin-left: 40px;
-        padding: 10px;
     
     }
     
@@ -967,12 +854,10 @@ footer div a {
     }
     
     .fotoProducto {
-        height: 68vh;
         margin-top: 20px;
     }
         
     .miSeleccion {
-        height: 12vh;
         margin-top: 20px;
     }
     
