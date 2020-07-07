@@ -99,6 +99,10 @@ footer div a {
     .footer {
         height: 180px;
     }
+
+    .iniciar {
+        margin-top: 0px;
+    }
 }
 /* MEDIA QUERY 768 */
 
