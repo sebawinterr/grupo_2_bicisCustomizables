@@ -35,7 +35,7 @@ ___
     - __Hacer más:__
         
         1. Si bién nos empezamos a reunir al menos dos veces por semana, debemos encontrar el espacio y tiempo para colocar dos reuniones fijas. A veces se nos dificulta por el resto de las obligaciones y responsabilidades extras de cada uno.
-        2. Comunicarnos día a día los avances vía whatsapp. Ya lo estamos realizando desde hace un tiempo. El objetivo es comentar lo q estuvimos realizando, los problemas que se presentaron al realizar una tarea específica, los aspectos donde necesitamos ayuda para avanzar y los pendientes.
+        2. Comunicarnos día a día los avances vía whatsapp. Ya lo estamos realizando desde hace un tiempo. El objetivo es comentar lo que estuvimos realizando, los problemas que se presentaron al realizar una tarea específica, los aspectos donde necesitamos ayuda para avanzar y los pendientes.
         3. Implementar la utilización del tablero digital para el seguimiento del proyecto.
         4. Generar nuevos aportes al proyecto en cada día. Disponer de un tiempo para poder contribuir al avance del proyecto de manera diaria.
     
@@ -51,5 +51,11 @@ ___
 
     - __Dejar de hacer:__
 
-        1. Evitar, en la medida de lo posible, la presencia de tiempos muertos. Con ello nos referimos a la falta de aporte diario. Es decir, queremos evitar que pase un día sin ningun tipo de aporte al proyecto. El objetivo es que cada integrante pueda aportar un nuevo avance, no importa si es mínimo o grande, para continuar avanzando en el proyecto.
+        1. Evitar, en la medida de lo posible, la presencia de tiempos muertos. Con ello nos referimos a la falta de aporte diario. Es decir, queremos evitar que pase un día sin ningun tipo de aporte. El objetivo es que cada integrante pueda aportar un nuevo avance, no importa si es mínimo o grande.
+___
+
++ ## ___Tablero___
+
+    - Utilizamos trello para realizar nuestro tablero. El mismo puede observarse [aquí](https://trello.com/b/axTK8Uqn/planificaci%C3%B3n-bykes).
+
 ___
