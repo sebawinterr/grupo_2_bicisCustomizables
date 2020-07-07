@@ -1,5 +1,12 @@
 *{
-    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .formulariosDatos{
@@ -11,6 +18,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.iniciar {
+    margin-top: 10px;
+}
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 h2{
@@ -25,6 +40,11 @@ h5{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
+h4{
+    font-family: 'Barlow Condensed', 'sans-serif';
+    font-size: 20px;
+}
+
 input{
     font-family: 'Montserrat', sans-serif;
 }
@@ -36,7 +56,7 @@ input{
 /* FOOTER */
 .footer {
     width: 100%;
-    height: 45vh;
+    height: 65vh;
     background-color: black;
     margin-top: 100px;
 }
@@ -51,6 +71,10 @@ footer div a {
 
 .cartaFooter {
     border: 0px
+}
+
+.contacto {
+    margin-top: 10px;
 }
 
 .redes {
@@ -77,6 +101,17 @@ footer div a {
     }
 }
 /* MEDIA QUERY 768 */
+
+@media (min-width: 1024px ){
+    h4{
+        font-size: 30px;
+    }
+
+    .contacto {
+        margin-top: 0px;
+    }
+}
+
 
 /* MEDIA QUERY 1440 */
 @media (min-width: 1440px){

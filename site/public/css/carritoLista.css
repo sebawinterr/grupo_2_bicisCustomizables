@@ -1,5 +1,5 @@
 *{
-    justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .spaceBetween{
@@ -36,6 +36,11 @@ h5{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
+h4{
+    font-family: 'Barlow Condensed', 'sans-serif';
+    font-size: 20px;
+}
+
 input{
     font-family: 'Montserrat', sans-serif;
 }
@@ -67,6 +72,10 @@ footer div a {
     border: 0px
 }
 
+.contacto {
+    margin-top: 10px;
+}
+
 .redes {
     padding-top: 20px;
 }
@@ -87,15 +96,34 @@ footer div a {
 /* MEDIA QUERY 768 */
 @media (min-width: 768px ){
     .footer {
-        height: 180px;
+        height: 180vh;
     }
 }
 /* MEDIA QUERY 768 */
 
+@media (min-width: 1024px) {
+    h4{
+        font-size: 30px;
+    }
+
+    .contacto {
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width: 1080px) {
+
+    .footer {
+        height: 25vh;
+    }
+
+}
+
 /* MEDIA QUERY 1440 */
 @media (min-width: 1440px){
     *{
-        justify-content: space-around;
+        box-sizing: border-box;
     }
     
     .spaceBetween{

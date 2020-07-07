@@ -10,8 +10,9 @@
 </head>
 
 <body>
-<br>
-<br>  
+
+  <main class="container-fluid">
+
 <!--Paginación-->
 <nav aria-label="...">
   <ul class="pagination pagination-lg justify-content-center">
@@ -28,17 +29,19 @@
     </li>
   </ul>
 </nav>
-<br>
-<br>
-<h2 class="border-bottom border-dark">Método de pago</h2>
-<br>
-<br>
+
+<section class="row titulo col-12 border-bottom border-dark justify-content-center">
+  <h2>Método de pago</h2>
+</section>
+
+
+
 <section class="container row col col-12">
 <!--Formulario Tarjeta-->
-<div class="row col-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+<div class="row col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 <div class="form-row">
                     
-                    <form class="col-6">
+                    <form class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                       <h2>Ingresa tus datos</h2>
                                 <div class="form-row border-bottom border-dark">
                                   <div class="col-md-6 mb-3">
@@ -62,7 +65,7 @@
                                 <div class="col-md-12 mb-3">
                                   <input type="tel" class="form-control" id="validationServer02" placeholder="Suma tu codigo promocional!" name="codigoPromo" value="">
                               </div>                              
-                                <a type="submit" href="/carrito/confirmacion" class="col-md-12 btn btn-dark btn-lg btn-block" style="background-color: black">Finalizar compra</a>
+                                <a type="submit" href="/carrito/confirmacion" class="col-md-12 btn btn-dark btn-lg btn-block" style="background-color: black">FINALIZAR COMPRA</a>
                             </form>
 </div>
 <br>
@@ -70,7 +73,7 @@
 <br>
 
 <!--Resumen con foto-->
-<div class="resumen card col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6">
+<div class="resumen card col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
 
             <div class="card-body col-6">
               <h5 class="card-title">Resumen del pedido</h5>
@@ -116,7 +119,7 @@
 <!--Footer-->
 <footer class="row footer">
       
-  <article class="contacto col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+  <article class="contacto col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
     <div class="cartaFooter card text-center" style="background-color: black">
       <div class="card-body" style="background-color: black">
@@ -190,6 +193,10 @@
   </article>
 
 </footer>
+
+
+  </main>
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

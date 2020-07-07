@@ -1,7 +1,21 @@
 *{
-    justify-content: space-around;
+    box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-bottom: 15px;
+}
 
 #boton{
     min-width: min-content;
@@ -37,10 +51,20 @@ input{
 .valores{
     justify-content: space-between;
 }
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h4{
+    font-family: 'Barlow Condensed', 'sans-serif';
+    font-size: 20px;
+}
+
 /* FOOTER */
 .footer {
     width: 100%;
-    height: 45vh;
+    height: 65vh;
     background-color: black;
     margin-top: 100px;
 }
@@ -55,6 +79,10 @@ footer div a {
 
 .cartaFooter {
     border: 0px
+}
+
+.contacto {
+    margin-top: 10px;
 }
 
 .redes {
@@ -81,8 +109,32 @@ footer div a {
         height: 180px;
     }
 
+    .logo {
+        margin-top: 10px;
+    }
+
+
+
 }
 /* MEDIA QUERY 768 */
+
+@media (min-width: 1024px ){
+    h4{
+        font-size: 30px;
+    }
+
+    .contacto {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .footer {
+        height: 25vh;
+    }
+
+}
 
 /* MEDIA QUERY 1440 */
 @media (min-width: 1440px){
@@ -110,7 +162,11 @@ footer div a {
     .cartaFooter {
         border: 0px
     }
-    
+
+    .contacto {
+        margin-top: 10px;
+    }
+   
     .redes {
         padding-top: 20px;
     }
