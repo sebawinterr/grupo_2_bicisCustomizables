@@ -56,6 +56,6 @@ ___
 
 + ## ___Tablero___
 
-    - Utilizamos trello para realizar nuestro tablero. El mismo puede observarse [aquí](https://trello.com/b/axTK8Uqn/planificaci%C3%B3n-bykes).
+    - Utilizamos trello para realizar nuestro tablero. El mismo puede observarse [aquí](https://trello.com/b/axTK8Uqn).
 
 ___
