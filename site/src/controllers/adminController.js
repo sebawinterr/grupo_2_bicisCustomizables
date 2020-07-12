@@ -6,7 +6,7 @@ let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','
 module.exports = {
     admin : function(req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','formularioCarga.html'));
-        res.render(path.resolve(__dirname, '..','views','administrador','formularioCarga'));
+        res.render(path.resolve(__dirname, '..','views','administrador','listadoProductos'),{bicicletas});
     },
     custom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
