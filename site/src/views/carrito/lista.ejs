@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoLista.css">
+    <title>Bykes - Make it yours</title>
+
+</head>
+<body>
+
+
+<main class="container-fluid">
+
+
+<!--Navbar-->
+<header class="header row">
+  <div class="fixed-top col-12 col-sm-12">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="p-4 navbar-expand-md navbar-expand-lg navbar-dark col-12" style="background-color: black">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/quienesSomos">¿Quienes somos? <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-transparent bg-transparent">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <div>
+         <a href="/register">
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
+         </a>
+         <a href="/carrito/lista">
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+         </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <br>
+  <br>
+  <br>
+  <div class="col-12 titulo">
+  <h2 class="ml-3 border-bottom border-dark">CARRITO DE COMPRAS</h2>
+  </div>
+
+
+
+  <div class="spaceBetween row mt-3">
+
+
+  <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+    <!--Item 1-->   
+    <div class="row resumen">
+      <div class="col-6">
+        <img src="/img/fixievioleta.jpg" class="card-img" alt="Imagen bici">
+      </div>
+      <div class="col-6">
+        <div class="card-body">
+          <h5 class="card-title  font-italic"><small class="text-muted">Marca</small>Scott</h5>
+          <h5 class="card-title  font-italic"><small class="text-muted">Modelo</small>Speedster-10</h5>
+          <h5 class="card-title  font-italic"><small class="text-muted">Estilo</small>Fixie</h5>
+          <h5 class="card-title  font-italic"><small class="text-muted">Precio</small>$60.000</h5>
+          <h5 class="card-title  font-italic"><small class="text-muted">Descuento</small>25%</h5>
+          <h5 class="card-title  font-italic"><small class="text-muted">Cuotas</small>12</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+<!--Resumen con foto-->
+<div class="resumen card">
+  <div class="card-body">
+    <h2 class="card-title">Resumen del pedido</h2>
+  
+  <article class="d-flex justify-content-center">
+    <div class="col-6">
+      <h6>Costo</h6>
+      <br>
+      <h6>Descuento</h6>
+      <br>
+      <h6>Envío</h6>      
+    </div>  
+    <div class="col-6">
+      <h6>Valor</h6>
+      <br>
+      <h6>Valor</h6>
+      <br>
+      <h6>Valor</h6>      
+    </div>
+  </article>
+  <article class="row border-top border-dark">
+    <div class="col-6">
+      <h2>TOTAL</h2>
+    </div>
+
+    <div class="col-6">
+      <h2>Precio Final</h2>
+    </div>
+  </article>
+</div>
+<a type="submit" href="/carrito/envio" class="btn btn-dark btn-lg btn-block" style="background-color: #000000">PROCEDER A COMPRA</a>
+<br>
+</div>
+<br>
+<br>
+
+  </section>
+
+
+</div>
+
+<!--Footer-->
+<%- include('../partials/footer.ejs') %>
+
+    
+</main>
+
+</body>
+</html>

@@ -24,6 +24,11 @@ h6 {
     font-size: 20px;
 }
 
+h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+}
+
 p {
     font-size: 14px;
 }
@@ -155,6 +160,11 @@ footer div a {
     
     h6 {
         font-size: 20px;
+    }
+
+    h4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 15px;
     }
     
     p {
@@ -566,6 +576,11 @@ footer div a {
     h6 {
         font-size: 25px;
     }
+
+    h4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
     
     p {
         font-size: 20px;
@@ -660,6 +675,11 @@ footer div a {
   
     h5 {
         font-size: 50px;
+    }
+
+    h4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 25px;
     }
     
     p {

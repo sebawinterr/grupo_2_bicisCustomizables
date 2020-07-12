@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/quienesSomos.css">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <!--Navbar-->
+    <header class="row header">
+        <div class="fixed-top col-12">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4 navbar-expand-md navbar-expand-lg navbar-dark col-12" style="background-color: black">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/quienesSomos">¿Quienes somos? <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-transparent bg-transparent">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <div>
+               <a href="register">
+                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log in</button>
+               </a>
+               <a href="/carrito/lista">
+                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
+               </a>
+            </div>
+          </nav>
+        </div>
+  
+    </header>
+
+        <!--Listado de Fotos-->
+        <section>
+
+            <article>
+                <div class="card text-center bg-overlay text-white">
+                    <img src="/img/persona1.jpg" class="card-img" alt="persona1">
+                    <div class="div-texto card-img-overlay">
+                      <p class="text-center">Nosotros queremos redefinir la bicicleta. En su sentido más técnico, la consideramos como un "vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales que transmiten el movimiento de las piernas a la rueda trasera mediante una cadena y un piñón". Pero creemos que es mucho más que eso...</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+              <div class="card text-center bg-light text-white">
+                  <img src="/img/fixieverde.jpg" class="card-img" alt="bici1">
+                  <div class="div-texto card-img-overlay">
+                  </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="card text-center bg-light text-white">
+                  <img src="/img/persona2.jpg" class="card-img" alt="persona2">
+                  <div class="div-texto card-img-overlay">
+                    <p class="text-center">Queremos redefinir a la bicicleta como un símbolo de identidad, autonomía e independencia. Ofrecemos la oportunidad de plasmar tu identidad en una máquina que puede llevarte tan lejos como vos la puedas llevar a ella. Make it yours.</p>
+                  </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="card text-center bg-light text-white">
+                  <img src="/img/cinelliamroj.jpg" class="card-img" alt="bici2">
+                  <div class="div-texto card-img-overlay">
+                  </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="card text-center bg-light text-white">
+                  <img src="/img/persona3.jpg" class="card-img" alt="persona3">
+                  <div class="div-texto card-img-overlay">
+                    <p class="text-center">Back to basics: Benoit Lambert, escritor y director francés, en su libro "El retorno de la bicicleta" desarrolla el concepto de frugalidad en un sentido superador. Parafraseando con el autor, el concepto alcanza un significado más amplio en la modernidad, desde el cual optamos por experiencias enriquecedoras que nos generen satisfacción, alejándonos de lo superfluo y acercándonos a un equilibrio.</p>
+                  </div>
+              </div>
+            </article>
+
+        </section>
+
+        <%- include('../partials/footer.ejs') %>
+
+    </main>
+</body>
+</html>

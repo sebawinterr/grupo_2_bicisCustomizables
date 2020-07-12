@@ -18,6 +18,11 @@ h5 {
     font-size: 25px;
 }
 
+h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+}
+
 h6 {
     font-size: 20px;
 }
@@ -167,6 +172,11 @@ footer div a {
     h6 {
         font-size: 20px;
     }
+
+    h4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+    }
     
     
     div a {
@@ -227,6 +237,10 @@ footer div a {
     
     h6 {
         font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
     }
     
     
