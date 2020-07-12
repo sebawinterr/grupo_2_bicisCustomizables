@@ -6,7 +6,7 @@ let bicicletas =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data',
 module.exports = {
   index : function(req, res){
       //res.sendFile(path.resolve(__dirname, '..','views','productos','productos.html'));
-      res.render(path.resolve(__dirname, '..','views','productos','productos'));
+      res.render(path.resolve(__dirname, '..','views','productos','productos'),{bicicletas});
         
     },
 

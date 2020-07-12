@@ -13,7 +13,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/fixievioleta.jpg"
+        "imagen": "fixievioleta.jpg"
     },
     {
         "id": 2,
@@ -29,7 +29,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/mtbkscott.jpg"
+        "imagen": "mtbkscott.jpg"
     },
     {
         "id": 3,
@@ -45,7 +45,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/aventonMataro.jpg"
+        "imagen": "aventonMataro.jpg"
     },
     {
         "id": 4,
@@ -61,7 +61,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "18",
-        "imagen": "../../public/img/aventonCordoba.jpg"
+        "imagen": "aventonCordoba.jpg"
     },
     {
         "id": 5,
@@ -77,7 +77,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/trekRemedy.jpeg"
+        "imagen": "trekRemedy.jpeg"
     },
     {
         "id": 6,
@@ -93,7 +93,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/canyonCommuter.jpg"
+        "imagen": "canyonCommuter.jpg"
     },
     {
         "id": 7,
@@ -109,7 +109,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/capriBerlinMan.jpg"
+        "imagen": "capriBerlinMan.jpg"
     },
     {
         "id": 8,
@@ -125,7 +125,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/mtbkkona.jpg"
+        "imagen": "mtbkkona.jpg"
     },
     {
         "id": 9,
@@ -141,7 +141,7 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/fixieverde.jpg"
+        "imagen": "fixieverde.jpg"
     },
     {
         "id": 10,
@@ -157,6 +157,6 @@
         "descuento": 0,
         "cuotas": "si",
         "cantCuotas": "12",
-        "imagen": "../../public/img/fixieamarilla.jpg"
+        "imagen": "fixieamarilla.jpg"
     }
 ]  
