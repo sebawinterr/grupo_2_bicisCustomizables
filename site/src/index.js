@@ -5,7 +5,7 @@ const methodOverride = require('method-override');
 
 // Indicamos donde estan los archivos etaticos
 app.use(express.static(path.resolve(__dirname,'..','public')));
-//Debemos indicar cual es el motor de plantillas que estamos usando EJS
+//Motor de plantillas EJS
 app.set('view engine','ejs');
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
