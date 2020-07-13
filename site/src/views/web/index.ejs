@@ -61,7 +61,7 @@
 
       <article class="col-12">
         <div class="card bg-transparent text-white border-0">
-          <img src="img/fixiecobre.jpg" class="card-img" alt="...">
+          <img src="img/fixiecobre.jpg" class="card-img" alt="Bicicleta">
           <div class="card-img-overlay">
             <h5 class="card-title text-center pt-30">COMPARATE CON VOS MISMO HACE ALGÚN TIEMPO ATRÁS</h5>
             <h6 class="card-title text-center pt-30">Make it yours</h6>
@@ -71,56 +71,24 @@
         </div>
       </article>
 
-
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white border-0">
-          <img src="img/fixievioleta.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="titulo card-title text-center mt-30 pt-30">SCOTT SPEEDSTER - 10</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/mtbkscott.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">SCOTT - SCALE 970</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
- 
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/aventonMataro.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">AVENTON MATARO</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/aventonCordoba.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">AVENTON CORDOBA</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
+      <% for(let i = 0; i < bicicletas.length; i++){ %>
+        <% if (bicicletas[i].id <= 4) { %>
+          <article class="col-12">
+            <div class="card bg-transparent text-white border-0">
+              <img src="/images/bicicletas/<%= bicicletas[i].imagen%> " class="card-img" alt="Bicicleta">
+              <div class="card-img-overlay">
+                <h5 class="titulo card-title text-center mt-30 pt-30"><%= bicicletas[i].modelo%></h5>
+                <a href="/productos/detalle" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                Ver Más</button></a>
+              </div>
+            </div>
+          </article> 
+        <% } %>
+      <% } %>
 
       <article class="col-12">
         <div class="card bg-transparent text-white border-0">
-          <img src="img/biciPortada.jpg" class="card-img" alt="...">
+          <img src="img/biciPortada.jpg" class="card-img" alt="Bicicleta">
           <div class="card-img-overlay">
             <h5 class="titulo card-title text-center pt-30">COMPARATE CON VOS MISMO HACE ALGÚN TIEMPO ATRÁS</h5>
             <h6 class="titulo card-title text-center pt-30">Make it yours</h6>
@@ -130,38 +98,20 @@
         </div>
       </article>
 
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/trekRemedy.jpeg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">TREK - REMEDY 9.7</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/canyonCommuter.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">CANYON - COMMUTER 5.0</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="col-12">
-        <div class="card bg-transparent text-white">
-          <img src="img/capriBerlinMan.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title text-center">CAPRI - BERLIN MAN</h5>
-            <a href="/productos/detalle" class="d-flex justify-content-center"><button type="submit" class="btn btn-outline-light my-2 my-sm-0">
-            Ver Más</button></a>
-          </div>
-        </div>
-      </article>
+      <% for(let i = 4; i < bicicletas.length; i++){ %>
+        <% if (bicicletas[i].id <= 7) { %>
+          <article class="col-12">
+            <div class="card bg-transparent text-white border-0">
+              <img src="/images/bicicletas/<%= bicicletas[i].imagen%> " class="card-img" alt="Bicicleta">
+              <div class="card-img-overlay">
+                <h5 class="titulo card-title text-center mt-30 pt-30"><%= bicicletas[i].modelo%></h5>
+                <a href="/productos/detalle" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                Ver Más</button></a>
+              </div>
+            </div>
+          </article> 
+        <% } %>
+      <% } %>
 
     </section>
 
