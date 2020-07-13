@@ -60,106 +60,107 @@
         <section class="seccion row">
 
           <article class="titulo d-flex justify-content-center">
-            <h1 class="border-bottom border-dark col-12">PRODUCTO FINAL</h1>
+            <h1 class="border-bottom border-dark col-12">CARGA DE PRODUCTO</h1>
           </article>
 
-          <br><br><br>
+          <br><br>
           
           <article class="formulario col-12">
-            <form>
-              <!--class="was-validated"-->
-              <div class="mb-3">
-                <select class="custom-select">
-                  <option value="">Elija el tipo de producto</option>
-                  <option value="biciCompleta">Bicicleta completa</option>
-                  <option value="pieza">Pieza</option>
-                </select>
-              </div>
-              <br>
-
-              <h6>Carga de imagenes segun color:</h4>
+            <form action="/administrador/create" method="POST" enctype="multipart/form-data">
+              <h6>Carga de imagen:</h4>
                 <br>
 
-              <input type="text" placeholder="Color 1" class="col-5 form-control">
+              <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores">
               <br>
               <div class="custom-file mb-3">
                 <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
-                <label class="custom-file-label" for="validatedCustomFile">Foto segun color 1</label>
+                <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
               </div>
 
-              <input type="text" placeholder="Color 2" class="col-5 form-control">
               <br>
-              <div class="custom-file mb-3">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
-                <label class="custom-file-label" for="validatedCustomFile">Foto segun color 2</label>
-              </div>
-              <br><br><br>
+              <br>
+              <br>
 
-              
-              <div class="talle-rodado">
-                
-                
-                <!--<div class="talle custom-control custom-checkbox mb-3">
-                  <h6>Talles disponibles:</h6>
-                  <input type="checkbox" class="custom-control-input" value="small" id="small">
-                  <label class="custom-control-label" for="small">Small</label>
-
-                  <input type="checkbox" class="custom-control-input" value="medium" id="medium">
-                  <label class="custom-control-label" for="medium">Medium</label>
-
-                  <input type="checkbox" class="custom-control-input" value="large" id="large">
-                  <label class="custom-control-label" for="large">Large</label>
-                </div>-->
+              <div class="talle-rodado">               
               <div class="talle d-flex">
                 <h6>Talles disponibles:</h6>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" id="customRadio1" name="small" class="custom-control-input">
+                  <input type="checkbox" id="customRadio1" name="talle" class="custom-control-input" value="S">
                   <label class="custom-control-label" for="customRadio1">Small</label>
                 </div>
                 <br>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" id="customRadio2" name="medium" class="custom-control-input">
+                  <input type="checkbox" id="customRadio2" name="talle" value="M" class="custom-control-input">
                   <label class="custom-control-label" for="customRadio2">Medium</label>
                 </div>
                 <br>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" id="customRadio3" name="large" class="custom-control-input">
+                  <input type="checkbox" id="customRadio3" name="talle" value="L" class="custom-control-input">
                   <label class="custom-control-label" for="customRadio3">Large</label>
                 </div>
+                <br>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="customRadio4" name="talle" class="custom-control-input" value="XL">
+                  <label class="custom-control-label" for="customRadio4">Extra Large</label>
+                </div>
               </div>
-                
-              
-
                 
               <div class="talle d-flex">
                 <h6>Rodados disponibles</h6>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" id="27" name="27" class="custom-control-input">
+                  <input type="checkbox" id="27" name="rodado" value="27.5" class="custom-control-input">
                   <label class="custom-control-label" for="27">27,5 "</label>
                 </div>
                 <br>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" id="29" name="29" class="custom-control-input">
+                  <input type="checkbox" id="29" name="rodado" value="29" class="custom-control-input">
                   <label class="custom-control-label" for="29">29 "</label>
                 </div>
                 <br>
               </div>
-
               </div>
-              <br><br>
+
+              <br>
+              <br>
 
               <div class="marca-modelo">
                 <input type="text" placeholder="Marca" name="marca" class="col-5 form-control">
                 <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control">
               </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control">
+                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <select name="cuotas" class="form-control col-5">
+                  <option value="">Cuotas?</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+                <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-5 form-control">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control">
+              </div>
+              
 
+              <!--Descripciones-->
               <div class="mb-3">
                 <br>
-                <textarea class="form-control" name="descripcionProducto" id="validationTextarea" placeholder="Descripcion del producto"></textarea>
+                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto"></textarea>
+                <br>
+                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"></textarea>
               </div>
+              
+
+              
 
               <div class="botones">
               <button type="submit" class="btn btn-primary btn-lg btn-dark" style="background-color: black">Cargar Producto</button>
+
               <a href="/administrador" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
               <br><br><br>
               </div>
