@@ -8,12 +8,13 @@ module.exports = {
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','formularioCarga.html'));
         res.render(path.resolve(__dirname, '..','views','administrador','listadoProductos'),{bicicletas});
     },
+    create: function (req, res){
+        //res.sendFile(path.resolve(__dirname, '..','views','administrador','final.html'));
+        res.render(path.resolve(__dirname, '..','views','administrador','final'));
+    },
     custom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         res.render(path.resolve(__dirname, '..','views','administrador','custom'));
-    },
-    final: function (req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','administrador','final.html'));
-        res.render(path.resolve(__dirname, '..','views','administrador','final'));
     }
+    
 }
