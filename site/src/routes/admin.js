@@ -23,6 +23,7 @@ router.post("/administrador/create", upload.single('imagen'), adminController.sa
 router.get('/administrador/detalleAdmin/:id', adminController.show);
 router.get('/administrador/edit/:id', adminController.edit);
 router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
+router.get('/administrador/delete/:id', adminController.destroy);
 
 //router.get('/administrador/custom', adminController.custom);
 

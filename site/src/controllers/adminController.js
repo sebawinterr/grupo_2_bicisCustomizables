@@ -81,6 +81,15 @@ module.exports = {
         fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasActualizar);
         res.redirect('/administrador');
     },
+    destroy: (req,res) =>{
+        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+        const biciDeleteId = req.params.id; 
+        const bicicletasFinal = bicicletas.filter(bici => bici.id != biciDeleteId);
+        let bicicletasGuardar = JSON.stringify(bicicletasFinal,null,2);
+        //Guardar o reemplazar nuestro archivo JSON
+        fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasGuardar);
+        res.redirect('/administrador');
+    },
     custom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         res.render(path.resolve(__dirname, '..','views','administrador','custom'));
