@@ -21,6 +21,7 @@ router.get('/administrador', adminController.admin);
 router.get('/administrador/create', adminController.create);
 router.post("/administrador/create", upload.single('imagen'), adminController.save);
 router.get('/administrador/detalleAdmin/:id', adminController.show);
+router.get('/administrador/delete/:id', adminController.destroy);
 
 //router.get('/administrador/custom', adminController.custom);
 

@@ -158,28 +158,5 @@
     "cuotas": "si",
     "cantCuotas": "12",
     "imagen": "fixieamarilla.jpg"
-  },
-  {
-    "id": 11,
-    "marca": "Cinelli",
-    "modelo": "Vieja",
-    "estilo": "Fixie",
-    "descripcion": "Es una bici vieja",
-    "descripcionTecnica": "Bici descascarada",
-    "colores": "Amarilla",
-    "talle": [
-      "S",
-      "M",
-      "XL"
-    ],
-    "rodado": [
-      "27.5",
-      "29"
-    ],
-    "precio": "2000",
-    "descuento": "5",
-    "cuotas": "si",
-    "cantCuotas": "6",
-    "imagen": "bici-1594683026980.jpg"
   }
 ]
