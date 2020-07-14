@@ -20,6 +20,7 @@ const adminController = require(path.resolve(__dirname,'..','controllers','admin
 router.get('/administrador', adminController.admin);
 router.get('/administrador/create', adminController.create);
 router.post("/administrador/create", upload.single('imagen'), adminController.save);
+router.get('/administrador/detalleAdmin/:id', adminController.show);
 
 //router.get('/administrador/custom', adminController.custom);
 

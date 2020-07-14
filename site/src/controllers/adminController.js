@@ -44,6 +44,18 @@ module.exports = {
             fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), nuevaBiciGuardar);
             res.redirect('/administrador');
     },
+    show: (req,res)=>{
+        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+        
+        let miBici;
+        bicicletas.forEach(bici => {
+           if(bici.id == req.params.id){
+               miBici = bici;         
+            }
+        });
+        res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
+    
+    },
     custom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         res.render(path.resolve(__dirname, '..','views','administrador','custom'));

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/listaadmin.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/listaadmin.css">
     <title>Bykes - Make it yours - Contacto</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
                   <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
@@ -56,44 +56,40 @@
     
       
 
-    <!--Listado de Productos-->
+    <!--detalle admin-->
     <section class="row container col-12">
 
         <article class="titulo d-flex justify-content-center border-bottom border-dark col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h5>Listado de Productos</h5>
+            <h5>Detalle Bicicleta</h5>
         </article>
 
-        <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 mb-2">
-            <a href="/administrador/create"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Agregar Producto<ion-icon name="add-circle-outline"></ion-icon></button></a>
+        <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center mt-2">
+            <div class="card bg-transparent text-white border-dark w-55 p-1 pt-3">
+              <figure class="">
+                <img src="/images/bicicletas/<%= miBici.imagen%> " class="card-img" alt="Bicicleta">
+              </figure>
+            </div>
         </article>
-          <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <table class="table text-white" style="background-color: #000000;">
-              <thead>
-                <tr>
-                  <th scope="col">Id</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Ver</th>
-                  <th scope="col">Editar</th>
-                  <th scope="col">Borrar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% bicicletas.forEach(bici => { %>
-                <tr>
-                  <td><%= bici.id%> </td>
-                  <td><%= bici.modelo%> </td>
-                  <td><a href="/administrador/detalleAdmin/<%= bici.id%>"> <ion-icon name="eye-outline"></ion-icon></a></td>
-                  <td><a href=""> <ion-icon name="pencil-outline"></ion-icon></a></td>
-                  <td><a href=""><ion-icon name="trash-outline"></ion-icon></a></td>
-                </tr>
-                <% }); %>
-              </tbody>
-            </table> 
-          </article>       
 
-        
-        
+        <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
+            <div class="row row-cols-1 row-cols-sm-12 row-cols-md-12 row-cols-lg-12 row-cols-xl-2 d-flex justify-content-center mt-2">
+              <div class="cartaUno col mb-4">
+                <div class="card h-100 border-dark">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Marca: <%= miBici.marca%></h4>
+                    <h4 class="card-title">Modelo: <%= miBici.modelo%></h4>
+                    <h4 class="card-title">Precio: <%= miBici.precio %></h4>
+                    <p class="card-text"> Descripción Técnica: <%= miBici.descripcionTecnica %></p>
+                    <h4 class="card-title">Colores: <%= miBici.colores %></h4>
+                    <h4 class="card-title">Talle: <%= miBici.talle %></h4>
+                    <h4 class="card-title">Rodado: <%= miBici.rodado %></h4>
+                    <a href="/administrador" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
+                  </div>
+                </div>
+              </div>
+
+          </article>
 
     </section>
 
