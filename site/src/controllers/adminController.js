@@ -56,6 +56,31 @@ module.exports = {
         res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
     
     },
+    edit: (req,res) =>{
+        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+
+        const biciId = req.params.id;
+        let biciEditar = bicicletas.find(bici => bici.id == biciId);
+        res.render(path.resolve(__dirname, '..','views','administrador','edit'), {biciEditar});
+    },
+    update: (req,res) =>{
+        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+
+        req.body.id = req.params.id;
+        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen; //if ternario en la variable req.body.imagen me esta llegando algo en el req.file, entonces guardame lo q llega en el req.body.oldImagen
+        
+        let bicisUpdate = bicicletas.map(bici => {
+            if(bici.id == req.body.id){
+                return bici = req.body;
+            }
+            return bici;
+        });
+        
+        let bicicletasActualizar = JSON.stringify(bicisUpdate,null,2);
+        //Guardar o reemplazar nuestro archivo JSON
+        fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasActualizar);
+        res.redirect('/administrador');
+    },
     custom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         res.render(path.resolve(__dirname, '..','views','administrador','custom'));

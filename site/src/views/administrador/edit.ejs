@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+    <main class="container col-8">
+      
+      <!--Navbar-->
+      <header class="row header">
+        <div class="fixed-top col-12">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4 navbar-expand-md navbar-expand-lg navbar-dark col-12" style="background-color: black">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/quienesSomos">¿Quienes somos? <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos">Bicicletas <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productos/custom">Customizar <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-transparent bg-transparent">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </nav>
+        </div>
+  
+      </header>
+          <br><br><br>
+        <section class="seccion row">
+
+          <article class="titulo d-flex justify-content-center">
+            <h1 class="border-bottom border-dark col-12">EDICION DE PRODUCTO</h1>
+          </article>
+
+          <br>
+          <br>
+          
+          <article class="formulario col-12">
+            <form action="/administrador/edit/<%= biciEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+              <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores" value="<%= biciEditar.colores%>">
+              <br>
+
+              <div class="talle-rodado">               
+              <div class="talle d-flex">
+                <h6>Talle:</h6>
+                <div class="custom-control">
+                  <input type="text" name="talle" class="form-control" value="<%= biciEditar.talle%>">
+                </div>
+              </div>
+                
+              <div class="talle d-flex">
+                <h6>Rodado:</h6>
+                
+                <div class="custom-control">
+                  <input type="text" name="rodado" value="<%= biciEditar.rodado%>" class="form-control">
+                </div>
+                <br>
+              </div>
+              </div>
+
+              <br>
+              <br>
+
+              <div class="marca-modelo">
+                <input type="text" placeholder="Marca" name="marca" class="col-5 form-control" value="<%= biciEditar.marca%>">
+                <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control" value="<%= biciEditar.modelo%>">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control" value="<%= biciEditar.precio%>">
+                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control" value="<%= biciEditar.descuento%>">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <select name="cuotas" class="form-control col-5">
+                  <option value="si" <%= biciEditar.cuotas == "si" ? "selected" : null %>>Sí</option>
+                  <option value="no" <%= biciEditar.cuotas == "no" ? "selected" : null %>>No</option>
+                </select>
+                <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-5 form-control" value="<%= biciEditar.cantCuotas%>">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control" value="<%= biciEditar.estilo%>">
+              </div>
+              
+
+              <!--Descripciones-->
+              <div class="mb-3">
+                <br>
+                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto" ><%= biciEditar.descripcion%></textarea>
+                <br>
+                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"><%= biciEditar.descripcionTecnica%></textarea>
+              </div>
+
+
+            <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
+
+                <div class="bg-transparent text-white border-light w-55 p-1 pt-3">
+                    <input type="hidden"  name="oldImagen"  value="<%= biciEditar.imagen%>">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= biciEditar.imagen%>">
+                    
+                    <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
+
+                  <figure class="">
+                    <img src="/images/bicicletas/<%= biciEditar.imagen%> " class="card-img" alt="Bicicleta">
+                  </figure>
+                    
+                </div>
+
+                
+            </article>
+              
+
+              
+
+              <div class="botones">
+              <button type="submit" class="btn btn-primary btn-lg btn-dark" style="background-color: black">Cargar Producto</button>
+
+              <a href="/administrador" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
+              <br><br><br>
+              </div>
+
+            </form>
+          </article>
+        </section>
+    </main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

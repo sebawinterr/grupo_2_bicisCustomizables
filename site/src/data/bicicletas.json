@@ -160,26 +160,20 @@
     "imagen": "fixieamarilla.jpg"
   },
   {
-    "id": 11,
-    "marca": "Cinelli",
-    "modelo": "Vieja",
-    "estilo": "Fixie",
-    "descripcion": "Es una bici vieja",
-    "descripcionTecnica": "Bici descascarada",
-    "colores": "Amarilla",
-    "talle": [
-      "S",
-      "M",
-      "XL"
-    ],
-    "rodado": [
-      "27.5",
-      "29"
-    ],
-    "precio": "2000",
-    "descuento": "5",
-    "cuotas": "si",
-    "cantCuotas": "6",
-    "imagen": "bici-1594683026980.jpg"
+    "colores": "Amarillasdasdasd",
+    "talle": "S",
+    "rodado": "27.5",
+    "marca": "Cinellililili",
+    "modelo": "Viejajajajaja",
+    "precio": "22",
+    "descuento": "66",
+    "cuotas": "no",
+    "cantCuotas": "0",
+    "estilo": "Fixieasdasda",
+    "descripcion": "Es una bici viejajajajajaja",
+    "descripcionTecnica": "Bici descascaradasadadadada",
+    "oldImagen": "bici-1594683026980.jpg",
+    "id": "11",
+    "imagen": "bici-1594770064108.jpg"
   }
 ]
