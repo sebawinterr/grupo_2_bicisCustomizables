@@ -158,22 +158,5 @@
     "cuotas": "si",
     "cantCuotas": "12",
     "imagen": "fixieamarilla.jpg"
-  },
-  {
-    "colores": "Amarillasdasdasd",
-    "talle": "S",
-    "rodado": "27.5",
-    "marca": "Cinellililili",
-    "modelo": "Viejajajajaja",
-    "precio": "22",
-    "descuento": "66",
-    "cuotas": "no",
-    "cantCuotas": "0",
-    "estilo": "Fixieasdasda",
-    "descripcion": "Es una bici viejajajajajaja",
-    "descripcionTecnica": "Bici descascaradasadadadada",
-    "oldImagen": "bici-1594683026980.jpg",
-    "id": "11",
-    "imagen": "bici-1594770064108.jpg"
   }
 ]
