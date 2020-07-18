@@ -13,37 +13,15 @@
 
     <main class="container">
       <!--navbar-->
-      <%- include('../partials/headerNegro.ejs') %>
+      <%- include('../partials/headerBlanco.ejs') %>
 
 
       <!--Formularios-->
         <div class="formularios row">
-          <div class="row container d-flex justify-content-center align-items-baseline">
-              <form class="login col-6 col-sm-12 col-md-6 col-lg-g col-xl-6 col-12">                
-                    
-                <h2 class="border-bottom border-dark">INICIAR SESION</h2>
 
-                <div class="form-group">
-                        <br>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                </div>
-                <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-dark" style="background-color: black;">Iniciar Sesión</button>
-                <br><br><br>
-              </form>
-              
-
-                
-                  
-              <form class="register col-6 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12">                
+              <form class="register col-10 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12">                
                     
-                <h2 class="border-bottom border-dark">REGISTRARSE</h2>
+                <h2 class="border-bottom border-light border-solid">REGISTRARSE</h2>
 
                 <div class="form-row">
                       <div class="col-md-6 mb-3">
@@ -98,8 +76,9 @@
                 </div>
                 <br>
                 <button class="btn btn-primary btn-dark" type="submit" style="background-color: black;">Registrarme</button>
+                <a href="/login" class="btn btn-primary btn-danger" style="background-color: #FF6000 ; border: orangered">Ya tengo cuenta</a>
               </form>
-          </div>
+          
         </div>
 
 
