@@ -1,0 +1,88 @@
+header{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+form{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.talle{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.talle-rodado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.marca-modelo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seccion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    h5 {
+        padding-top: 3.5rem;
+        font-size: 2rem;
+    }
+    
+    .talle-rodado{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    h5 {
+        padding-top: 13rem;
+        font-size: 4rem;
+    }
+    
+    
+}
+
+@media (max-width: 1440px) {
+    h5 {
+        padding-top: 18rem;
+        font-size: 6rem;
+    }
+}
