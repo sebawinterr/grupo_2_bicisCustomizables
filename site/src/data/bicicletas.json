@@ -153,20 +153,20 @@
     "imagen": "fixieverde.jpg"
   },
   {
-    "id": 10,
-    "marca": "Cinelli",
-    "modelo": "CINELLI - PISTA 19",
-    "estilo": "Fixie",
-    "descripcion": "Es la bicicleta pensada especialmente para atravesar la ciudad con estilo e imponer tu propia impronta en el camino.",
-    "descripcionTecnica": "La Tipo Pista es una bicicleta sin cambios perfecta para iniciarse con las bicis de piñon fijo.Ideal tanto para la pista como la ciudad, viene equipada con frenos a pedal. Cubiertas Duro 700x25 y cadena KMC. Cuadro y horquilla de aluminio. Disponible en rodado 27.5 y 29, talle del S al L",
     "colores": "Amarillo",
-    "colores2": "Metal",
     "talle": "S, M, L, XL",
     "rodado": "27.5 y 29",
-    "precio": 45000,
-    "descuento": 0,
+    "marca": "Cinelli",
+    "modelo": "CINELLI - PISTA 19",
+    "precio": "45000",
+    "descuento": "0",
     "cuotas": "si",
     "cantCuotas": "12",
+    "estilo": "Fixie",
+    "descripcion": "Es la bicicleta pensada especialmente para atravesar la ciudad con estilo e imponer tu propia impronta en el camino.",
+    "descripcionTecnica": "La Tipo Pista es una bicicleta sin cambios perfecta para iniciarse con las bicis de piñon fijo y mas.Ideal tanto para la pista como la ciudad, viene equipada con frenos a pedal. Cubiertas Duro 700x25 y cadena KMC. Cuadro y horquilla de aluminio. Disponible en rodado 27.5 y 29, talle del S al L",
+    "oldImagen": "fixieamarilla.jpg",
+    "id": "10",
     "imagen": "fixieamarilla.jpg"
   }
 ]

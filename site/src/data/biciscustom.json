@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "estilo": "Fixie",
+    "nombre": "Martina",
+    "colores": "Rosa",
+    "colores2": "",
+    "talle": "M",
+    "rodado": "29",
+    "descripcionTecnica": "Bicicleta estilo Fixie, de cuadro color rosa y horquilla en color negro. Rodado 29 y talle M.",
+    "precio": 30000,
+    "descuento": 0,
+    "cuotas": "si",
+    "cantCuotas": "12",
+    "imagen": "custom1.jpg"
+  },
+  {
+    "id": 2,
+    "estilo": "Fixie",
+    "nombre": "Fran",
+    "colores": "Cobre",
+    "colores2": "",
+    "talle": "M",
+    "rodado": "27.5",
+    "descripcionTecnica": "Bicicleta estilo Fixie, de cuadro color cobre y horquilla en color negro. Rodado 27.5 y talle M.",
+    "precio": 40000,
+    "descuento": 0,
+    "cuotas": "si",
+    "cantCuotas": "12",
+    "imagen": "custom2.jpg"
+  },
+  {
+    "id": 3,
+    "estilo": "Fixie",
+    "nombre": "Iker",
+    "colores": "Negra",
+    "colores2": "",
+    "talle": "M",
+    "rodado": "29",
+    "descripcionTecnica": "Bicicleta estilo Fixie, de cuadro color negro y horquilla en color negro. Rodado 29 y talle M.",
+    "precio": 30000,
+    "descuento": 0,
+    "cuotas": "si",
+    "cantCuotas": "12",
+    "imagen": "custom3.jpg"
+  },
+  {
+    "colores": "Amarillo",
+    "talle": "L",
+    "rodado": "29",
+    "nombre": "Manu",
+    "precio": "30000",
+    "descuento": "0",
+    "cuotas": "si",
+    "cantCuotas": "12",
+    "estilo": "Fixie",
+    "descripcionTecnica": "Bicicleta estilo fixie color amarilla y roja. Rodado 29 y talle L",
+    "oldImagen": "bici-1595172664246.jpg",
+    "id": "4",
+    "imagen": "bici-1595172664246.jpg"
+  }
+]

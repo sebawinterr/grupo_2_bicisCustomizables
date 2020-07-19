@@ -5,12 +5,10 @@ const fs = require('fs');
 
 module.exports = {
     admin : function(req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','administrador','formularioCarga.html'));
         let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
         res.render(path.resolve(__dirname, '..','views','administrador','listadoProductos'),{bicicletas});
     },
     create: function (req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','administrador','final.html'));
         let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
         res.render(path.resolve(__dirname, '..','views','administrador','create'));
     },
@@ -90,9 +88,90 @@ module.exports = {
         fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasGuardar);
         res.redirect('/administrador');
     },
-    custom: function (req, res){
+    listadoCustom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
-        res.render(path.resolve(__dirname, '..','views','administrador','custom'));
-    }
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+        res.render(path.resolve(__dirname, '..','views','administrador','custom','listadoCustom'),{biciscustom});
+    },
+    customCreate: function (req, res){
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+        res.render(path.resolve(__dirname, '..','views','administrador','custom','customCreate'),{biciscustom});
+    },
+    customSave: (req,res)=>{
+        //leemos el json de nuestras bicicletas custom
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+        let ultimaBiciCustom = biciscustom.pop();
+        biciscustom.push(ultimaBiciCustom);
+ 
+        let nuevaBiciCustom={
+            id: ultimaBiciCustom.id +1,
+            estilo: req.body.estilo,
+            nombre: req.body.nombre,
+            colores: req.body.colores,
+            talle: req.body.talle,
+            rodado: req.body.rodado,
+            descripcionTecnica: req.body.descripcionTecnica,
+            precio: req.body.precio,
+            descuento: req.body.descuento,
+            cuotas: req.body.cuotas,
+            cantCuotas: req.body.cantCuotas,
+            imagen : req.file.filename
+        };
+            //Aquí se agrega al array el nuevo Producto
+            biciscustom.push(nuevaBiciCustom);
+            //Convertir mi array en un string
+            let nuevaBiciCustomGuardar = JSON.stringify(biciscustom,null,2)
+            //Guardar o reemplazar nuestro archivo JSON
+            fs.writeFileSync(path.resolve(__dirname,'..','data','biciscustom.json'), nuevaBiciCustomGuardar);
+            res.redirect('/administrador/custom');
+    },
+    customShow: (req,res)=>{
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+        
+        let miBiciCustom;
+        biciscustom.forEach(bicic => {
+           if(bicic.id == req.params.id){
+               miBiciCustom = bicic;         
+            }
+        });
+        res.render(path.resolve(__dirname, '..','views','administrador','custom','detalleCustom'), {miBiciCustom:miBiciCustom})
+    
+    },
+    customEdit: (req,res) =>{
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+
+        const biciCustomId = req.params.id;
+        let biciCustomEditar = biciscustom.find(bicic => bicic.id == biciCustomId);
+        res.render(path.resolve(__dirname, '..','views','administrador','custom','customEdit'), {biciCustomEditar});
+    },
+    customUpdate: (req,res) =>{
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+
+        req.body.id = req.params.id;
+        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen; //if ternario en la variable req.body.imagen me esta llegando algo en el req.file, entonces guardame lo q llega en el req.body.oldImagen
+        
+        let biciCustomUpdate = biciscustom.map(bicic => {
+            if(bicic.id == req.body.id){
+                return bicic = req.body;
+            }
+            return bicic;
+        });
+        
+        let bicisCustomActualizar = JSON.stringify(biciCustomUpdate,null,2);
+        //Guardar o reemplazar nuestro archivo JSON
+        fs.writeFileSync(path.resolve(__dirname,'..','data','biciscustom.json'), bicisCustomActualizar);
+        res.redirect('/administrador/custom');
+    },
+    customDestroy: (req,res) =>{
+        let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
+        const biciCustomDeleteId = req.params.id; 
+        const bicisCustomFinal = biciscustom.filter(bicic => bicic.id != biciCustomDeleteId);
+        let bicisCustomGuardar = JSON.stringify(bicisCustomFinal,null,2);
+        //Guardar o reemplazar nuestro archivo JSON
+        fs.writeFileSync(path.resolve(__dirname,'..','data','biciscustom.json'), bicisCustomGuardar);
+        res.redirect('/administrador/custom');
+    },
+
+    
     
 }

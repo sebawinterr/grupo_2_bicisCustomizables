@@ -25,6 +25,14 @@ router.get('/administrador/edit/:id', adminController.edit);
 router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
 router.get('/administrador/delete/:id', adminController.destroy);
 
+//rutas de administrador para productos custom
+router.get('/administrador/custom', adminController.listadoCustom);
+router.get('/administrador/custom/create', adminController.customCreate);
+router.post("/administrador/custom/create", upload.single('imagen'), adminController.customSave);
+router.get('/administrador/custom/detalleCustom/:id', adminController.customShow);
+router.get('/administrador/custom/edit/:id', adminController.customEdit);
+router.put('/administrador/custom/edit/:id', upload.single('imagen'), adminController.customUpdate);
+router.get('/administrador/custom/delete/:id', adminController.customDestroy);
 //router.get('/administrador/custom', adminController.custom);
 
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+    <main class="container col-8">
+      
+      <!--Navbar-->
+      <%- include('../../partials/headerNegro.ejs') %>
+          <br><br><br>
+        <section class="seccion row">
+
+          <article class="titulo d-flex justify-content-center">
+            <h1 class="border-bottom border-dark col-12">CARGA DE PRODUCTO CUSTOM</h1>
+          </article>
+
+          <br><br>
+          
+          <article class="formulario col-12">
+            <form action="/administrador/custom/create" method="POST" enctype="multipart/form-data">
+              <h6>Carga de imagen:</h4>
+                <br>
+
+              <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores">
+              <br>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
+                <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
+              </div>
+
+              <br>
+              <br>
+              <br>
+
+              <div class="talle-rodado">               
+              <div class="talle d-flex">
+                <h6>Talles disponibles:</h6>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="customRadio1" name="talle" class="custom-control-input" value="S">
+                  <label class="custom-control-label" for="customRadio1">Small</label>
+                </div>
+                <br>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="customRadio2" name="talle" value="M" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Medium</label>
+                </div>
+                <br>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="customRadio3" name="talle" value="L" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">Large</label>
+                </div>
+                <br>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="customRadio4" name="talle" class="custom-control-input" value="XL">
+                  <label class="custom-control-label" for="customRadio4">Extra Large</label>
+                </div>
+              </div>
+                
+              <div class="talle d-flex">
+                <h6>Rodados disponibles</h6>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="27" name="rodado" value="27.5" class="custom-control-input">
+                  <label class="custom-control-label" for="27">27,5 "</label>
+                </div>
+                <br>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="29" name="rodado" value="29" class="custom-control-input">
+                  <label class="custom-control-label" for="29">29 "</label>
+                </div>
+                <br>
+              </div>
+              </div>
+
+              <br>
+              <br>
+
+              <div class="marca-modelo">
+                <input type="text" placeholder="Nombre de bici custom" name="nombre" class="col-5 form-control">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control">
+                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <select name="cuotas" class="form-control col-5">
+                  <option value="">Cuotas?</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+                <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-5 form-control">
+              </div>
+              <br>
+              <div class="marca-modelo">
+                <input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control">
+              </div>
+              
+
+              <!--Descripciones-->
+              <div class="mb-3">
+                <br>
+                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"></textarea>
+              </div>
+              
+
+              
+
+              <div class="botones">
+              <button type="submit" class="btn btn-primary btn-lg btn-dark" style="background-color: black">Cargar Producto</button>
+
+              <a href="/administrador/custom" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
+              <br><br><br>
+              </div>
+
+            </form>
+          </article>
+        </section>
+    </main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
