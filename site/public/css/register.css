@@ -7,6 +7,10 @@ body{
     background-size: 100%;
 }
 
+form{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
