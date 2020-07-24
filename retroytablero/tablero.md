@@ -30,8 +30,8 @@ ___
 
     - Para mayor claridad, colocamos a continuación capturas de con los avances en el tablero correspondientes al Sprint 3:
 
-        ![capturas](/capturastablero/tabs3-1.PNG)
+        ![capturas](/capturastablero/tabs3-1.png)
 
-        ![capturas](/capturastablero/tabs3-2.PNG) 
+        ![capturas](/capturastablero/tabs3-2.png) 
 
 ___
