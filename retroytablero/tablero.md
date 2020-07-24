@@ -32,6 +32,6 @@ ___
 
         ![capturas](/capturastablero/tabs3-1.PNG)
 
-        ![capturas](/capturas/tabs3-2.PNG) 
+        ![capturas](/capturastablero/tabs3-2.PNG) 
 
 ___
