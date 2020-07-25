@@ -44,6 +44,8 @@ ___
         1. Mantener y conservar la comunicación diaria como grupo a través de nuestro canal directo (whatsapp). 
         2. Reuniones vía zoom para analizar los avances, prestarnos ayuda en las dificultades del proceso y organizar las nuevas tareas.
         3. Los aportes diarios para el avance del proyecto.
+        4. Logramos implementar la utilización del tablero digital para una mejor organización.
+        5. Seguir estableciendo las reuniones. Logramos implementarlas y mantenerlas durante los fines de semana, donde nos reunimos los sabados o los domingos; en algunas ocaciones ambos días cuando fue necesario. A su vez, aprovechamos para reunirnos los lunes o martes para seguir avanzando en conjunto.
 
     - __Hacer menos:__
         
@@ -52,10 +54,4 @@ ___
     - __Dejar de hacer:__
 
         1. Evitar, en la medida de lo posible, la presencia de tiempos muertos. Con ello nos referimos a la falta de aporte diario. Es decir, queremos evitar que pase un día sin ningun tipo de aporte. El objetivo es que cada integrante pueda aportar un nuevo avance, no importa si es mínimo o grande.
-___
-
-+ ## ___Tablero___
-
-    - Utilizamos trello para realizar nuestro tablero. El mismo puede observarse [aquí](https://trello.com/b/axTK8Uqn).
-
 ___
