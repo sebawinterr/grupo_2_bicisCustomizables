@@ -18,8 +18,15 @@
 
       <!--Formularios-->
         <div class="formularios row">
-
-              <form class="register col-10 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12">                
+          <% if(typeof errors != 'undefined') { %>
+            <p style="color: #FF6000;">Error</p>
+            <ul>
+            <% for(var i = 0; i < errors.length; i++) { %>
+            <li> <%= errors[i].msg %> </li>
+            <% } %>
+            </ul>
+           <% } %>
+              <form class="register col-10 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12" action="/users/login" method="POST">                
                     
                 <h2 class="border-bottom border-light border-solid">REGISTRARSE</h2>
 
