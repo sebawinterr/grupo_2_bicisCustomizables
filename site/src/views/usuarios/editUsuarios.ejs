@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/edit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+    <main class="container col-8">
+      
+      <!--Navbar-->
+      <%- include('../partials/headerNegro.ejs') %>
+          <br><br><br>
+        <section class="seccion row">
+
+          <article class="titulo d-flex justify-content-center">
+            <h1 class="border-bottom border-dark col-12">EDICION DE USUARIO</h1>
+          </article>
+
+          <br>
+          <br>
+          
+          <article class="formulario col-12">
+            <form action="/administrador/edit/<%= usuarioEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="marca-modelo col-12">
+                <label for="nombre">Nombre:</label>
+              <input type="text" placeholder="Nombre" class="col-5 form-control" name="nombre" value="<%= usuarioEditar.nombre%>">
+              <label for="apellido">Apellido:</label>
+              <input type="text" placeholder="Apellido" class="col-5 form-control" name="apellido" value="<%= usuarioEditar.apellido%>">
+            </div> 
+              <br>
+
+            <div class="marca-modelo col-12">               
+              <div class="talle d-flex">
+                <h6>Email:</h6>
+
+                <div class="custom-control">
+                  <input type="email" name="email" class="form-control" value="<%= usuarioEditar.email%>">
+                </div>
+              </div>
+                
+              <div class="talle d-flex">
+                <h6>Categoría:</h6>
+                
+                <div class="custom-control">
+                  <input type="number" name="categoria" value="<%= usuarioEditar.categoria%>" class="form-control">
+                </div>
+                <br>
+              </div>
+            </div>
+
+              <br>
+              
+              <div class="marca-modelo col-12">
+                <div class="col-5">
+                  <label for="dni">DNI:</label>
+                  <input type="text" placeholder="DNI" name="dni" class="col-12 form-control" id="dni" value="<%= usuarioEditar.dni%>">
+                </div>
+                <div class="col-5">
+                  <label for="telefono">Teléfono:</label>
+                  <input type="text" placeholder="Teléfono" name="telefono" class="col-12 form-control" value="<%= usuarioEditar.telefono%>">
+                </div>
+              </div>
+
+              <br>
+              
+              <div class="marca-modelo col-12">
+                <div class="col-5">
+                  <label for="">Dirección:</label>
+                  <input type="text" placeholder="Dirección" name="direccion" class="col-12 form-control" value="<%= usuarioEditar.direccion%>">
+                </div>
+                <div class="col-5">
+                  <label for="">Piso y Departamento:</label>
+                  <input type="text" placeholder="Piso y Departamento" name="pisoDepto" class="col-12 form-control" value="<%= usuarioEditar.pisoDepto%>">
+                </div>
+              </div>
+
+              <br>
+              <div class="marca-modelo col-12">
+                <div class="col-5">
+                  <label for="">Código Postal:</label>
+                  <input type="number" placeholder="Código Postal" name="cp" class="col-12 form-control" value="<%= usuarioEditar.cp%>">
+                </div>
+                <div class="col-5">
+                  <label for="">Provincia:</label>
+                  <input type="text" placeholder="Provincia" name="provincia" class="col-12 form-control" value="<%= usuarioEditar.provincia%>">
+                </div>
+              </div>
+              
+              <br>
+              <div>
+                <label for="">Localidad:</label>
+                <input type="text" placeholder="Localidad" name="localidad" class="col-5 form-control" value="<%= usuarioEditar.localidad%>">
+              </div>
+              
+            <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
+
+                <div class="bg-transparent text-white border-light w-55 p-1 pt-3">
+                    <input type="hidden"  name="oldImagen"  value="<%= usuarioEditar.imagen%>">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= usuarioEditar.imagen%>">
+                    
+                    <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
+
+                  <figure class="">
+                    <img src="/images/usuarios/<%= usuarioEditar.imagen%> " class="card-img" alt="imagen">
+                  </figure>
+                    
+                </div>
+
+                
+            </article>
+              
+
+              
+
+              <div class="botones">
+              <button type="submit" class="btn btn-primary btn-lg btn-dark" style="background-color: black">Cargar usuario</button>
+
+              <a href="/usuarios" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
+              <br><br><br>
+              </div>
+
+            </form>
+          </article>
+        </section>
+    </main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
