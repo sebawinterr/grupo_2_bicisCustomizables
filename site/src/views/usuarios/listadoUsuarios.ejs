@@ -19,33 +19,33 @@
     <section class="row container col-12">
 
         <article class="titulo d-flex justify-content-center border-bottom border-dark col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h5>Listado de Productos</h5>
+            <h5>Listado de Usuarios</h5>
         </article>
 
         <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 mb-2">
-            <a href="/administrador/create"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Agregar Producto<ion-icon name="add-circle-outline"></ion-icon></button></a>
-            <a href="/administrador/custom"><button type="button" class="btn btn-primary" style="background-color: #49D4C6 ; border: #49D4C6; color: #000000">Listado Productos Custom <ion-icon name="list-outline"></ion-icon></button></a>
-            <a href="/usuarios"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Listado de Usuarios<ion-icon name="add-circle-outline"></ion-icon></button></a>
+            <a href="/administrador"><button type="button" class="btn btn-primary" style="background-color: #FF6000 ; border: #FF6000; color: #000000">Volver<ion-icon name="list-outline"></ion-icon></button></a>
         </article>
           <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <table class="table text-white" style="background-color: #000000;">
               <thead>
                 <tr>
                   <th scope="col">Id</th>
-                  <th scope="col">Marca/Modelo</th>
+                  <th scope="col">Nombre y Apellido</th>
+                  <th scope="col">Categoria</th>
                   <th scope="col">Ver</th>
                   <th scope="col">Editar</th>
                   <th scope="col">Borrar</th>
                 </tr>
               </thead>
               <tbody>
-                <% bicicletas.forEach(bici => { %>
+                <% usuarios.forEach(user => { %>
                 <tr>
-                  <td><%= bici.id%> </td>
-                  <td><%= bici.modelo%> </td>
-                  <td><a href="/administrador/detalleAdmin/<%= bici.id%>"> <ion-icon name="eye-outline"></ion-icon></a></td>
-                  <td><a href="/administrador/edit/<%= bici.id%>"> <ion-icon name="pencil-outline"></ion-icon></a></td>
-                  <td><a href="/administrador/delete/<%= bici.id%>"><ion-icon name="trash-outline"></ion-icon></a></td>
+                  <td><%= user.id%> </td>
+                  <td><%= user.nombre + " " + user.apellido%> </td>
+                  <td><%= user.categoria%> </td>
+                  <td><a href="/usuarios/detalle/<%= user.id%>"> <ion-icon name="eye-outline"></ion-icon></a></td>
+                  <td><a href="/usuarios/edit/<%= user.id%>"> <ion-icon name="pencil-outline"></ion-icon></a></td>
+                  <td><a href="/usuarios/delete/<%= user.id%>"><ion-icon name="trash-outline"></ion-icon></a></td>
                 </tr>
                 <% }); %>
               </tbody>
