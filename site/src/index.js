@@ -4,7 +4,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const { check, validationResult, body } = require('express-validator');
+//const { check, validationResult, body } = require('express-validator');
 
 
 // MIDDLEWARES

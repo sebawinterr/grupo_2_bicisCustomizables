@@ -5,7 +5,7 @@ const multer = require('multer');
 const { check, validationResult, body } = require('express-validator');
 
 
-var users =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
+//const users =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
 module.exports = {
     index : function(req, res){

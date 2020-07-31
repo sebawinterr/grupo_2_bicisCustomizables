@@ -12,8 +12,6 @@ const userController = require(path.resolve(__dirname,'..','controllers','userCo
 // Llamamos al archivo json
 let archivoUsers =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
-
-
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, path.resolve(__dirname, '../../public/images/usuarios'));    //Aquí deben indicar donde van a guardar la imagen
@@ -23,7 +21,7 @@ const storage = multer.diskStorage({
     }
   })
    
-  const upload= multer({ storage })
+const upload= multer({ storage })
 
 
 
