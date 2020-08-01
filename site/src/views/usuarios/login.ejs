@@ -18,28 +18,26 @@
 
       <!--Formularios-->
         <div class="formularios row">
-          <% if(typeof errors != 'undefined') { %>
-            <p style="color: #FF6000;">Error</p>
-            <ul>
-            <% for(var i = 0; i < errors.length; i++) { %>
-            <li> <%= errors[i].msg %> </li>
-            <% } %>
-            </ul>
-           <% } %>
               <form class="login col-6 col-sm-12 col-md-6 col-lg-g col-xl-6 col-12" action="/login" method="POST">                
                     
                 <h2 class="border-bottom border-light border-solid">INICIAR SESION</h2>
 
                 <div class="form-group">
                         <br>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email" value="<%= typeof old != 'undefined' ? old.email : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.email){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.email.msg %></span>
+                          <%}%>
                 </div>
                 <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password">
+                        <% if(typeof errors != 'undefined' && errors.password){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.password.msg %></span>
+                          <%}%>
                 </div>
                 <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                        <input type="checkbox" name="recuerdame">
+                        <label class="form-check-label">Recuerdame</label>
                 </div>
                 <button type="submit" class="btn btn-primary btn-dark" style="background-color: black;">Iniciar Sesión</button>
                 <a href="/register" class="btn btn-primary btn-danger" style="background-color: #FF6000 ; border: orangered">Crear una cuenta</a>

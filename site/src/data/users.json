@@ -318,5 +318,21 @@
     "password": "$2b$10$o7/YDP0ScHYPRU2UbtSNzerptxsT0OMZLZid2kH/2OBNVcnekTYfa",
     "imagen": "foto-1596296002619.jpg",
     "categoria": 0
+  },
+  {
+    "id": 21,
+    "nombre": "Sebastian",
+    "apellido": "Winter",
+    "dni": "39560913",
+    "telefono": "12345678",
+    "direccion": "calle falsa 123",
+    "pisoDepto": "-",
+    "cp": "1234",
+    "provincia": "salta",
+    "localidad": "la linda",
+    "email": "wintersebast@gmail.com",
+    "password": "$2b$10$ICtYay0e6HhcfSx1R/5EQuoEll5/ZilIkHiy3kjRMJq74oU6gTfkS",
+    "imagen": "foto-1596308397569.jpg",
+    "categoria": 0
   }
 ]

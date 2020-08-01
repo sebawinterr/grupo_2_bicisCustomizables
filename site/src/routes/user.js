@@ -80,13 +80,33 @@ router.post('/register', upload.single('imagen'), [
 
 
 router.get('/login',userController.login);
-/*router.post('/login',upload.single('imagen'), [
+router.post('/login', [
     check('email').isEmail().withMessage('El email no es válido'),
-    check('password').isLength({min:8}).withMessage('La contraseña debe contener al menos 8 caracteres')
-],userController.processLogIn);*/
-/*router.get('/check', function (req,res){
-    req.session.usuarioLogueado == undefined ? res.send('no logueaste bro') : res.redirect('/productos')
-})*/
+    body('email').custom( (value) =>{
+        for (let i = 0; i < archivoUsers.length; i++) {
+            if (archivoUsers[i].email == value) {
+                return true
+            }
+        }
+        return false
+    }).withMessage('Este email no se encuentra registrado.'), 
+    check('password').isLength({min:8}).withMessage('La contraseña debe contener al menos 8 caracteres'),
+    body('password').custom( (value, {req}) =>{
+        for (let i = 0; i < archivoUsers.length; i++) {
+            if (archivoUsers[i].email == req.body.email) {
+                if(bcrypt.compareSync(value, archivoUsers[i].password)){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        } 
+    }).withMessage('Contraseña incorrecta.')
+],userController.processLogIn);
+router.get('/logout', userController.logout);
+//router.get('/check', function (req,res){
+//    req.session.usuarioLogueado == undefined ? res.send('no logueaste bro') : res.redirect('/productos')
+//})
 
 //! Rutas Crud Usuarios
 router.get('/usuarios', userController.usuarios);
