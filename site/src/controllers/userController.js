@@ -15,14 +15,18 @@ module.exports = {
 
     processRegister: (req, res) => {
         let errors = validationResult(req);
+        let usuario = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
+        let ultimoUsuario = usuario.pop();
+        usuario.push(ultimoUsuario);
         if (errors.isEmpty()) {
           let usuarioARegistrar = {
+            id: ultimoUsuario.id + 1,
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             dni: req.body.dni,
-            //telefono: req.body.telefono,
+            telefono: req.body.telefono,
             direccion: req.body.direccion,
-            pisoDpto: req.body.pisoDpto ? req.body.pisoDpto : '',
+            pisoDepto: req.body.pisoDepto ? req.body.pisoDepto : '',
             cp: req.body.cp,
             provincia: req.body.provincia,
             localidad: req.body.localidad,
@@ -31,6 +35,7 @@ module.exports = {
             imagen: req.file ? req.file.filename : '',
             categoria: 0 // req.body.email == '%@digitalhouse.com' ? '' : Usuario 1 = Basico, 2 = Analista, 9 = Administrador
           }
+
           let archivoUsers = fs.readFileSync(path.resolve(__dirname, '../data/users.json'), {encoding: 'utf-8'});
           let users;
           if (archivoUsers == "") {
@@ -41,7 +46,7 @@ module.exports = {
     
           users.push(usuarioARegistrar);
           usersJSON = JSON.stringify(users, null, 2);
-          fs.appendFileSync(path.resolve(__dirname, '../data/users.json'), usersJSON);
+          fs.writeFileSync(path.resolve(__dirname, '../data/users.json'), usersJSON);
           res.redirect('/login');
         } else {  
           return res.render(path.resolve(__dirname, '../views/usuarios/register'), {
@@ -80,7 +85,7 @@ module.exports = {
             return res.render('login', {errors: errors.errors});
         }
         let usuarioALoguear;        
-    }*/
+    },*/
     usuarios : function(req, res){
       let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
       res.render(path.resolve(__dirname, '..','views','usuarios','listadoUsuarios'),{usuarios});

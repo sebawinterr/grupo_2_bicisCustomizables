@@ -46,10 +46,10 @@ router.post('/register', upload.single('imagen'), [
         return true
     }).withMessage('Este dni ya se encuentra registrado'),   
         //DIRECCION
-    check('direccion').isEthereumAddress({min: 1}).withMessage('Debe colocar una dirección válida'),
+    check('direccion').isLength({min: 1}).withMessage('Debe colocar una dirección válida'),
         //CP
     check('cp').isLength({min: 4
-    }).withMessage('Debe colocar un Codigo Postal'),
+    }).withMessage('Coloque su Código Postal'),
         //PROVINCIA
     check('provincia').isLength({min: 1
     }).withMessage('Debe colocar una provincia'),
@@ -74,7 +74,7 @@ router.post('/register', upload.single('imagen'), [
             return true
         }
         return false;
-    }).withMessage('Debe elegir su avatar y debe ser un archivo con formato: .JPG ó JPEG ó PNG')    
+    }).withMessage('Debe elegir su avatar y debe ser un archivo con formato: .JPG ó JPEG ó PNG') 
 ],userController.processRegister);
 
 

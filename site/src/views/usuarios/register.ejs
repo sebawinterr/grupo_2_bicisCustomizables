@@ -17,15 +17,11 @@
 
 
       <!--Formularios-->
+      
         <div class="formularios row">
-          <% if(typeof errors != 'undefined') { %>
-            <p style="color: #FF6000;">Error2</p>
-            <ul>
-            <% for(var i = 0; i < errors.length; i++) { %>
-            <li> <%= errors[i].msg %> </li>
-            <% } %>
-            </ul>
-           <% } %>
+              
+
+           
               <form class="register col-10 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12" action="/register" method="POST" enctype="multipart/form-data">                
                     
                 <h2 class="border-bottom border-light border-solid">REGISTRARSE</h2>
@@ -33,49 +29,79 @@
                 <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <br>
-                        <input type="text" class="form-control" id="validationServer01" name="nombre" placeholder="Nombre" value="<%= typeof old != 'undefined' ? old.nombre : '' %>">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="<%= typeof old != 'undefined' ? old.nombre : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.nombre){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.nombre.msg %></span>
+                          <%}%>
                       </div>
                       
                       <div class="col-md-6 mb-3">
                         <br>
-                        <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" value="<%= typeof old != 'undefined' ? old.apellido : '' %>">
+                        <input type="text" class="form-control" placeholder="Apellido" name="apellido" value="<%= typeof old != 'undefined' ? old.apellido : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.apellido){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.apellido.msg %></span>
+                          <%}%>
                       </div>
                       
                       <div class="col-md-6 mb-3">
                         
-                        <input type="number" class="form-control" id="validationServer01" name="dni" value="<%= typeof old != 'undefined' ? old.dni : '' %>" placeholder="DNI">
+                        <input type="number" class="form-control" name="dni" value="<%= typeof old != 'undefined' ? old.dni : '' %>" placeholder="DNI">
+                        <% if(typeof errors != 'undefined' && errors.dni){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.dni.msg %></span>
+                          <%}%>
                       </div>
                       
                       <div class="col-md-6 mb-3">
                         
-                        <input type="number" class="form-control" id="validationServer02" placeholder="Teléfono" value="<%= typeof old != 'undefined' ? old.telefono : '' %>" name="telefono">
+                        <input type="number" class="form-control" placeholder="Teléfono" value="<%= typeof old != 'undefined' ? old.telefono : '' %>" name="telefono">
                       </div>
                 </div>
                 <div class="form-row">
                       <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" value="<%= typeof old != 'undefined' ? old.direccion : '' %>">
+                        <input type="text" class="form-control" placeholder="Dirección" name="direccion" value="<%= typeof old != 'undefined' ? old.direccion : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.direccion){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.direccion.msg %></span>
+                          <%}%>
                       </div>
                       <div class="col-md-3 mb-3">
-                        <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="pisoDepto" value="<%= typeof old != 'undefined' ? old.pisoDepto : '' %>">
+                        <input type="text" class="form-control" placeholder="Piso y Dto." name="pisoDepto" value="<%= typeof old != 'undefined' ? old.pisoDepto : '' %>">
                       </div>
                       <div class="col-md-3 mb-3">
-                        <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" value="<%= typeof old != 'undefined' ? old.cp : '' %>">
+                        <input type="number" name="cp" placeholder="CP" class="form-control" value="<%= typeof old != 'undefined' ? old.cp : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.cp){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.cp.msg %></span>
+                          <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" value="<%= typeof old != 'undefined' ? old.provincia : '' %>">
+                        <input type="text" class="form-control" placeholder="Provincia" name="provincia" value="<%= typeof old != 'undefined' ? old.provincia : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.provincia){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.provincia.msg %></span>
+                          <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" value="<%= typeof old != 'undefined' ? old.localidad : '' %>">
+                        <input type="text" class="form-control" placeholder="Localidad" name="localidad" value="<%= typeof old != 'undefined' ? old.localidad : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.localidad){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.localidad.msg %></span>
+                          <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
-                        <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" value="<%= typeof old != 'undefined' ? old.email : '' %>">
+                        <input type="email" class="form-control" placeholder="Email" name="email" value="<%= typeof old != 'undefined' ? old.email : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.email){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.email.msg %></span>
+                          <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
-                        <input type="password" class="form-control" id="validationServer03" placeholder="Contraseña" name="password">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password">
+                        <% if(typeof errors != 'undefined' && errors.password){%>
+                          <span class="text-danger" style="font-weight: 800;"> <%= errors.password.msg %></span>
+                          <%}%>
                       </div>
                 </div>
                 <div class="custom-file mb-3">
                   <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
+                  <% if(typeof errors != 'undefined' && errors.imagen){%>
+                    <span class="text" style="color: #FF6000; font-weight: 800;"> <%= errors.imagen.msg %></span>
+                    <%}%>
                   <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
                 </div>
                 <div class="form-group">

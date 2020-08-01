@@ -302,5 +302,21 @@
     "password": "k7ZQzn",
     "categoria": 0,
     "imagen": "image/pjpeg"
+  },
+  {
+    "id": 20,
+    "nombre": "Juancito",
+    "apellido": "Esperon",
+    "dni": "40587236",
+    "telefono": "1234567890",
+    "direccion": "Av de Los Pioneros 17400",
+    "pisoDepto": "-",
+    "cp": "2358",
+    "provincia": "Río Negro",
+    "localidad": "Bariloche",
+    "email": "juanesp@gmail.com",
+    "password": "$2b$10$o7/YDP0ScHYPRU2UbtSNzerptxsT0OMZLZid2kH/2OBNVcnekTYfa",
+    "imagen": "foto-1596296002619.jpg",
+    "categoria": 0
   }
 ]
