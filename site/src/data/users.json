@@ -334,5 +334,53 @@
     "password": "$2b$10$ICtYay0e6HhcfSx1R/5EQuoEll5/ZilIkHiy3kjRMJq74oU6gTfkS",
     "imagen": "foto-1596308397569.jpg",
     "categoria": 0
+  },
+  {
+    "id": 22,
+    "nombre": "Juan",
+    "apellido": "Esperon",
+    "dni": "40731369",
+    "telefono": "1154511959",
+    "direccion": "viamos 123",
+    "pisoDepto": "65",
+    "cp": "1052",
+    "provincia": "buenojs airs",
+    "localidad": "temperley",
+    "email": "juanfesperon@bykes.com",
+    "password": "$2b$10$dh8MUCYKpAKOQEYHg6TPjuFYa42.Ur0JYNXjDco8hbYdlM7rR2ff6",
+    "imagen": "foto-1596494444485.jpg",
+    "categoria": 0
+  },
+  {
+    "id": 23,
+    "nombre": "p",
+    "apellido": "sanchez",
+    "dni": "14525636",
+    "telefono": "1152511636",
+    "direccion": "sdjasd",
+    "pisoDepto": "65",
+    "cp": "1254",
+    "provincia": "adsad",
+    "localidad": "dsadsd",
+    "email": "psanchez@bykes.com",
+    "password": "$2b$10$g8gmJVdlGzhxrXZ.ED.kKOWBbkqp8PlCXBLX269te51/LF0RKOaCW",
+    "imagen": "foto-1596496010807.jpg",
+    "categoria": 9
+  },
+  {
+    "id": 24,
+    "nombre": "drogadicto",
+    "apellido": "marian",
+    "dni": "45787989",
+    "telefono": "5463644525",
+    "direccion": "adsasda",
+    "pisoDepto": "65",
+    "cp": "1254",
+    "provincia": "dkasjdkajk",
+    "localidad": "mal",
+    "email": "psanchez@gmail.com",
+    "password": "$2b$10$m.zvyZtSTVva/w/cR97It.rnjTShW9vWqq2SIsW3V7iCmn1I6.OHO",
+    "imagen": "foto-1596496101999.jpg",
+    "categoria": 0
   }
 ]

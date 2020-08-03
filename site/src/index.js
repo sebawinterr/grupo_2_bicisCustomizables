@@ -4,6 +4,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+//const acceso = require('./middlewares/acceso');
 //const { check, validationResult, body } = require('express-validator');
 
 
@@ -21,6 +22,8 @@ app.use(methodOverride('_method'));
 app.use(session({secret: "top secret",
 resave: true,
 saveUninitialized: true}));
+// Requerimos middleware de acceso
+//app.use(acceso);
 // Hacemos uso de cookie-parser
 app.use(cookieParser());
 

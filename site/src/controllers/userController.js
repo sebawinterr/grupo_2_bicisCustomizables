@@ -33,7 +33,7 @@ module.exports = {
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             imagen: req.file ? req.file.filename : '',
-            categoria: 0 // req.body.email == '%@digitalhouse.com' ? '' : Usuario 1 = Basico, 2 = Analista, 9 = Administrador
+            categoria: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0     // Usuario 1 = Basico, 2 = Analista, 9 = Administrador
           }
 
           let archivoUsers = fs.readFileSync(path.resolve(__dirname, '../data/users.json'), {encoding: 'utf-8'});
