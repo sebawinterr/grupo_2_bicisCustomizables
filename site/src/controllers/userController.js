@@ -62,19 +62,24 @@ module.exports = {
       let errors = validationResult(req);
       if (errors.isEmpty()) {
         let archivoUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-        let usuarioLogueado = archivoUsers.find(user => {
-          user.email == req.body.email;
+        let usuarioLogueado = archivoUsers.filter(user => {
+          return user.email == req.body.email
         });
+        console.log(usuarioLogueado);
+        /*.find(user => {
+          user.email == req.body.email;
+        });*/
         //delete usuarioLogueado.password;
-        req.session.user = usuarioLogueado;
+        // Creamos cookie llamada "user"
+        req.session.usuarioGuardado = usuarioLogueado;
         if (req.body.recuerdame){
           res.cookie('email', usuarioLogueado.email, {maxAge: 1000*60*60*24*7});
         }
         res.redirect('/');
-      } else {
+      }
+       else {
         return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
       }
-
     },
     logout: (req,res) =>{
       req.session.destroy();

@@ -1,22 +1,25 @@
-/*const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 let archivoUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
 module.exports = (req,res,next) =>{
     //Variable locals (super global - vive en las vistas )
-    res.locals.usuario = false;
-    if(req.session.usuario){
-        res.locals.usuario = req.session.usuario;
+    res.locals.usuarioGuardado = false;
+
+    if(req.session.usuarioGuardado){
+        res.locals.usuarioGuardado = req.session.usuarioGuardado;
         return next();
-    }else if(req.cookieParser.email){
-        let usuario = archivoUsers.find(usuario => usuario.email == req.cookieParser.email)
+    }else if(req.cookies.email){
+        let usuarioLogueado = archivoUsers.filter(user => {
+            return user.email == req.cookies.email});
+        //let user = archivoUsers.filter(user => user.email == req.cookies.email)
         //return res.send(usuario);
         //delete usuario.password;          
-        req.session.usuario = usuario;
-        res.locals.usuario = usuario;
+        req.session.usuarioGuardado = usuarioLogueado;
+        res.locals.usuarioGuardado = usuarioLogueado;
         return next();
     }else{
         return next();
     }
-}*/
+}
