@@ -65,7 +65,7 @@ module.exports = {
         let usuarioLogueado = archivoUsers.filter(user => {
           return user.email == req.body.email
         });
-        console.log(usuarioLogueado);
+        console.log(usuarioLogueado[0].email);
         /*.find(user => {
           user.email == req.body.email;
         });*/
@@ -73,7 +73,9 @@ module.exports = {
         // Creamos cookie llamada "user"
         req.session.usuarioGuardado = usuarioLogueado;
         if (req.body.recuerdame){
-          res.cookie('email', usuarioLogueado.email, {maxAge: 1000*60*60*24*7});
+          //res.cookie('email', usuarioLogueado.email, {maxAge: 1000*60*60*24*7});
+          let mailUsuarioLogueado = usuarioLogueado[0].email
+          res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
         }
         res.redirect('/');
       }
