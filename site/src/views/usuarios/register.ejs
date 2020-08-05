@@ -39,7 +39,7 @@
                         <br>
                         <input type="text" class="form-control" placeholder="Apellido" name="apellido" value="<%= typeof old != 'undefined' ? old.apellido : '' %>">
                         <% if(typeof errors != 'undefined' && errors.apellido){%>
-                          <span class="text-danger" style="font-weight: 800;" > <%= errors.apellido.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.apellido.msg %></span>
                           <%}%>
                       </div>
                       
@@ -47,7 +47,7 @@
                         
                         <input type="number" class="form-control" name="dni" value="<%= typeof old != 'undefined' ? old.dni : '' %>" placeholder="DNI">
                         <% if(typeof errors != 'undefined' && errors.dni){%>
-                          <span class="text-danger" style="font-weight: 800;" > <%= errors.dni.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.dni.msg %></span>
                           <%}%>
                       </div>
                       
@@ -60,7 +60,7 @@
                       <div class="col-md-6 mb-3">
                         <input type="text" class="form-control" placeholder="Dirección" name="direccion" value="<%= typeof old != 'undefined' ? old.direccion : '' %>">
                         <% if(typeof errors != 'undefined' && errors.direccion){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.direccion.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.direccion.msg %></span>
                           <%}%>
                       </div>
                       <div class="col-md-3 mb-3">
@@ -69,38 +69,38 @@
                       <div class="col-md-3 mb-3">
                         <input type="number" name="cp" placeholder="CP" class="form-control" value="<%= typeof old != 'undefined' ? old.cp : '' %>">
                         <% if(typeof errors != 'undefined' && errors.cp){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.cp.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.cp.msg %></span>
                           <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
                         <input type="text" class="form-control" placeholder="Provincia" name="provincia" value="<%= typeof old != 'undefined' ? old.provincia : '' %>">
                         <% if(typeof errors != 'undefined' && errors.provincia){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.provincia.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.provincia.msg %></span>
                           <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
                         <input type="text" class="form-control" placeholder="Localidad" name="localidad" value="<%= typeof old != 'undefined' ? old.localidad : '' %>">
                         <% if(typeof errors != 'undefined' && errors.localidad){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.localidad.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.localidad.msg %></span>
                           <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
                         <input type="email" class="form-control" placeholder="Email" name="email" value="<%= typeof old != 'undefined' ? old.email : '' %>">
                         <% if(typeof errors != 'undefined' && errors.email){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.email.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.email.msg %></span>
                           <%}%>
                       </div>
                       <div class="col-md-6 mb-3">
                         <input type="password" class="form-control" placeholder="Contraseña" name="password">
                         <% if(typeof errors != 'undefined' && errors.password){%>
-                          <span class="text-danger" style="font-weight: 800;"> <%= errors.password.msg %></span>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.password.msg %></span>
                           <%}%>
                       </div>
                 </div>
                 <div class="custom-file mb-3">
                   <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
                   <% if(typeof errors != 'undefined' && errors.imagen){%>
-                    <span class="text" style="color: #FF6000; font-weight: 800;"> <%= errors.imagen.msg %></span>
+                    <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.imagen.msg %></span>
                     <%}%>
                   <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
                 </div>

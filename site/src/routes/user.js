@@ -74,7 +74,7 @@ router.post('/register', upload.single('imagen'), [
             return true
         }
         return false;
-    }).withMessage('Debe elegir su avatar y debe ser un archivo con formato: .JPG ó JPEG ó PNG') 
+    }).withMessage('Debe elegir su imagen de perfil en formato .JPG ó .JPEG ó .PNG') 
 ],userController.processRegister);
 
 
