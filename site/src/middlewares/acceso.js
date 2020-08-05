@@ -10,9 +10,9 @@ module.exports = (req,res,next) =>{
     if(req.session.usuarioGuardado){
         res.locals.usuarioGuardado = req.session.usuarioGuardado;
         return next();
-    }else if(req.cookies.email){
+    }else if(req.cookie.galletita){
         let usuarioLogueado = archivoUsers.filter(user => {
-            return user.email == req.cookies.email});
+            return user.email == req.cookie.galletita});
         //let user = archivoUsers.filter(user => user.email == req.cookies.email)
         //return res.send(usuario);
         //delete usuario.password;          
