@@ -31,6 +31,7 @@ ___
         2. Disponer de un canal de comunicación donde comentemos los avances de manera diaria.
         3. Realizar un tablero digital donde poder realizar un seguimiento más efectivo de las distintas tareas y su grado de avance.
         4. Comprometernos a realizar cada día un nuevo aporte al proyecto. Por más mínimo que sea, estamos contribuyendo al avance general del proyecto.
+        5. Si se presentan dificultades para avanzar en las tareas divididas entre el equipo, realizar reuniones para poder resolverlas entre todos.
 
     - __Hacer más:__
         
@@ -38,6 +39,7 @@ ___
         2. Comunicarnos día a día los avances vía whatsapp. Ya lo estamos realizando desde hace un tiempo. El objetivo es comentar lo que estuvimos realizando, los problemas que se presentaron al realizar una tarea específica, los aspectos donde necesitamos ayuda para avanzar y los pendientes.
         3. Implementar la utilización del tablero digital para el seguimiento del proyecto.
         4. Generar nuevos aportes al proyecto en cada día. Disponer de un tiempo para poder contribuir al avance del proyecto de manera diaria.
+        5. Durante el Sprint 4, tuvimos que afrontar varias consignas entre los tres integrantes del grupo ya que teniamos dificultades para avanzar de manera individual. Generamos varias reuniones para poder resolverlo.
     
     - __Continuar haciendo:__
         
@@ -45,7 +47,8 @@ ___
         2. Reuniones vía zoom para analizar los avances, prestarnos ayuda en las dificultades del proceso y organizar las nuevas tareas.
         3. Los aportes diarios para el avance del proyecto.
         4. Logramos implementar la utilización del tablero digital para una mejor organización.
-        5. Seguir estableciendo las reuniones. Logramos implementarlas y mantenerlas durante los fines de semana, donde nos reunimos los sabados o los domingos; en algunas ocaciones ambos días cuando fue necesario. A su vez, aprovechamos para reunirnos los lunes o martes para seguir avanzando en conjunto.
+        5. Seguir estableciendo las reuniones. Logramos implementarlas y mantenerlas durante los fines de semana, donde nos reunimos los sabados o los domingos; en algunas ocaciones ambos días cuando fue necesario. A su vez, aprovechamos para reunirnos los lunes y martes para seguir avanzando en conjunto. Este espacio nos permitió resolver dificultades de manera colaborativa.
+        
 
     - __Hacer menos:__
         
