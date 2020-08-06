@@ -1,10 +1,9 @@
-const fs = require('fs');
+/*const fs = require('fs');
 const path = require('path');
 
 let archivoUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
 module.exports = (req,res,next) =>{
-    //Variable locals (super global - vive en las vistas )
     res.locals.usuarioGuardado = false;
 
     if(req.session.usuarioGuardado){
@@ -22,4 +21,4 @@ module.exports = (req,res,next) =>{
     }else{
         return next();
     }
-}
+}*/

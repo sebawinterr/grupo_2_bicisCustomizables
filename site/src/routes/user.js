@@ -104,9 +104,7 @@ router.post('/login', [
     }).withMessage('Contraseña incorrecta.')
 ],userController.processLogIn);
 router.get('/logout', userController.logout);
-//router.get('/check', function (req,res){
-//    req.session.usuarioLogueado == undefined ? res.send('no logueaste bro') : res.redirect('/productos')
-//})
+
 
 //! Rutas Crud Usuarios
 router.get('/usuarios', userController.usuarios);

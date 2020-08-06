@@ -33,7 +33,7 @@ module.exports = {
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             imagen: req.file ? req.file.filename : '',
-            categoria: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0     // Usuario 1 = Basico, 2 = Analista, 9 = Administrador
+            categoria: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0     // UsuarioBasico = 0, Administrador = 9
           }
 
           let archivoUsers = fs.readFileSync(path.resolve(__dirname, '../data/users.json'), {encoding: 'utf-8'});
@@ -70,12 +70,9 @@ module.exports = {
           user.email == req.body.email;
         });*/
         //delete usuarioLogueado.password;
-        // Creamos cookie llamada "user"
-
         req.session.usuarioGuardado = usuarioLogueado[0];
         console.log(req.session.usuarioGuardado);
         if (req.body.recuerdame){
-          //res.cookie('email', usuarioLogueado.email, {maxAge: 1000*60*60*24*7});
           let mailUsuarioLogueado = usuarioLogueado[0].email;
           res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
         }
@@ -87,7 +84,7 @@ module.exports = {
     },
     logout: (req,res) =>{
       req.session.destroy();
-      res.cookie('email',null,{maxAge: -1});
+      res.cookie('galletita',null,{maxAge: -1});
       res.redirect('/productos')
     },
     usuarios : function(req, res){
