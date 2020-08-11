@@ -15,13 +15,13 @@ module.exports = (sequelize,DataTypes) =>{
 
     const Style = sequelize.define(alias,cols,config);
 
-    Style.associate = function(models) {
+    /*Style.associate = function(models) {
         Style.hasMany(models.Article, {
             as: "articles",
-            foreignKey: "id_style"
+            foreignKey: "style_id"
 
         });
-    }
+    }*/
 
     return Style;
 }
