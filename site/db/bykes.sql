@@ -89,7 +89,7 @@ CREATE TABLE `articles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `brand` varchar(100) DEFAULT NULL,
   `model` varchar(100) DEFAULT NULL,
-  `id_style` int(11) NOT NULL,
+  `style` varchar(15) DEFAULT NULL,
   `description` varchar(500) DEFAULT NULL,
   `techDescription` varchar(500) DEFAULT NULL,
   `colors` varchar(100) DEFAULT NULL,
@@ -100,16 +100,11 @@ CREATE TABLE `articles` (
   `financing` tinyint(1) DEFAULT NULL,
   `financingSize` int(11) DEFAULT NULL,
   `image` varchar(100) NOT NULL,
-  `id_article_user` int(11) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idStyle_idx` (`id_style`),
-  KEY `id_article_user_idx` (`id_article_user`),
-  CONSTRAINT `id_article_user` FOREIGN KEY (`id_article_user`) REFERENCES `article_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `id_style` FOREIGN KEY (`id_style`) REFERENCES `styles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -118,6 +113,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
+INSERT INTO `articles` VALUES (21,'Scott','SCOTT - SPEEDSTER 10','Fixie','Scott Speedster 10 es la mejor representación de la autonomía. Podrás movilizarte libremente cada día.','La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed.','Violeta','S','27.5',60000.00,0,0,12,'bici-1597185718802.jpg','2020-08-11 22:41:58','2020-08-11 22:41:58',NULL);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -288,7 +284,7 @@ CREATE TABLE `styles` (
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -297,6 +293,7 @@ CREATE TABLE `styles` (
 
 LOCK TABLES `styles` WRITE;
 /*!40000 ALTER TABLE `styles` DISABLE KEYS */;
+INSERT INTO `styles` VALUES (1,'Fixie',NULL,NULL,NULL),(2,'Mountain',NULL,NULL,NULL),(3,'Urban',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `styles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -382,4 +379,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-10 21:51:06
+-- Dump completed on 2020-08-11 20:04:03
