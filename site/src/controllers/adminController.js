@@ -59,7 +59,7 @@ module.exports = {
             res.redirect('/administrador');*/
     },
     show: (req,res)=>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+        /*let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
         
         let miBici;
         bicicletas.forEach(bici => {
@@ -67,7 +67,12 @@ module.exports = {
                miBici = bici;         
             }
         });
-        res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
+        res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})*/
+        Article.findByPk(req.params.id)  
+        .then(miBici =>{
+            res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
+        })  
+        .catch(error => res.send(error))
     
     },
     edit: (req,res) =>{

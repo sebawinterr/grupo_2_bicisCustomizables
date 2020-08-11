@@ -9,7 +9,7 @@ module.exports = (sequelize,DataTypes) =>{
         },
         brand: DataTypes.STRING,
         model: DataTypes.STRING,
-        style: DataTypes.STRING,//style_id: DataTypes.INTEGER, //asociacion con styles
+        style: DataTypes.STRING, //styleId: DataTypes.INTEGER //asociacion con styles
         description: DataTypes.STRING,
         techDescription: DataTypes.STRING,
         colors: DataTypes.STRING,
@@ -29,8 +29,9 @@ module.exports = (sequelize,DataTypes) =>{
 
     /*Article.associate = function(models) {
         Article.belongsTo(models.Style, {
-            as: "styles",
-            foreignKey: "style_id"
+            as: "style",
+            foreignKey: "styleId",
+            
 
         });
     }*/
