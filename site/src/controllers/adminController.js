@@ -57,30 +57,30 @@ module.exports = {
         .catch(error => res.send(error))
     
     },
-    edit: (req,res) =>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-
-        const biciId = req.params.id;
-        let biciEditar = bicicletas.find(bici => bici.id == biciId);
-        res.render(path.resolve(__dirname, '..','views','administrador','edit'), {biciEditar});
+    edit: (req,res) => { //! Listo
+        Article.findByPk(req.params.id)
+        .then(biciEditar =>{
+            res.render(path.resolve(__dirname, '..','views','administrador','edit'), {biciEditar });
+        })
     },
     update: (req,res) =>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
+        const _body = req.body;
+        //return res.send(_body);
+        _body.name = req.body.nombre,
+        _body.description = req.body.descripcion,
+        _body.price =  req.body.precio,
+        _body.discount = req.body.descuento,
+        _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
 
-        req.body.id = req.params.id;
-        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen; //if ternario en la variable req.body.imagen me esta llegando algo en el req.file, entonces guardame lo q llega en el req.body.oldImagen
-        
-        let bicisUpdate = bicicletas.map(bici => {
-            if(bici.id == req.body.id){
-                return bici = req.body;
+        Article.update(_body ,{
+            where : {
+                id : req.params.id
             }
-            return bici;
-        });
-        
-        let bicicletasActualizar = JSON.stringify(bicisUpdate,null,2);
-        //Guardar o reemplazar nuestro archivo JSON
-        fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasActualizar);
-        res.redirect('/administrador');
+        })
+        .then(bicicleta =>{
+            res.redirect('/administrador')
+        })
+        .catch(error => res.send(error));     //error de Base de Datos
     },
     destroy: (req,res) =>{
         let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));

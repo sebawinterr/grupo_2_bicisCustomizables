@@ -27,7 +27,7 @@
           <article class="formulario col-12">
             <form action="/administrador/edit/<%= biciEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
               <label for="colores">Color:</label>
-              <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores" value="<%= biciEditar.colores%>">
+              <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores" value="<%= biciEditar.colors%>">
               <br>
 
             <div class="talle-rodado">               
@@ -35,7 +35,7 @@
                 <h6>Talle:</h6>
 
                 <div class="custom-control">
-                  <input type="text" name="talle" class="form-control" value="<%= biciEditar.talle%>">
+                  <input type="text" name="talle" class="form-control" value="<%= biciEditar.size%>">
                 </div>
               </div>
                 
@@ -43,7 +43,7 @@
                 <h6>Rodado:</h6>
                 
                 <div class="custom-control">
-                  <input type="text" name="rodado" value="<%= biciEditar.rodado%>" class="form-control">
+                  <input type="text" name="rodado" value="<%= biciEditar.shot%>" class="form-control">
                 </div>
                 <br>
               </div>
@@ -54,11 +54,11 @@
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="marca">Marca:</label>
-                  <input type="text" placeholder="Marca" name="marca" class="col-12 form-control" id="marca" value="<%= biciEditar.marca%>">
+                  <input type="text" placeholder="Marca" name="marca" class="col-12 form-control" id="marca" value="<%= biciEditar.brand%>">
                 </div>
                 <div class="col-5">
                   <label for="modelo">Modelo:</label>
-                  <input type="text" placeholder="Modelo" name="modelo" class="col-12 form-control" value="<%= biciEditar.modelo%>">
+                  <input type="text" placeholder="Modelo" name="modelo" class="col-12 form-control" value="<%= biciEditar.model%>">
                 </div>
               </div>
 
@@ -67,11 +67,11 @@
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Precio:</label>
-                  <input type="number" placeholder="Precio" name="precio" class="col-12 form-control" value="<%= biciEditar.precio%>">
+                  <input type="number" placeholder="Precio" name="precio" class="col-12 form-control" value="<%= biciEditar.price%>">
                 </div>
                 <div class="col-5">
                   <label for="">Descuento:</label>
-                  <input type="number" placeholder="Descuento" name="descuento" class="col-12 form-control" value="<%= biciEditar.descuento%>">
+                  <input type="number" placeholder="Descuento" name="descuento" class="col-12 form-control" value="<%= biciEditar.discount%>">
                 </div>
               </div>
 
@@ -81,19 +81,19 @@
                 <div class="col-5">
                   <label for="">Cuotas:</label>
                   <select name="cuotas" class="form-control col-12">
-                    <option value="si" <%= biciEditar.cuotas == "si" ? "selected" : null %>>Sí</option>
-                    <option value="no" <%= biciEditar.cuotas == "no" ? "selected" : null %>>No</option>
+                    <option value="si" <%= biciEditar.financing == "si" ? "selected" : null %>>Sí</option>
+                    <option value="no" <%= biciEditar.financing == "no" ? "selected" : null %>>No</option>
                   </select>
                 </div>
                 <div class="col-5">
                   <label for="">Cantidad de cuotas:</label>
-                  <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-12 form-control" value="<%= biciEditar.cantCuotas%>">
+                  <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-12 form-control" value="<%= biciEditar.financingSize%>">
                 </div>
               </div>
               <br>
               <div>
                 <label for="">Estilo:</label>
-                <input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control" value="<%= biciEditar.estilo%>">
+                <input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control" value="<%= biciEditar.styleId%>">
               </div>
               
 
@@ -101,23 +101,23 @@
               <div class="mb-3">
                 <br>
                 <label for="">Descripcion:</label>
-                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto" ><%= biciEditar.descripcion%></textarea>
+                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto" ><%= biciEditar.description%></textarea>
                 <br>
                 <label for="">Descripcion tecnica:</label>
-                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"><%= biciEditar.descripcionTecnica%></textarea>
+                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"><%= biciEditar.techDescription%></textarea>
               </div>
 
 
             <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
 
                 <div class="bg-transparent text-white border-light w-55 p-1 pt-3">
-                    <input type="hidden"  name="oldImagen"  value="<%= biciEditar.imagen%>">
-                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= biciEditar.imagen%>">
+                    <input type="hidden"  name="oldImagen"  value="<%= biciEditar.image%>">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= biciEditar.image%>">
                     
                     <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
 
                   <figure class="">
-                    <img src="/images/bicicletas/<%= biciEditar.imagen%> " class="card-img" alt="Bicicleta">
+                    <img src="/images/bicicletas/<%= biciEditar.image%> " class="card-img" alt="Bicicleta">
                   </figure>
                     
                 </div>
