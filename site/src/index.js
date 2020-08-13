@@ -8,8 +8,8 @@ const cookieParser = require('cookie-parser');
 //const { check, validationResult, body } = require('express-validator');
 
 
-// MIDDLEWARES
-// Indicamos donde estan los archivos etaticos
+//! MIDDLEWARES
+//* Indicamos donde estan los archivos etaticos
 app.use(express.static(path.resolve(__dirname,'..','public')));
 //Motor de plantillas EJS
 app.set('view engine','ejs');
