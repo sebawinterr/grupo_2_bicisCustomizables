@@ -1,57 +1,60 @@
 const path = require('path');
 const fs = require('fs');
+const db = require('../database/models');
+const Article = db.Article;
+const Style = db.Style;
+//const Address = db.Address;
+//const Neighbourhood = db.Neighbourhood;
+//const User = db.User;
 
-
+const Op = db.Sequelize.Op;
 
 module.exports = {
     admin : function(req, res){
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-        res.render(path.resolve(__dirname, '..','views','administrador','listadoProductos'),{bicicletas});
+        const bicicletas = Article.findAll();
+        const estilos = Style.findAll();
+        Promise.all([bicicletas,estilos]) 
+        .then(([bicicletas,estilos]) =>{
+            res.render(path.resolve(__dirname, '..','views','administrador','listadoProductos'),{bicicletas,estilos});
+        })
     },
     create: function (req, res){
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
         res.render(path.resolve(__dirname, '..','views','administrador','create'));
     },
     save: (req,res)=>{
-        //leemos el json de nuestras bicicletas
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-        let ultimaBici = bicicletas.pop();
-        bicicletas.push(ultimaBici);
- 
         let nuevaBici={
-            id: ultimaBici.id +1,
-            marca: req.body.marca,
-            modelo: req.body.modelo,
-            estilo: req.body.estilo,
-            descripcion: req.body.descripcion,
-            descripcionTecnica: req.body.descripcionTecnica,
-            colores: req.body.colores,
-            talle: req.body.talle,
-            rodado: req.body.rodado,
-            precio: req.body.precio,
-            descuento: req.body.descuento,
-            cuotas: req.body.cuotas,
-            cantCuotas: req.body.cantCuotas,
-            imagen : req.file.filename
+            //id: ultimaBici.id +1,
+            brand: req.body.marca,
+            model: req.body.modelo,
+            styleId: req.body.estilo,
+            description: req.body.descripcion,
+            techDescription: req.body.descripcionTecnica,
+            colors: req.body.colores,
+            size: req.body.talle,
+            shot: req.body.rodado,
+            price: req.body.precio,
+            discount: req.body.descuento,
+            financing: req.body.cuotas,
+            financingSize: req.body.cantCuotas,
+            image: req.file.filename
         };
-            //Aquí se agrega al array el nuevo Producto
-            bicicletas.push(nuevaBici);
-            //Convertir mi array en un string
-            let nuevaBiciGuardar = JSON.stringify(bicicletas,null,2)
-            //Guardar o reemplazar nuestro archivo JSON
-            fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), nuevaBiciGuardar);
+        Article.create(nuevaBici, {
+            include: ['style']
+        })
+        .then(bici =>{
             res.redirect('/administrador');
+        })
+        .catch(error => res.send(error))
+
     },
     show: (req,res)=>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-        
-        let miBici;
-        bicicletas.forEach(bici => {
-           if(bici.id == req.params.id){
-               miBici = bici;         
-            }
-        });
-        res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
+        Article.findByPk(req.params.id, {
+            include: ['style']
+        })  
+        .then(miBici =>{
+            res.render(path.resolve(__dirname, '..','views','administrador','detalleAdmin'), {miBici:miBici})
+        })  
+        .catch(error => res.send(error))
     
     },
     edit: (req,res) =>{
