@@ -25,6 +25,7 @@ router.get('/administrador/detalleAdmin/:id', controlAcceso, adminController.sho
 router.get('/administrador/edit/:id', controlAcceso, adminController.edit);
 router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
 router.get('/administrador/delete/:id', controlAcceso, adminController.destroy);
+router.get('/administrador/buscar', controlAcceso, adminController.search);
 
 //rutas de administrador para productos custom
 router.get('/administrador/custom', controlAcceso, adminController.listadoCustom);

@@ -66,10 +66,18 @@ module.exports = {
     update: (req,res) =>{
         const _body = req.body;
         //return res.send(_body);
-        _body.name = req.body.nombre,
+        _body.brand = req.body.marca,
+        _body.model = req.body.modelo,
+        _body.styleId = req.body.estilo,
         _body.description = req.body.descripcion,
+        _body.techDescription = req.body.descripcionTecnica,
+        _body.colors =  req.body.colores,
+        _body.size =  req.body.talle,
+        _body.shot =  req.body.rodado,
         _body.price =  req.body.precio,
         _body.discount = req.body.descuento,
+        _body.financing = req.body.cuotas,
+        _body.financingSize = req.body.cantCuotas,
         _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
 
         Article.update(_body ,{
@@ -82,15 +90,27 @@ module.exports = {
         })
         .catch(error => res.send(error));     //error de Base de Datos
     },
-    destroy: (req,res) =>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-        const biciDeleteId = req.params.id; 
-        const bicicletasFinal = bicicletas.filter(bici => bici.id != biciDeleteId);
-        let bicicletasGuardar = JSON.stringify(bicicletasFinal,null,2);
-        //Guardar o reemplazar nuestro archivo JSON
-        fs.writeFileSync(path.resolve(__dirname,'..','data','bicicletas.json'), bicicletasGuardar);
-        res.redirect('/administrador');
+    destroy: (req,res) => {
+        Article.destroy({
+                where : {
+                   id:  req.params.id
+                },
+                force : true 
+        })
+        .then(confirm =>{
+                res.redirect('/administrador');
+        })
     },
+    search: ( req, res) =>{
+        Article.findAll({
+            where:{
+                name: {[Op.like]: `%${req.query.buscar}%`}
+            }
+        })
+        .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'administrador', 'listadosProductos'),{articulos: resultado});})
+        .catch(error => res.send(error))
+    },
+    
     listadoCustom: function (req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));

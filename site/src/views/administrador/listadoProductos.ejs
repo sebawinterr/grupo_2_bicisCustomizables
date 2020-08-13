@@ -22,11 +22,18 @@
             <h5>Listado de Productos</h5>
         </article>
 
-        <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 mb-2">
+        <article class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-2 mb-2">
             <a href="/administrador/create"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Agregar Producto<ion-icon name="add-circle-outline"></ion-icon></button></a>
             <a href="/administrador/custom"><button type="button" class="btn btn-primary" style="background-color: #49D4C6 ; border: #49D4C6; color: #000000">Listado Productos Custom <ion-icon name="list-outline"></ion-icon></button></a>
-            <a href="/usuarios"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Listado de Usuarios<ion-icon name="list-outline"></ion-icon></button></a>
-        </article>
+            <a href="/usuarios"><button type="button" class="btn btn-danger" style="background-color: #FF6000 ; border: orangered">Listado de Usuarios<ion-icon name="list-outline"></ion-icon></button></a> 
+            </article>
+            <article class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-2 mb-2">
+              <form  class="p-2 col-6 d-flex justify-content-between " action="/administrar/buscar" method="GET">
+                <input class="form-control mr-sm-2" type="search" name="buscar">
+                <button style="background-color: #FF6000; color: white; border: orangered;" class="btn btn-outline-info my-2 my-sm-0" type="submit"><ion-icon name="search-outline"></ion-icon></button>
+              </form>
+            </article>
+        
           <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <table class="table text-white" style="background-color: #000000;">
               <thead>
