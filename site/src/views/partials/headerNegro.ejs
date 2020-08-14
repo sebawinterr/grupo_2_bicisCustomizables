@@ -1,4 +1,4 @@
-<header class="row header">
+  <header class="row header">
     <div class="fixed-top col-12">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4 navbar-expand-md navbar-expand-lg navbar-dark col-12" style="background-color: black">
@@ -18,9 +18,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+                </li>
           </ul>
         </div>
       </div>
@@ -30,26 +30,23 @@
           <ion-icon name="menu-outline"></ion-icon>
         </button>
         <div>
-          <% if(locals.usuario) { %>
-            <a href="#">
-              <img src="/images/usuarios/<%=locals.usuario.imagen %>"    width = '30' style= 'border-radius: 100%;'alt="">
+            <!--<a href="#">
+              <img src="/images/usuarios/    "    width = '30' style= 'border-radius: 100%;'alt="">
             </a>
             <a class="nav-link" href="/logout">
               <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log out<ion-icon name="log-out-outline"></ion-icon></button>
             </a>
             <a href="/carrito/lista">
               <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
-            </a>
+            </a>-->
 
-            <% } else { %>
               <!--Cuando no estoy logueado debería ver esto-->
            <a href="register">
              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Log in</button>
            </a>
            <a href="/carrito/lista">
              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
-           </a>
-           <%}%>  
+           </a> 
         </div>
       </nav>
     </div>

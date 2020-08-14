@@ -83,7 +83,8 @@ module.exports = {
         Article.update(_body ,{
             where : {
                 id : req.params.id
-            }
+            },
+            include: ['style']
         })
         .then(bicicleta =>{
             res.redirect('/administrador')
@@ -104,10 +105,10 @@ module.exports = {
     search: ( req, res) =>{
         Article.findAll({
             where:{
-                name: {[Op.like]: `%${req.query.buscar}%`}
+                model: {[Op.like]: `%${req.query.search}%`}
             }
         })
-        .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'administrador', 'listadosProductos'),{articulos: resultado});})
+        .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'administrador', 'listadoProductos'),{bicicletas: resultado});})
         .catch(error => res.send(error))
     },
     

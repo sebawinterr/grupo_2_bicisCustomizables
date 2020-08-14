@@ -71,7 +71,7 @@ module.exports = {
         });*/
         //delete usuarioLogueado.password;
         req.session.usuarioGuardado = usuarioLogueado[0];
-        console.log(req.session.usuarioGuardado);
+        //console.log(req.session.usuarioGuardado);
         if (req.body.recuerdame){
           let mailUsuarioLogueado = usuarioLogueado[0].email;
           res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
@@ -85,7 +85,7 @@ module.exports = {
     logout: (req,res) =>{
       req.session.destroy();
       res.cookie('galletita',null,{maxAge: -1});
-      res.redirect('/productos')
+      res.redirect('/register')
     },
     usuarios : function(req, res){
       let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));

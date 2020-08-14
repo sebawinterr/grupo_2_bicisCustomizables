@@ -19,13 +19,14 @@ const upload = multer({ storage })
 const adminController = require(path.resolve(__dirname,'..','controllers','adminController'));
 
 router.get('/administrador', controlAcceso, adminController.admin);
+router.get('/administrador/search_results', controlAcceso, adminController.search);
 router.get('/administrador/create', controlAcceso, adminController.create);
 router.post("/administrador/create", upload.single('imagen'), adminController.save);
 router.get('/administrador/detalleAdmin/:id', controlAcceso, adminController.show);
 router.get('/administrador/edit/:id', controlAcceso, adminController.edit);
 router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
 router.get('/administrador/delete/:id', controlAcceso, adminController.destroy);
-router.get('/administrador/buscar', controlAcceso, adminController.search);
+router.get('/administrador/search_results', controlAcceso, adminController.search);
 
 //rutas de administrador para productos custom
 router.get('/administrador/custom', controlAcceso, adminController.listadoCustom);

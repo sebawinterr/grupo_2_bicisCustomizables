@@ -15,7 +15,7 @@ module.exports = (sequelize,DataTypes) =>{
         password: DataTypes.STRING,
         category: DataTypes.INTEGER,
         image: DataTypes.STRING,
-        idAddress: DataTypes.INTEGER, // asociacion con addresses
+        //idAddress: DataTypes.INTEGER, // asociacion con addresses
 
     };
     let config = {

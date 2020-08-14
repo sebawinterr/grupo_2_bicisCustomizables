@@ -18,9 +18,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/administrador">Administrar <span class="sr-only">(current)</span></a>
+                </li>
           </ul>
         </div>
       </div>
@@ -30,26 +30,12 @@
           <ion-icon name="menu-outline"></ion-icon>
         </button>
         <div>
-          <% if(locals.usuario) { %>
-            <a href="#">
-              <img src="/images/usuarios/<%=locals.usuario.imagen %>"    width = '30' style= 'border-radius: 100%;'alt="">
-            </a>
-            <a class="nav-link" href="/logout">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log out<ion-icon name="log-out-outline"></ion-icon></button>
-            </a>
-            <a href="/carrito/lista">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
-            </a>
-
-            <% } else { %>
-              <!--Cuando no estoy logueado debería ver esto-->
            <a href="register">
              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log in</button>
            </a>
            <a href="/carrito/lista">
              <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><ion-icon name="cart-outline"></ion-icon></button>
            </a>
-           <%}%>  
         </div>
       </nav>
     </div>

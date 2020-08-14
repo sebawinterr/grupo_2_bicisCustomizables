@@ -9,7 +9,7 @@ module.exports = (sequelize,DataTypes) =>{
         },
         streetName: DataTypes.STRING,
         additionalNumbers: DataTypes.STRING,
-        idNeighbourhood: DataTypes.INTEGER, // asociacion con neighbourhood
+        //idNeighbourhood: DataTypes.INTEGER, // asociacion con neighbourhood
 
     };
     let config = {
