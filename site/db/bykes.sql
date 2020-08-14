@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `bykes` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE `bykes`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: bykes
@@ -100,6 +98,7 @@ CREATE TABLE `articles` (
   `financing` tinyint(1) DEFAULT NULL,
   `financingSize` int(11) DEFAULT NULL,
   `image` varchar(100) NOT NULL,
+  `idArticleUser` int(11) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
@@ -114,7 +113,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
-INSERT INTO `articles` VALUES (21,'Scott','SCOTT - SPEEDSTER 10',0,'Scott Speedster 10 es la mejor representación de la autonomía. Podrás movilizarte libremente cada día.','La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed.','Violeta','S','27.5',60000.00,0,0,12,'bici-1597185718802.jpg','2020-08-11 22:41:58','2020-08-11 22:41:58',NULL),(22,'Scott','SCOTT - SCALE 970',2,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','','29',65000.00,0,0,12,'bici-1597239177198.jpg','2020-08-12 13:32:57','2020-08-14 00:32:56',NULL),(23,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597239545146.jpg','2020-08-12 13:39:05','2020-08-12 13:39:05',NULL),(24,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,NULL,65000.00,0,0,12,'bici-1597239858094.jpg','2020-08-12 13:44:18','2020-08-12 13:44:18',NULL),(25,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597239922803.jpg','2020-08-12 13:45:22','2020-08-12 13:45:22',NULL),(26,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597240148685.jpg','2020-08-12 13:49:08','2020-08-12 13:49:08',NULL),(27,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'27.5',65000.00,0,0,12,'bici-1597240263176.jpg','2020-08-12 13:51:03','2020-08-12 13:51:03',NULL),(28,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','M','29',65000.00,0,0,12,'bici-1597240463301.jpg','2020-08-12 13:54:23','2020-08-12 13:54:23',NULL),(29,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','M','29',65000.00,0,0,12,'bici-1597240720325.jpg','2020-08-12 13:58:40','2020-08-12 13:58:40',NULL),(30,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','L','29',65000.00,0,0,12,'bici-1597241267982.jpg','2020-08-12 14:07:48','2020-08-12 14:07:48',NULL),(31,'Scott','SCOTT - SCALE 970',2,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','S','29',65000.00,0,0,12,'bici-1597256344659.jpg','2020-08-12 18:19:04','2020-08-14 00:17:04',NULL),(33,'Cinelli','CINELLI - PISTA 19',1,'Es la bicicleta pensada especialmente para atravesar la ciudad con estilo e imponer tu propia impronta en el camino.','La Tipo Pista es una bicicleta sin cambios perfecta para iniciarse con las bicis de piñon fijo y mas.Ideal tanto para la pista como la ciudad, viene equipada con frenos a pedal. Cubiertas Duro 700x25 y cadena KMC. Cuadro y horquilla de aluminio. Disponible en rodado 27.5 y 29, talle del S al L','Amarillo','M','27.5',45000.00,0,0,12,'bici-1597364665799.jpg','2020-08-14 00:24:25','2020-08-14 00:24:25',NULL);
+INSERT INTO `articles` VALUES (21,'Scott','SCOTT - SPEEDSTER 10',0,'Scott Speedster 10 es la mejor representación de la autonomía. Podrás movilizarte libremente cada día.','La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed.','Violeta','S','27.5',60000.00,0,0,12,'bici-1597185718802.jpg',0,'2020-08-11 22:41:58','2020-08-11 22:41:58',NULL),(22,'Scott','SCOTT - SCALE 970',2,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','','29',65000.00,0,0,12,'bici-1597239177198.jpg',0,'2020-08-12 13:32:57','2020-08-14 00:32:56',NULL),(23,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597239545146.jpg',0,'2020-08-12 13:39:05','2020-08-12 13:39:05',NULL),(24,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,NULL,65000.00,0,0,12,'bici-1597239858094.jpg',0,'2020-08-12 13:44:18','2020-08-12 13:44:18',NULL),(25,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597239922803.jpg',0,'2020-08-12 13:45:22','2020-08-12 13:45:22',NULL),(26,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'29',65000.00,0,0,12,'bici-1597240148685.jpg',0,'2020-08-12 13:49:08','2020-08-12 13:49:08',NULL),(27,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja',NULL,'27.5',65000.00,0,0,12,'bici-1597240263176.jpg',0,'2020-08-12 13:51:03','2020-08-12 13:51:03',NULL),(28,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','M','29',65000.00,0,0,12,'bici-1597240463301.jpg',0,'2020-08-12 13:54:23','2020-08-12 13:54:23',NULL),(29,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','M','29',65000.00,0,0,12,'bici-1597240720325.jpg',0,'2020-08-12 13:58:40','2020-08-12 13:58:40',NULL),(30,'Scott','SCOTT - SCALE 970',0,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','L','29',65000.00,0,0,12,'bici-1597241267982.jpg',0,'2020-08-12 14:07:48','2020-08-12 14:07:48',NULL),(31,'Scott','SCOTT - SCALE 970',2,'Scott Scale 970 es la bicicleta perfecta para los buscadores constantes de una mayor independencia en la vida cotidiana.','La Scale 970 de SCOTT viene equipada con una horquilla Rock Shox y tecnología de bloqueo remoto para permitir diferentes ajustes de recorrido en función de las necesidades de cada momento. Cambios Shimano SLX-Deore de 24 velocidades.','Negro con Naranja','S','29',65000.00,0,0,12,'bici-1597256344659.jpg',0,'2020-08-12 18:19:04','2020-08-14 00:17:04',NULL),(33,'Cinelli','CINELLI - PISTA 19',1,'Es la bicicleta pensada especialmente para atravesar la ciudad con estilo e imponer tu propia impronta en el camino.','La Tipo Pista es una bicicleta sin cambios perfecta para iniciarse con las bicis de piñon fijo y mas.Ideal tanto para la pista como la ciudad, viene equipada con frenos a pedal. Cubiertas Duro 700x25 y cadena KMC. Cuadro y horquilla de aluminio. Disponible en rodado 27.5 y 29, talle del S al L','Amarillo','M','27.5',45000.00,0,0,12,'bici-1597364665799.jpg',0,'2020-08-14 00:24:25','2020-08-14 00:24:25',NULL);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -182,33 +181,6 @@ LOCK TABLES `equipments` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `frame_wheel`
---
-
-DROP TABLE IF EXISTS `frame_wheel`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `frame_wheel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `idFrame` int(11) NOT NULL,
-  `idWheel` int(11) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT NULL,
-  `updatedAt` timestamp NULL DEFAULT NULL,
-  `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `frame_wheel`
---
-
-LOCK TABLES `frame_wheel` WRITE;
-/*!40000 ALTER TABLE `frame_wheel` DISABLE KEYS */;
-/*!40000 ALTER TABLE `frame_wheel` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `frames`
 --
 
@@ -223,13 +195,10 @@ CREATE TABLE `frames` (
   `primaryForkColor` varchar(100) NOT NULL,
   `secondaryForkColor` varchar(100) DEFAULT NULL,
   `frameSize` varchar(10) NOT NULL,
-  `idFrameWheel` int(11) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idFrameWheel_idx` (`idFrameWheel`),
-  CONSTRAINT `idFrameWheel` FOREIGN KEY (`idFrameWheel`) REFERENCES `frame_wheel` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -269,6 +238,94 @@ CREATE TABLE `neighbourhoods` (
 LOCK TABLES `neighbourhoods` WRITE;
 /*!40000 ALTER TABLE `neighbourhoods` DISABLE KEYS */;
 /*!40000 ALTER TABLE `neighbourhoods` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `orders`
+--
+
+DROP TABLE IF EXISTS `orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `articleUserId` int(11) NOT NULL,
+  `paymentId` int(11) NOT NULL,
+  `shipmentId` int(11) NOT NULL,
+  `createdAt` timestamp NULL DEFAULT NULL,
+  `updatedAt` timestamp NULL DEFAULT NULL,
+  `deletedAt` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `articleUserId_idx` (`articleUserId`),
+  KEY `paymentId_idx` (`paymentId`),
+  KEY `shipmentId_idx` (`shipmentId`),
+  CONSTRAINT `articleUserId` FOREIGN KEY (`articleUserId`) REFERENCES `article_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `paymentId` FOREIGN KEY (`paymentId`) REFERENCES `payment_methods` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `shipmentId` FOREIGN KEY (`shipmentId`) REFERENCES `shipments` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orders`
+--
+
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `payment_methods`
+--
+
+DROP TABLE IF EXISTS `payment_methods`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `payment_methods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `method` varchar(100) DEFAULT NULL,
+  `createdAt` timestamp NULL DEFAULT NULL,
+  `updatedAt` timestamp NULL DEFAULT NULL,
+  `deletedAt` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `payment_methods`
+--
+
+LOCK TABLES `payment_methods` WRITE;
+/*!40000 ALTER TABLE `payment_methods` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payment_methods` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shipments`
+--
+
+DROP TABLE IF EXISTS `shipments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `shipments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `addressId` int(11) NOT NULL,
+  `createdAt` timestamp NULL DEFAULT NULL,
+  `updatedAt` timestamp NULL DEFAULT NULL,
+  `deletedAt` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `addressId_idx` (`addressId`),
+  CONSTRAINT `addressId` FOREIGN KEY (`addressId`) REFERENCES `addresses` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shipments`
+--
+
+LOCK TABLES `shipments` WRITE;
+/*!40000 ALTER TABLE `shipments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `shipments` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -316,7 +373,7 @@ CREATE TABLE `users` (
   `category` int(11) NOT NULL,
   `image` varchar(100) DEFAULT NULL,
   `idAddress` int(11) NOT NULL,
-  `id_user_article` int(11) NOT NULL,
+  `idUserArticle` int(11) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
@@ -325,10 +382,8 @@ CREATE TABLE `users` (
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `phoneNumber_UNIQUE` (`phoneNumber`),
   UNIQUE KEY `image_UNIQUE` (`image`),
-  KEY `id_user_article_idx` (`id_user_article`),
   KEY `idAddress_idx` (`idAddress`),
-  CONSTRAINT `idAddress` FOREIGN KEY (`idAddress`) REFERENCES `addresses` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `id_user_article` FOREIGN KEY (`id_user_article`) REFERENCES `article_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `idAddress` FOREIGN KEY (`idAddress`) REFERENCES `addresses` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -352,13 +407,11 @@ CREATE TABLE `wheels` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `spokeColor` varchar(100) DEFAULT NULL,
   `hubColor` varchar(100) DEFAULT NULL,
-  `idWheelFrame` int(11) NOT NULL,
+  `shotWheel` int(11) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idWheelFrame_idx` (`idWheelFrame`),
-  CONSTRAINT `idWheelFrame` FOREIGN KEY (`idWheelFrame`) REFERENCES `frame_wheel` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -380,4 +433,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-13 21:41:38
+-- Dump completed on 2020-08-14 10:43:22
