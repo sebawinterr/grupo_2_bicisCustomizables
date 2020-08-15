@@ -23,7 +23,7 @@
         <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center mt-2">
             <div class="card bg-transparent text-white border-dark w-55 p-1 pt-3">
               <figure class="">
-                <img src="/images/usuarios/<%= miUsuario.imagen%> " class="card-img" alt="Imagen">
+                <img src="/images/usuarios/<%= miUsuario.image%> " class="card-img" alt="Imagen">
               </figure>
             </div>
         </article>
@@ -34,14 +34,12 @@
               <div class="cartaUno col mb-4">
                 <div class="card h-100 border-dark">
                   <div class="card-body text-center">
-                    <h4 class="card-title">Nombre: <%= miUsuario.nombre%></h4>
-                    <h4 class="card-title">Apellido: <%= miUsuario.apellido%></h4>
+                    <h4 class="card-title">Nombre: <%= miUsuario.firstName%></h4>
+                    <h4 class="card-title">Apellido: <%= miUsuario.lastName%></h4>
                     <h4 class="card-title">DNI: <%= miUsuario.dni %></h4>
-                    <h4 class="card-text"> Categoria: <%= miUsuario.categoria %></h4>
+                    <h4 class="card-text"> Categoria: <%= miUsuario.category %></h4>
                     <h4 class="card-title">Email: <%= miUsuario.email %></h4>
-                    <h4 class="card-title">Dirección: <%= miUsuario.direccion %></h4>
-                    <h4 class="card-title">Localidad: <%= miUsuario.localidad %></h4>
-                    <h4 class="card-title">Provincia: <%= miUsuario.provincia %></h4>
+                    <h4 class="card-title">Teléfono: <%= miUsuario.phoneNumber %></h4>
                     <a href="/usuarios" class="btn btn-primary btn-lg btn-danger" style="background-color: #FF6000 ; border: orangered">Volver</a>
                   </div>
                 </div>

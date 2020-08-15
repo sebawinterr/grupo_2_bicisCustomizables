@@ -48,7 +48,7 @@ module.exports = {
     login : function(req, res){
         res.render(path.resolve(__dirname, '..','views','usuarios','login'));
     },
-    processLogIn: function(req,res){
+    /*processLogIn: function(req,res){
       let errors = validationResult(req);
       if (errors.isEmpty()) {
         let archivoUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
@@ -59,9 +59,9 @@ module.exports = {
         /*.find(user => {
           user.email == req.body.email;
         });*/
-        //delete usuarioLogueado.password;
-        req.session.usuarioGuardado = usuarioLogueado[0];
-        //console.log(req.session.usuarioGuardado);
+        //delete usuarioLogueadreq.session.usuarioGuardado = usuarioLogueado[0];o.password;
+        /*
+        
         if (req.body.recuerdame){
           let mailUsuarioLogueado = usuarioLogueado[0].email;
           res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
@@ -71,27 +71,56 @@ module.exports = {
        else {
         return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
       }
+    },*/
+    processLogIn: function(req,res){
+      let errors = validationResult(req);
+      if (errors.isEmpty()) {
+        let usuarioLogueado = {
+          email: req.body.email,
+          password: req.body.password,
+          //category: db.sequelize.query('select category from users where user.email = req.body.email')
+        }
+
+        User.findAll({
+          where: {
+            email: req.body.email,
+          }
+        })
+        .then((users) => {
+          req.session.usuarioLogueado;
+        
+          console.log(req.session)
+          if (req.body.recuerdame){
+            let mailUsuarioLogueado = usuarioLogueado.email;
+            res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
+          }
+          res.redirect('/');
+
+        })
+      }
+       else {
+        return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
+      }
     },
+
     logout: (req,res) =>{
       req.session.destroy();
       res.cookie('galletita',null,{maxAge: -1});
       res.redirect('/register')
     },
-    usuarios : function(req, res){
-      let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-      res.render(path.resolve(__dirname, '..','views','usuarios','listadoUsuarios'),{usuarios});
+    usuarios: function(req,res){
+      const usuarios = User.findAll();
+      Promise.all([usuarios])
+      .then(([usuarios]) =>{
+        res.render(path.resolve(__dirname, '..','views','usuarios','listadoUsuarios'),{usuarios});
+      })
     },
     show: (req,res)=>{
-      let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-      
-      let miUsuario;
-      usuarios.forEach(user => {
-         if(user.id == req.params.id){
-             miUsuario = user;         
-          }
-      });
-      res.render(path.resolve(__dirname, '..','views','usuarios','detalleUsuario'), {miUsuario:miUsuario})
-  
+      User.findByPk(req.params.id)
+      .then(miUsuario =>{
+        res.render(path.resolve(__dirname, '..','views','usuarios','detalleUsuario'), {miUsuario:miUsuario})
+      })
+      .catch(error => res.send(error))
     },
     edit: (req,res) =>{
       let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));

@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `bykes` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `bykes`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: bykes
@@ -372,8 +374,8 @@ CREATE TABLE `users` (
   `password` varchar(100) NOT NULL,
   `category` int(11) NOT NULL,
   `image` varchar(100) DEFAULT NULL,
-  `idAddress` int(11) NOT NULL,
-  `idUserArticle` int(11) NOT NULL,
+  `idAddress` int(11) DEFAULT NULL,
+  `idUserArticle` int(11) DEFAULT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
@@ -381,10 +383,8 @@ CREATE TABLE `users` (
   UNIQUE KEY `dni_UNIQUE` (`dni`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `phoneNumber_UNIQUE` (`phoneNumber`),
-  UNIQUE KEY `image_UNIQUE` (`image`),
-  KEY `idAddress_idx` (`idAddress`),
-  CONSTRAINT `idAddress` FOREIGN KEY (`idAddress`) REFERENCES `addresses` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  UNIQUE KEY `image_UNIQUE` (`image`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -393,6 +393,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'Mariano','Torrecilla',34265210,15444888,'marianotorrecilla@bykes.com','$2b$10$5IQhBuRbAYFOZZYC8H/g6eIrFHx68WOHP.n3lGYpeNxCmnQ47NY86',9,'foto-1597506139146.jpg',NULL,NULL,'2020-08-15 15:42:19','2020-08-15 15:42:19',NULL),(2,'Juan ','Esperon',40258258,15666777,'juanesperon@bykes.com','$2b$10$R4d/wamdnifYXW2RVbcV8OKVx0jseCenf1.B8J1V4WUeoJZ7wZ1I.',9,'foto-1597510869871.jpg',NULL,NULL,'2020-08-15 17:01:09','2020-08-15 17:01:09',NULL),(3,'Marcelo','Perez',30247247,15222888,'mperez@gmail.com','$2b$10$75QnlPaySGaM45hk7llANeWzpV7v8JA4bTW8oxodRYleEut4hZXb.',0,'foto-1597511000454.jpg',NULL,NULL,'2020-08-15 17:03:20','2020-08-15 17:03:20',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -433,4 +434,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-14 10:43:22
+-- Dump completed on 2020-08-15 18:25:58
