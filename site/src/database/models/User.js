@@ -23,13 +23,13 @@ module.exports = (sequelize,DataTypes) =>{
     }
     const User = sequelize.define(alias,cols,config);
 
-    User.associate = function(models) {
+    /*User.associate = function(models) {
         User.belongsTo(models.Address, {
             as: "addresses",
             foreignKey: "idAddress"
 
         });
-    }
+    }*/
 
 
 

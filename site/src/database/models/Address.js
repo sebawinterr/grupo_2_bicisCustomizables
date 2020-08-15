@@ -17,13 +17,13 @@ module.exports = (sequelize,DataTypes) =>{
     }
     const Address = sequelize.define(alias,cols,config);
 
-    Address.associate = function(models) {
+    /*Address.associate = function(models) {
         Address.hasMany(models.User, {
             as: "users",
             foreignKey: "idAddress"
 
         });
-    }
+    }*/
 
     Address.associate = function(models) {
         Address.belongsTo(models.Neighbourhood, {
