@@ -6,6 +6,8 @@ const { check, validationResult, body } = require('express-validator');
 const db = require('../database/models/');
 const User = db.User;
 
+const Op = db.Sequelize.Op;
+
 
 
 //const users =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
@@ -195,5 +197,14 @@ module.exports = {
       .then(confirm =>{
               res.redirect('/usuarios');
       })
+    },
+    search: ( req, res) =>{
+      User.findAll({
+          where:{
+              lastName: {[Op.like]: `%${req.query.search}%`}
+          }
+      })
+      .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'usuarios', 'listadoUsuarios'),{usuarios: resultado});})
+      .catch(error => res.send(error))
     }
 }

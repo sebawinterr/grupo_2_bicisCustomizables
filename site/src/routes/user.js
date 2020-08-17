@@ -28,58 +28,61 @@ let archivoUsers =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data
 
 //! url de Rutas 
 router.get('/register', userController.index);
-router.post('/register', upload.single('imagen'), [
-    // VALIDACIONES
-    // NOMBRE
-    check('nombre').isLength({
-        min: 1
-      }).withMessage('El nombre es obligatorio'),
-      // APELLIDO
-    check('apellido').isLength({min: 1
-      }).withMessage('El apellido es obligatorio'),
-      // DNI
-    check('dni').isLength({min: 7, max:14
-    }).withMessage('El DNI es obligatorio'),
-    body('dni').custom( (value) =>{
-        for (let i = 0; i < archivoUsers.length; i++) {
-            if (archivoUsers[i].dni == value) {
-                return false
-            }
-        }
-        return true
-    }).withMessage('Este dni ya se encuentra registrado'),   
-        //DIRECCION
-    check('direccion').isLength({min: 1}).withMessage('Debe colocar una dirección válida'),
-        //CP
-    check('cp').isLength({min: 4
-    }).withMessage('Coloque su Código Postal'),
-        //PROVINCIA
-    check('provincia').isLength({min: 1
-    }).withMessage('Debe colocar una provincia'),
-        //LOCALIDAD
-    check('localidad').isLength({min: 1
-    }).withMessage('La localidad es obligatoria'),
-        //EMAIL  
-    check('email').isEmail().withMessage('Agregar un email válido'),
-    // Validacion para saber si existe el email del usuario
-    body('email').custom( (value) =>{
-        for (let i = 0; i < archivoUsers.length; i++) {
-            if (archivoUsers[i].email == value) {
-                return false
-            }
-        }
-        return true
-    }).withMessage('Este email ya se encuentra registrado'), 
-    // Validacion de contraseña
-    check('password').isLength({min: 8 }).withMessage('La contraseña debe tener un mínimo de 8 caractéres'),
-    body('imagen').custom((value, {req}) =>{
-        if(req.file != undefined){
-            return true
-        }
-        return false;
-    }).withMessage('Debe elegir su imagen de perfil en formato .JPG ó .JPEG ó .PNG') 
-],userController.processRegister);
 
+User.findAll()
+    .then((usuario) => {
+    router.post('/register', upload.single('imagen'), [
+        // VALIDACIONES
+        // NOMBRE
+        check('nombre').isLength({
+            min: 1
+        }).withMessage('El nombre es obligatorio'),
+        // APELLIDO
+        check('apellido').isLength({min: 1
+        }).withMessage('El apellido es obligatorio'),
+        // DNI
+        check('dni').isLength({min: 7, max:14
+        }).withMessage('El DNI es obligatorio'),
+        body('dni').custom( (value) =>{
+            for (let i = 0; i < usuario.length; i++) {
+                if (usuario[i].dni == value) {
+                    return false
+                }
+            }
+            return true
+        }).withMessage('Este dni ya se encuentra registrado'),   
+            //DIRECCION
+        check('direccion').isLength({min: 1}).withMessage('Debe colocar una dirección válida'),
+            //CP
+        check('cp').isLength({min: 4
+        }).withMessage('Coloque su Código Postal'),
+            //PROVINCIA
+        check('provincia').isLength({min: 1
+        }).withMessage('Debe colocar una provincia'),
+            //LOCALIDAD
+        check('localidad').isLength({min: 1
+        }).withMessage('La localidad es obligatoria'),
+            //EMAIL  
+        check('email').isEmail().withMessage('Agregar un email válido'),
+        // Validacion para saber si existe el email del usuario
+        body('email').custom( (value) =>{
+            for (let i = 0; i < usuario.length; i++) {
+                if (usuario[i].email == value) {
+                    return false
+                }
+            }
+            return true
+        }).withMessage('Este email ya se encuentra registrado'), 
+        // Validacion de contraseña
+        check('password').isLength({min: 8 }).withMessage('La contraseña debe tener un mínimo de 8 caractéres'),
+        body('imagen').custom((value, {req}) =>{
+            if(req.file != undefined){
+                return true
+            }
+            return false;
+        }).withMessage('Debe elegir su imagen de perfil en formato .JPG ó .JPEG ó .PNG') 
+    ],userController.processRegister);
+});
 
 
 router.get('/login',userController.login);
@@ -111,12 +114,13 @@ User.findAll()
         ],userController.processLogIn);
         router.get('/logout', userController.logout);
 
-    })
+});
 
 
 
 
 //! Rutas Crud Usuarios
+router.get('/usuarios/search_results', controlAcceso, userController.search);
 router.get('/usuarios', controlAcceso, userController.usuarios);
 router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
 router.put('/usuarios/edit/:id', upload.single('imagen'),userController.updateUsuarios);
