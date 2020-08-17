@@ -5,6 +5,7 @@ const multer = require('multer');
 const { check, validationResult, body } = require('express-validator');
 const db = require('../database/models/');
 const User = db.User;
+const Address = db.Address;
 
 const Op = db.Sequelize.Op;
 
@@ -26,17 +27,19 @@ module.exports = {
             lastName: req.body.apellido,
             dni: req.body.dni,
             phoneNumber: req.body.telefono,
-            //direccion: req.body.direccion,
-            //pisoDepto: req.body.pisoDepto ? req.body.pisoDepto : '',
-            //cp: req.body.cp,
-            //provincia: req.body.provincia,
-            //localidad: req.body.localidad,
+            streetName: req.body.direccion,
+            additionalNumbers: req.body.pisoDepto ? req.body.pisoDepto : '',
+            zipCode: req.body.cp,
+            province: req.body.provincia,
+            neighbourhood: req.body.localidad,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             image: req.file ? req.file.filename : '',
             category: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0     // UsuarioBasico = 0, Administrador = 9
           }
-          User.create(usuarioARegistrar)
+          User.create(usuarioARegistrar, {
+            include: ['addresses']
+        })
           .then((storedUser) => {
             return  res.redirect('/login');
           })
@@ -124,38 +127,12 @@ module.exports = {
       })
       .catch(error => res.send(error))
     },
-    /*edit: (req,res) =>{
-      let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-
-      const userId = req.params.id;
-      let usuarioEditar = usuarios.find(user => user.id == userId);
-      res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), {usuarioEditar});
-    },*/
-
     edit: (req,res) => { 
       User.findByPk(req.params.id)
-      .then(usuarioEditar =>{
+      .then(usuarioEditar => {
           res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), {usuarioEditar});
       })
     },
-    /*update: (req,res) =>{
-        let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-
-        req.body.id = req.params.id;
-        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen; //if ternario en la variable req.body.imagen me esta llegando algo en el req.file, entonces guardame lo q llega en el req.body.oldImagen
-      
-        let userUpdate = usuarios.map(user => {
-          if(user.id == req.body.id){
-              return user = req.body;
-          }
-          return user;
-        });
-      
-        let usuariosActualizar = JSON.stringify(userUpdate,null,2);
-        //Guardar o reemplazar nuestro archivo JSON
-        fs.writeFileSync(path.resolve(__dirname,'..','data','users.json'), usuariosActualizar);
-        res.redirect('/usuarios');
-    },*/
     updateUsuarios: (req,res) =>{
       const _body = req.body;
       //return res.send(_body);
@@ -163,6 +140,11 @@ module.exports = {
       _body.lastName = req.body.apellido,
       _body.dni = req.body.dni,
       _body.phoneNumber = req.body.telefono,
+      _body.streetName = req.body.direccion,
+      _body.additionalNumbers = req.body.additionalNumbers,
+      _body.zipCode = req.body.cp,
+      _body.province = req.body.provincia,
+      _body.neighbourhood = req.body.localidad,
       _body.email =  req.body.email,
       _body.category =  req.body.categoria,
       _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
@@ -171,22 +153,13 @@ module.exports = {
           where : {
               id : req.params.id
           },
-          //include: ['style']
+          include: ['addresses']
       })
       .then(user =>{
           res.redirect('/usuarios')
       })
       .catch(error => res.send(error));     //error de Base de Datos
     },
-    /*destroy: (req,res) =>{
-      let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-      const userDeleteId = req.params.id; 
-      const usuariosFinal = usuarios.filter(user => user.id != userDeleteId);
-      let usuariosGuardar = JSON.stringify(usuariosFinal,null,2);
-      //Guardar o reemplazar nuestro archivo JSON
-      fs.writeFileSync(path.resolve(__dirname,'..','data','users.json'), usuariosGuardar);
-      res.redirect('/usuarios');
-    },*/
     destroy: (req,res) => {
       User.destroy({
               where : {

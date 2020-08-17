@@ -9,7 +9,10 @@ module.exports = (sequelize,DataTypes) =>{
         },
         streetName: DataTypes.STRING,
         additionalNumbers: DataTypes.STRING,
-        //idNeighbourhood: DataTypes.INTEGER, // asociacion con neighbourhood
+        neighbourhood: DataTypes.STRING,
+        zipCode: DataTypes.INTEGER,
+        province: DataTypes.STRING,
+        
 
     };
     let config = {
@@ -17,25 +20,12 @@ module.exports = (sequelize,DataTypes) =>{
     }
     const Address = sequelize.define(alias,cols,config);
 
-    /*Address.associate = function(models) {
+    Address.associate = function(models) {
         Address.hasMany(models.User, {
             as: "users",
             foreignKey: "idAddress"
 
         });
-    }*/
-
-    Address.associate = function(models) {
-        Address.belongsTo(models.Neighbourhood, {
-            as: "neighbourhoods",
-            foreignKey: "idNeighbourhood"
-
-        });
     }
-
-
-
-
-
     return Address;
 }

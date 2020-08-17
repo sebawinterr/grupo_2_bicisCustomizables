@@ -67,15 +67,15 @@
               </div>
 
               <br>
-              <!--OJO FALTA LAS DIRECCIONES!-->
-              <!--<div class="marca-modelo col-12">
+              
+              <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Dirección:</label>
-                  <input type="text" placeholder="Dirección" name="direccion" class="col-12 form-control" value="<!--%= usuarioEditar.direccion%">
+                  <input type="text" placeholder="Dirección" name="direccion" class="col-12 form-control" value="<%= usuarioEditar.addresses.streetName%>">
                 </div>
                 <div class="col-5">
                   <label for="">Piso y Departamento:</label>
-                  <input type="text" placeholder="Piso y Departamento" name="pisoDepto" class="col-12 form-control" value="%= usuarioEditar.pisoDepto%>">
+                  <input type="text" placeholder="Piso y Departamento" name="pisoDepto" class="col-12 form-control" value="<%= usuarioEditar.addresses.additionalNumbers%>">
                 </div>
               </div>
 
@@ -83,19 +83,19 @@
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Código Postal:</label>
-                  <input type="number" placeholder="Código Postal" name="cp" class="col-12 form-control" value="%= usuarioEditar.cp%>">
+                  <input type="number" placeholder="Código Postal" name="cp" class="col-12 form-control" value="<%= usuarioEditar.addresses.zipCode%>">
                 </div>
                 <div class="col-5">
                   <label for="">Provincia:</label>
-                  <input type="text" placeholder="Provincia" name="provincia" class="col-12 form-control" value="%= usuarioEditar.provincia%>">
+                  <input type="text" placeholder="Provincia" name="provincia" class="col-12 form-control" value="<%= usuarioEditar.addresses.province%>">
                 </div>
               </div>
               
               <br>
               <div>
                 <label for="">Localidad:</label>
-                <input type="text" placeholder="Localidad" name="localidad" class="col-5 form-control" value="%= usuarioEditar.localidad%>">
-              </div>-->
+                <input type="text" placeholder="Localidad" name="localidad" class="col-5 form-control" value="<%= usuarioEditar.addresses.neighbourhood%>">
+              </div>
               
             <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
 
