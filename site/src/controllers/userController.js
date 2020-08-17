@@ -165,7 +165,7 @@ module.exports = {
       _body.category =  req.body.categoria,
       _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
 
-      User.update(cuerpo ,{
+      User.update(_body ,{
           where : {
               id : req.params.id
           },
