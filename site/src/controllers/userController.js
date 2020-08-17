@@ -108,7 +108,7 @@ module.exports = {
       res.cookie('galletita',null,{maxAge: -1});
       res.redirect('/register')
     },
-    usuarios: function(req,res){
+    usuarios: function(req,res){ 
       const usuarios = User.findAll();
       Promise.all([usuarios])
       .then(([usuarios]) =>{
@@ -122,14 +122,21 @@ module.exports = {
       })
       .catch(error => res.send(error))
     },
-    edit: (req,res) =>{
+    /*edit: (req,res) =>{
       let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
       const userId = req.params.id;
       let usuarioEditar = usuarios.find(user => user.id == userId);
       res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), {usuarioEditar});
+    },*/
+
+    edit: (req,res) => { 
+      User.findByPk(req.params.id)
+      .then(usuarioEditar =>{
+          res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), {usuarioEditar});
+      })
     },
-    update: (req,res) =>{
+    /*update: (req,res) =>{
         let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
 
         req.body.id = req.params.id;
@@ -146,8 +153,30 @@ module.exports = {
         //Guardar o reemplazar nuestro archivo JSON
         fs.writeFileSync(path.resolve(__dirname,'..','data','users.json'), usuariosActualizar);
         res.redirect('/usuarios');
+    },*/
+    update: (req,res) =>{
+      const _body = req.body;
+      //return res.send(_body);
+      _body.firstName = req.body.nombre,
+      _body.lastName = req.body.apellido,
+      _body.dni = req.body.dni,
+      _body.phoneNumber = req.body.telefono,
+      _body.email = req.body.email,
+      _body.category =  req.body.categoria,
+      _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
+
+      User.update(_body ,{
+          where : {
+              id : req.params.id
+          },
+          //include: ['style']
+      })
+      .then(usuario =>{
+          res.redirect('/usuarios')
+      })
+      .catch(error => res.send(error));     //error de Base de Datos
     },
-    destroy: (req,res) =>{
+    /*destroy: (req,res) =>{
       let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
       const userDeleteId = req.params.id; 
       const usuariosFinal = usuarios.filter(user => user.id != userDeleteId);
@@ -155,5 +184,16 @@ module.exports = {
       //Guardar o reemplazar nuestro archivo JSON
       fs.writeFileSync(path.resolve(__dirname,'..','data','users.json'), usuariosGuardar);
       res.redirect('/usuarios');
-    },
+    },*/
+    destroy: (req,res) => {
+      User.destroy({
+              where : {
+                 id:  req.params.id
+              },
+              force : true 
+      })
+      .then(confirm =>{
+              res.redirect('/usuarios');
+      })
+    }
 }

@@ -28,9 +28,9 @@
             <form action="/administrador/edit/<%= usuarioEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="marca-modelo col-12">
                 <label for="nombre">Nombre:</label>
-              <input type="text" placeholder="Nombre" class="col-5 form-control" name="nombre" value="<%= usuarioEditar.nombre%>">
+              <input type="text" placeholder="Nombre" class="col-5 form-control" name="nombre" value="<%= usuarioEditar.firstName%>">
               <label for="apellido">Apellido:</label>
-              <input type="text" placeholder="Apellido" class="col-5 form-control" name="apellido" value="<%= usuarioEditar.apellido%>">
+              <input type="text" placeholder="Apellido" class="col-5 form-control" name="apellido" value="<%= usuarioEditar.lastName%>">
             </div> 
               <br>
 
@@ -47,7 +47,7 @@
                 <h6>Categoría:</h6>
                 
                 <div class="custom-control">
-                  <input type="number" name="categoria" value="<%= usuarioEditar.categoria%>" class="form-control">
+                  <input type="number" name="categoria" value="<%= usuarioEditar.category%>" class="form-control">
                 </div>
                 <br>
               </div>
@@ -62,12 +62,12 @@
                 </div>
                 <div class="col-5">
                   <label for="telefono">Teléfono:</label>
-                  <input type="text" placeholder="Teléfono" name="telefono" class="col-12 form-control" value="<%= usuarioEditar.telefono%>">
+                  <input type="text" placeholder="Teléfono" name="telefono" class="col-12 form-control" value="<%= usuarioEditar.phoneNumber%>">
                 </div>
               </div>
 
               <br>
-              
+              <!--OJO FALTA LAS DIRECCIONES!-->
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Dirección:</label>
@@ -100,13 +100,13 @@
             <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
 
                 <div class="bg-transparent text-white border-light w-55 p-1 pt-3">
-                    <input type="hidden"  name="oldImagen"  value="<%= usuarioEditar.imagen%>">
-                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= usuarioEditar.imagen%>">
+                    <input type="hidden"  name="oldImagen"  value="<%= usuarioEditar.image%>">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= usuarioEditar.image%>">
                     
                     <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
 
                   <figure class="">
-                    <img src="/images/usuarios/<%= usuarioEditar.imagen%> " class="card-img" alt="imagen">
+                    <img src="/images/usuarios/<%= usuarioEditar.image%> " class="card-img" alt="imagen">
                   </figure>
                     
                 </div>
