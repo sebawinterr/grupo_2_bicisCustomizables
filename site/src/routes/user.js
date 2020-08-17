@@ -7,6 +7,7 @@ const multer = require('multer');
 const {check,validationResult,body} = require('express-validator');
 const db = require('../database/models/');
 const User = db.User;
+const controlAcceso = require('../middlewares/controlAcceso');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -116,11 +117,11 @@ User.findAll()
 
 
 //! Rutas Crud Usuarios
-router.get('/usuarios', userController.usuarios);
-router.get('/usuarios/edit/:id', userController.edit);
-router.put('/usuarios/edit/:id', upload.single('imagen'),userController.update);
-router.get('/usuarios/detalle/:id', userController.show);
-router.get('/usuarios/delete/:id', userController.destroy);
+router.get('/usuarios', controlAcceso, userController.usuarios);
+router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
+router.put('/usuarios/edit/:id', upload.single('imagen'),userController.updateUsuarios);
+router.get('/usuarios/detalle/:id', controlAcceso, userController.show);
+router.get('/usuarios/delete/:id', controlAcceso, userController.destroy);
 
 
 module.exports = router;

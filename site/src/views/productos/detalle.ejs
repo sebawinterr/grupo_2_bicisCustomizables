@@ -18,13 +18,13 @@
     <section class="row cuerpo">
 
         <article class="titulo col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <h5><%= miBiciDetalle.modelo%></h5>
+          <h5><%= miBiciDetalle.model%></h5>
         </article>
 
           <article class="fotoProducto col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
             <div class="card bg-transparent text-white border-dark">
               <figure class="bici">
-                <img src="/images/bicicletas/<%= miBiciDetalle.imagen%>" class="card-img" alt="Bicicleta">
+                <img src="/images/bicicletas/<%= miBiciDetalle.image%>" class="card-img" alt="Bicicleta">
               </figure>
             </div>
           </article>
@@ -33,8 +33,8 @@
             <div class="form-group">
               <select  name="descuento" class="custom-select" id="validationCustom04" required>
                 <option selected disabled value="#">Color</option>
-                <option value=""><ion-icon name="ellipse-outline"></ion-icon><%= miBiciDetalle.colores%></option>
-                <option value=""><ion-icon name="radio-button-off-outline"></ion-icon><%= miBiciDetalle.colores2%></option>
+                <option value=""><ion-icon name="ellipse-outline"></ion-icon><%= miBiciDetalle.colors%></option>
+                <!--<option value=""><ion-icon name="radio-button-off-outline"></ion-icon>%= miBiciDetalle.colores2%></option>-->
               </select>
             </div>
             
@@ -58,7 +58,7 @@
             <div class="cartaUno col mb-4">
               <div class="card h-100 border-dark">
                 <div class="card-body">
-                  <p class="card-text"><%= miBiciDetalle.descripcion%></p>
+                  <p class="card-text"><%= miBiciDetalle.description%></p>
                 </div>
               </div>
             </div>
@@ -66,14 +66,14 @@
               <div class="card h-100 border-dark">
                 <div class="card-body">
                   <h6 class="card-title">Especificaciones técnicas</h6>
-                  <p class="card-text"><%= miBiciDetalle.descripcionTecnica%></p>
+                  <p class="card-text"><%= miBiciDetalle.techDescription%></p>
                 </div>
               </div>
             </div>
             <div class="cartaTres col mb-4">
               <div class="card h-100 border-dark">
                 <div class="card-body">
-                  <h6 class="card-title">Precio: $<%= miBiciDetalle.precio%></h6>
+                  <h6 class="card-title">Precio: $<%= miBiciDetalle.price%></h6>
                   <p class="card-text">12 cuotas sin interes con Visa y Mastercard.</p>
                   <a href="/carrito/lista" class="comprar"><button type="button" class="btn btn-dark btn-lg" style="background-color: black">COMPRAR</button></a>
                 </div>
