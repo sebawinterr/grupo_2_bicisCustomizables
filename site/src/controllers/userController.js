@@ -154,14 +154,14 @@ module.exports = {
         fs.writeFileSync(path.resolve(__dirname,'..','data','users.json'), usuariosActualizar);
         res.redirect('/usuarios');
     },*/
-    update: (req,res) =>{
+    updateUsuarios: (req,res) =>{
       const _body = req.body;
       //return res.send(_body);
       _body.firstName = req.body.nombre,
       _body.lastName = req.body.apellido,
       _body.dni = req.body.dni,
       _body.phoneNumber = req.body.telefono,
-      _body.email = req.body.email,
+      _body.email =  req.body.email,
       _body.category =  req.body.categoria,
       _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
 
@@ -171,7 +171,7 @@ module.exports = {
           },
           //include: ['style']
       })
-      .then(usuario =>{
+      .then(user =>{
           res.redirect('/usuarios')
       })
       .catch(error => res.send(error));     //error de Base de Datos
