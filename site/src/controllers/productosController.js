@@ -13,18 +13,6 @@ module.exports = {
         })
         .catch(error => res.send(error))
     },
-    /*detalle: (req,res)=>{
-        let bicicletas = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','bicicletas.json')));
-        
-        let miBiciDetalle;
-        bicicletas.forEach(bici => {
-           if(bici.id == req.params.id){
-               miBiciDetalle = bici;         
-            }
-        });
-        res.render(path.resolve(__dirname, '..','views','productos','detalle'), {miBiciDetalle:miBiciDetalle})
-    
-    },*/
     detalle: (req,res)=>{
         Article.findByPk(req.params.id)
         .then(miBiciDetalle =>{

@@ -28,14 +28,14 @@ CREATE TABLE `addresses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `streetName` varchar(100) NOT NULL,
   `additionalNumbers` varchar(100) DEFAULT NULL,
-  `idNeighbourhood` int(11) NOT NULL,
+  `neighbourhood` varchar(100) DEFAULT NULL,
+  `zipCode` int(6) DEFAULT NULL,
+  `province` varchar(100) DEFAULT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idNeighbourhood_idx` (`idNeighbourhood`),
-  CONSTRAINT `idNeighbourhood` FOREIGN KEY (`idNeighbourhood`) REFERENCES `neighbourhoods` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +44,7 @@ CREATE TABLE `addresses` (
 
 LOCK TABLES `addresses` WRITE;
 /*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
+INSERT INTO `addresses` VALUES (1,'Del Barco Centenera 2525','2B','Capital Federal',1515,'Buenos Aires','2020-08-18 02:39:49','2020-08-18 02:39:49',NULL),(2,'Av Del Libertador 3000','14','Capital Federal',1427,'Buenos Aires','2020-08-18 02:41:46','2020-08-18 02:41:46',NULL),(3,'Humbolt 107','4A','Capital Federal',1425,'Buenos Aires','2020-08-18 02:43:44','2020-08-18 02:43:44',NULL),(4,'Grecia 602','','Capital Federal',1428,'Buenos Aires','2020-08-18 02:45:31','2020-08-18 02:45:31',NULL),(5,'Av de los Pioneros 14000','','Bariloche',2454,'Río Negro','2020-08-18 02:48:21','2020-08-18 02:48:21',NULL),(6,'Monroe 1754','1A','Capital Federal',1428,'Buenos Aires','2020-08-18 02:50:04','2020-08-18 02:50:04',NULL),(7,'Barabino 545','','San Antonio de Padua',1718,'Buenos Aires','2020-08-18 02:52:09','2020-08-18 02:52:09',NULL);
 /*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -214,35 +215,6 @@ LOCK TABLES `frames` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `neighbourhoods`
---
-
-DROP TABLE IF EXISTS `neighbourhoods`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `neighbourhoods` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `zipCode` int(11) NOT NULL,
-  `country` varchar(100) NOT NULL,
-  `province` varchar(100) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT NULL,
-  `updatedAt` timestamp NULL DEFAULT NULL,
-  `deletedAt` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `neighbourhoods`
---
-
-LOCK TABLES `neighbourhoods` WRITE;
-/*!40000 ALTER TABLE `neighbourhoods` DISABLE KEYS */;
-/*!40000 ALTER TABLE `neighbourhoods` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `orders`
 --
 
@@ -384,7 +356,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `phoneNumber_UNIQUE` (`phoneNumber`),
   UNIQUE KEY `image_UNIQUE` (`image`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -393,7 +365,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Mariano','Torrecilla',34265210,15444888,'marianotorrecilla@bykes.com','$2b$10$5IQhBuRbAYFOZZYC8H/g6eIrFHx68WOHP.n3lGYpeNxCmnQ47NY86',9,'foto-1597506139146.jpg',NULL,NULL,'2020-08-15 15:42:19','2020-08-15 15:42:19',NULL),(2,'Juan ','Esperon',40258258,15666777,'juanesperon@bykes.com','$2b$10$R4d/wamdnifYXW2RVbcV8OKVx0jseCenf1.B8J1V4WUeoJZ7wZ1I.',9,'foto-1597510869871.jpg',NULL,NULL,'2020-08-15 17:01:09','2020-08-15 17:01:09',NULL),(4,'Marcelo','Gómez',29879879,15456789,'mgomez@gmail.com','$2b$10$Jsn//d/ADzZA2h7cy9/fVex/wS3rwcG6RIb3Ju5SDraniiwjYpdwW',0,'foto-1597624968838.jpg',NULL,NULL,'2020-08-17 00:42:49','2020-08-17 01:03:49',NULL);
+INSERT INTO `users` VALUES (5,'Martina','Sanchez',36564259,1523232323,'martisanchez@gmail.com','$2b$10$9KvUEkAZC86C.uzni5iZcuY2HjL0QuntKmR4d29gp5qJWoIwSKqTS',0,'foto-1597718389818.jpg',1,NULL,'2020-08-18 02:39:50','2020-08-18 02:39:50',NULL),(6,'Iker','Casillas',25626627,1548754875,'ikercasillas@gmail.com','$2b$10$tKsdlpV9V0mhntSml9L0N.wt2M32IMh8.lHK7IAVED2NYdlA953c.',0,'foto-1597718506778.jpg',2,NULL,'2020-08-18 02:41:46','2020-08-18 02:41:46',NULL),(7,'Virginia','Anderson',30254141,1596969696,'vanderson@gmail.com','$2b$10$K0nTcnPIK/dJalmWqHT5Ue5X9ktIwrMsptZuuDGe/4/eW50ZKqTZm',0,'foto-1597718624613.jpg',3,NULL,'2020-08-18 02:43:44','2020-08-18 02:43:44',NULL),(8,'Manu','Lothbrok',31987655,1578787878,'manulothbrok@gmail.com','$2b$10$sRLuSX1S.CgzpvwLNIOVuOoRav.Ql.n.8zyFiONhdW/E5GZuzj0fi',0,'foto-1597718731755.jpg',4,NULL,'2020-08-18 02:45:32','2020-08-18 02:45:32',NULL),(9,'Juan','Esperon',40245367,1564652378,'juanesp@bykes.com','$2b$10$HhzEhS5wjYw5fgBkuArhEOOVNiJD.YWjblCYb45gD95exAvKY.AYa',9,'foto-1597718901216.jpg',5,NULL,'2020-08-18 02:48:21','2020-08-18 02:48:21',NULL),(10,'Sebastian','Winter',39852742,1541474845,'winter@bykes.com','$2b$10$.FistLWQDYylfC4eKCpWnOui2cz6IFt0M6njyZaWah1xKroffCp1m',9,'foto-1597719004334.jpg',6,NULL,'2020-08-18 02:50:04','2020-08-18 02:50:04',NULL),(11,'Mariano','Torrecilla',34652407,1563265489,'mariantorrecilla@bykes.com','$2b$10$NkHwYHqUVZZKTkhtBlVhYOhr9/GJ3SOxryLgHJisTU9jGo5hoXXum',9,'foto-1597719129581.jpg',7,NULL,'2020-08-18 02:52:09','2020-08-18 02:52:09',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -434,4 +406,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-17 11:47:43
+-- Dump completed on 2020-08-17 23:57:07
