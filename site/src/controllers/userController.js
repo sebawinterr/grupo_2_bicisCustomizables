@@ -22,26 +22,29 @@ module.exports = {
         let errors = validationResult(req);
        
         if (errors.isEmpty()) {
-          let usuarioARegistrar = {
-            firstName: req.body.nombre,
-            lastName: req.body.apellido,
-            dni: req.body.dni,
-            phoneNumber: req.body.telefono,
+          let direccionARegistrar = {
             streetName: req.body.direccion,
             additionalNumbers: req.body.pisoDepto ? req.body.pisoDepto : '',
             zipCode: req.body.cp,
             province: req.body.provincia,
-            neighbourhood: req.body.localidad,
-            email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
-            image: req.file ? req.file.filename : '',
-            category: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0     // UsuarioBasico = 0, Administrador = 9
+            neighbourhood: req.body.localidad
           }
-          User.create(usuarioARegistrar, {
-            include: ['addresses']
-        })
-          .then((storedUser) => {
-            return  res.redirect('/login');
+          Address.create(direccionARegistrar)
+          .then((storedAddress) => {
+            let usuarioARegistrar = {
+              firstName: req.body.nombre,
+              lastName: req.body.apellido,
+              dni: req.body.dni,
+              phoneNumber: req.body.telefono,
+              email: req.body.email,
+              password: bcrypt.hashSync(req.body.password, 10),
+              image: req.file ? req.file.filename : '',
+              category: req.body.email.indexOf('@bykes.com')!= -1 ? 9 : 0,  // UsuarioBasico = 0, Administrador = 9
+              idAddress: storedAddress.id
+            }
+          User.create(usuarioARegistrar).then(storedUser => 
+            res.redirect('/login')
+          )
           })
         } else {  
           return res.render(path.resolve(__dirname, '../views/usuarios/register'), {
@@ -53,37 +56,12 @@ module.exports = {
     login : function(req, res){
         res.render(path.resolve(__dirname, '..','views','usuarios','login'));
     },
-    /*processLogIn: function(req,res){
-      let errors = validationResult(req);
-      if (errors.isEmpty()) {
-        let archivoUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-        let usuarioLogueado = archivoUsers.filter(user => {
-          return user.email == req.body.email
-        });
-        //console.log(usuarioLogueado[0].email);
-        /*.find(user => {
-          user.email == req.body.email;
-        });*/
-        //delete usuarioLogueadreq.session.usuarioGuardado = usuarioLogueado[0];o.password;
-        /*
-        
-        if (req.body.recuerdame){
-          let mailUsuarioLogueado = usuarioLogueado[0].email;
-          res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
-        }
-        res.redirect('/');
-      }
-       else {
-        return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
-      }
-    },*/
     processLogIn: function(req,res){
       let errors = validationResult(req);
       if (errors.isEmpty()) {
         let usuarioLogueado = {
           email: req.body.email,
           password: req.body.password,
-          //category: db.sequelize.query('select category from users where user.email = req.body.email')
         }
 
         User.findAll({
@@ -91,10 +69,9 @@ module.exports = {
             email: req.body.email,
           }
         })
-        .then((users) => {
-          req.session.usuarioLogueado;
+        .then((user) => {
+          req.session.user = user[0];
         
-          console.log(req.session)
           if (req.body.recuerdame){
             let mailUsuarioLogueado = usuarioLogueado.email;
             res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
@@ -128,14 +105,15 @@ module.exports = {
       .catch(error => res.send(error))
     },
     edit: (req,res) => { 
-      User.findByPk(req.params.id)
+      User.findByPk(req.params.id, {
+        include: ['addresses']
+      })
       .then(usuarioEditar => {
           res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), {usuarioEditar});
       })
     },
     updateUsuarios: (req,res) =>{
       const _body = req.body;
-      //return res.send(_body);
       _body.firstName = req.body.nombre,
       _body.lastName = req.body.apellido,
       _body.dni = req.body.dni,
@@ -147,15 +125,19 @@ module.exports = {
       _body.neighbourhood = req.body.localidad,
       _body.email =  req.body.email,
       _body.category =  req.body.categoria,
-      _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
+      _body.image = req.file ? req.file.filename : req.body.oldImagen
 
       User.update(_body ,{
           where : {
               id : req.params.id
-          },
-          include: ['addresses']
+          }
       })
       .then(user =>{
+        Address.update(_body, {
+          where : {
+            id : user[0].idAddress
+          }
+        })
           res.redirect('/usuarios')
       })
       .catch(error => res.send(error));     //error de Base de Datos

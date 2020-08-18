@@ -59,7 +59,7 @@ module.exports = {
     },
     edit: (req,res) => { //! Listo
         Article.findByPk(req.params.id)
-        .then(biciEditar =>{
+        .then(biciEditar => {
             res.render(path.resolve(__dirname, '..','views','administrador','edit'), {biciEditar});
         })
     },
