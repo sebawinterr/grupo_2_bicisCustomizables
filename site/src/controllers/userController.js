@@ -113,35 +113,40 @@ module.exports = {
       })
     },
     updateUsuarios: (req,res) =>{
-      const _body = req.body;
-      _body.firstName = req.body.nombre,
-      _body.lastName = req.body.apellido,
-      _body.dni = req.body.dni,
-      _body.phoneNumber = req.body.telefono,
-      _body.streetName = req.body.direccion,
-      _body.additionalNumbers = req.body.additionalNumbers,
-      _body.zipCode = req.body.cp,
-      _body.province = req.body.provincia,
-      _body.neighbourhood = req.body.localidad,
-      _body.email =  req.body.email,
-      _body.category =  req.body.categoria,
-      _body.image = req.file ? req.file.filename : req.body.oldImagen
+      let usuarioAEditar = {
+        firstName: req.body.nombre,
+        lastName: req.body.apellido,
+        dni: req.body.dni,
+        phoneNumber: req.body.telefono,
+        email: req.body.email,
+        image: req.file ? req.file.filename : req.body.oldImagen,
+        category: req.body.categoria
+      };
+      let direccionAEditar = {
+        streetName: req.body.direccion,
+        additionalNumbers: req.body.pisoDepto,
+        zipCode: req.body.cp,
+        province: req.body.provincia,
+        neighbourhood: req.body.localidad
+      };
 
-      User.update(_body ,{
-          where : {
-              id : req.params.id
-          }
+      User.findAll({where: {id: req.params.id}
       })
-      .then(user =>{
-        Address.update(_body, {
-          where : {
-            id : user[0].idAddress
-          }
+      .then(usuarioConsultado =>{
+        const direccionId = usuarioConsultado[0].idAddress;
+        console.log(usuarioConsultado[0].idAddress);
+        Address.update(direccionAEditar,{
+          where: {id: direccionId}
         })
-          res.redirect('/usuarios')
       })
-      .catch(error => res.send(error));     //error de Base de Datos
-    },
+      User.update(usuarioAEditar, {
+        where: {id : req.params.id}
+      })
+      .then(updatedUser =>{      
+        res.redirect('/usuarios')
+      })
+      .catch(error=> res.send(error));
+    },    
     destroy: (req,res) => {
       User.destroy({
               where : {
