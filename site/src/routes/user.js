@@ -112,9 +112,10 @@ User.findAll()
                 } 
             }).withMessage('Contraseña incorrecta.')
         ],userController.processLogIn);
-        router.get('/logout', userController.logout);
+        
 
 });
+router.get('/logout', userController.logout);
 
 
 
@@ -123,7 +124,23 @@ User.findAll()
 router.get('/usuarios/search_results', controlAcceso, userController.search);
 router.get('/usuarios', controlAcceso, userController.usuarios);
 router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
-router.put('/usuarios/edit/:id', upload.single('imagen'),userController.updateUsuarios);
+
+
+/*User.findAll()
+    .then((users) => {
+        router.put('/usuarios/edit/:id', upload.single('imagen'), [
+            // VALIDACIONES
+           // NOMBRE
+        check('firstName').isLength({
+            min: 1
+        }).withMessage('El nombre es obligatorio'),
+
+        ],userController.updateUsuarios);
+   
+});*/
+
+
+router.put('/usuarios/edit/:id', upload.single('image'),userController.updateUsuarios);
 router.get('/usuarios/detalle/:id', controlAcceso, userController.show);
 router.get('/usuarios/delete/:id', controlAcceso, userController.destroy);
 
