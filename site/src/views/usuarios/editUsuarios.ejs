@@ -25,12 +25,21 @@
           <br>
           
           <article class="formulario col-12">
-            <form action="/usuarios/edit/<%= usuarioEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <!--errores del FRONT END-->
+            <div>
+              <ul id="errores">
+
+              </ul>
+            </div>
+            <form id="edicionUsuarios" action="/usuarios/edit/<%= usuarioEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="marca-modelo col-12">
                 <label for="nombre">Nombre:</label>
-              <input type="text" placeholder="Nombre" class="col-5 form-control" name="nombre" value="<%= usuarioEditar.firstName%>">
+              <input type="text" placeholder="Nombre" class="col-5 form-control" name="firstName" value="<%= usuarioEditar.firstName%>">
+              <% if(typeof errors != 'undefined' && errors.usuarioEditar.firstName){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.usuarioEditar.firstName.msg %></span>
+                <%}%>
               <label for="apellido">Apellido:</label>
-              <input type="text" placeholder="Apellido" class="col-5 form-control" name="apellido" value="<%= usuarioEditar.lastName%>">
+              <input type="text" placeholder="Apellido" class="col-5 form-control" name="lastName" value="<%= usuarioEditar.lastName%>">
             </div> 
               <br>
 
@@ -47,7 +56,7 @@
                 <h6>Categoría:</h6>
                 
                 <div class="custom-control">
-                  <input type="number" name="categoria" value="<%= usuarioEditar.category%>" class="form-control">
+                  <input type="number" name="category" value="<%= usuarioEditar.category%>" class="form-control">
                 </div>
                 <br>
               </div>
@@ -62,7 +71,7 @@
                 </div>
                 <div class="col-5">
                   <label for="telefono">Teléfono:</label>
-                  <input type="text" placeholder="Teléfono" name="telefono" class="col-12 form-control" value="<%= usuarioEditar.phoneNumber%>">
+                  <input type="text" placeholder="Teléfono" name="phoneNumber" class="col-12 form-control" value="<%= usuarioEditar.phoneNumber%>">
                 </div>
               </div>
 
@@ -71,11 +80,11 @@
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Dirección:</label>
-                  <input type="text" placeholder="Dirección" name="direccion" class="col-12 form-control" value="<%= usuarioEditar.addresses.streetName%>">
+                  <input type="text" placeholder="Dirección" name="streetName" class="col-12 form-control" value="<%= usuarioEditar.addresses.streetName%>">
                 </div>
                 <div class="col-5">
                   <label for="">Piso y Departamento:</label>
-                  <input type="text" placeholder="Piso y Departamento" name="pisoDepto" class="col-12 form-control" value="<%= usuarioEditar.addresses.additionalNumbers%>">
+                  <input type="text" placeholder="Piso y Departamento" name="additionalNumbers" class="col-12 form-control" value="<%= usuarioEditar.addresses.additionalNumbers%>">
                 </div>
               </div>
 
@@ -83,25 +92,25 @@
               <div class="marca-modelo col-12">
                 <div class="col-5">
                   <label for="">Código Postal:</label>
-                  <input type="number" placeholder="Código Postal" name="cp" class="col-12 form-control" value="<%= usuarioEditar.addresses.zipCode%>">
+                  <input type="number" placeholder="Código Postal" name="zipCode" class="col-12 form-control" value="<%= usuarioEditar.addresses.zipCode%>">
                 </div>
                 <div class="col-5">
                   <label for="">Provincia:</label>
-                  <input type="text" placeholder="Provincia" name="provincia" class="col-12 form-control" value="<%= usuarioEditar.addresses.province%>">
+                  <input type="text" placeholder="Provincia" name="province" class="col-12 form-control" value="<%= usuarioEditar.addresses.province%>">
                 </div>
               </div>
               
               <br>
               <div>
                 <label for="">Localidad:</label>
-                <input type="text" placeholder="Localidad" name="localidad" class="col-5 form-control" value="<%= usuarioEditar.addresses.neighbourhood%>">
+                <input type="text" placeholder="Localidad" name="neighbourhood" class="col-5 form-control" value="<%= usuarioEditar.addresses.neighbourhood%>">
               </div>
               
             <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
 
                 <div class="bg-transparent text-white border-light w-55 p-1 pt-3">
                     <input type="hidden"  name="oldImagen"  value="<%= usuarioEditar.image%>">
-                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= usuarioEditar.image%>">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" name="image" value="<%= usuarioEditar.image%>">
                     
                     <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
 
@@ -135,5 +144,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/js/editUsuarios.js"></script>
 </body>
 </html>

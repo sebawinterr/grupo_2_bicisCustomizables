@@ -74,7 +74,7 @@ module.exports = {
         
           if (req.body.recuerdame){
             let mailUsuarioLogueado = usuarioLogueado.email;
-            res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
+            res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24});
           }
           res.redirect('/');
 
@@ -83,12 +83,6 @@ module.exports = {
        else {
         return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
       }
-    },
-
-    logout: (req,res) =>{
-      req.session.destroy();
-      res.cookie('galletita',null,{maxAge: -1});
-      res.redirect('/register')
     },
     usuarios: function(req,res){ 
       const usuarios = User.findAll();
@@ -113,21 +107,61 @@ module.exports = {
       })
     },
     updateUsuarios: (req,res) =>{
+      /*let errors = validationResult(req);
+      if (errors.isEmpty()) {
+        let usuarioAEditar = {
+          firstName: req.body.nombre,
+          lastName: req.body.apellido,
+          dni: req.body.dni,
+          phoneNumber: req.body.telefono,
+          email: req.body.email,
+          image: req.file ? req.file.filename : req.body.oldImagen,
+          category: req.body.categoria
+        };
+        let direccionAEditar = {
+          streetName: req.body.direccion,
+          additionalNumbers: req.body.pisoDepto,
+          zipCode: req.body.cp,
+          province: req.body.provincia,
+          neighbourhood: req.body.localidad
+        };
+  
+        User.findAll({where: {id: req.params.id}
+        })
+        .then(usuarioConsultado =>{
+          const direccionId = usuarioConsultado[0].idAddress;
+          console.log(usuarioConsultado[0].idAddress);
+          Address.update(direccionAEditar,{
+            where: {id: direccionId}
+          })
+        })
+        User.update(usuarioAEditar, {
+          where: {id : req.params.id}
+        })
+        .then(updatedUser =>{      
+          res.redirect('/usuarios')
+        })
+        //.catch(error=> res.send(error));
+      }else{
+        return res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), { errors: errors.mapped(), old: req.body});
+
+      }*/
+      //console.log(usuarioEditar.id)
       let usuarioAEditar = {
-        firstName: req.body.nombre,
-        lastName: req.body.apellido,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         dni: req.body.dni,
-        phoneNumber: req.body.telefono,
+        phoneNumber: req.body.phoneNumber,
         email: req.body.email,
         image: req.file ? req.file.filename : req.body.oldImagen,
-        category: req.body.categoria
+        category: req.body.category
       };
       let direccionAEditar = {
-        streetName: req.body.direccion,
-        additionalNumbers: req.body.pisoDepto,
-        zipCode: req.body.cp,
-        province: req.body.provincia,
-        neighbourhood: req.body.localidad
+        streetName: req.body.streetName,
+        additionalNumbers: req.body.additionalNumbers,
+        zipCode: req.body.zipCode,
+        province: req.body.province,
+        neighbourhood: req.body.neighbourhood
       };
 
       User.findAll({where: {id: req.params.id}
@@ -166,5 +200,11 @@ module.exports = {
       })
       .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'usuarios', 'listadoUsuarios'),{usuarios: resultado});})
       .catch(error => res.send(error))
-    }
+    },
+    logout: (req,res) =>{
+      req.session.destroy();
+      res.cookie('galletita',null,{maxAge: -1});
+      res.redirect('/login')
+    },
+
 }
