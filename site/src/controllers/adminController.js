@@ -22,8 +22,7 @@ module.exports = {
         res.render(path.resolve(__dirname, '..','views','administrador','create'));
     },
     save: (req,res)=>{
-        let nuevaBici={
-            //id: ultimaBici.id +1,
+        let nuevaBici = {
             brand: req.body.marca,
             model: req.body.modelo,
             styleId: req.body.estilo,
@@ -41,7 +40,7 @@ module.exports = {
         Article.create(nuevaBici, {
             include: ['style']
         })
-        .then(bici =>{
+        .then( bici =>{
             res.redirect('/administrador');
         })
         .catch(error => res.send(error))

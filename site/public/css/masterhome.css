@@ -34,6 +34,10 @@ div a {
     font-size: 15px;
 }
 
+body header div div div ul li a:hover{
+    color: #49D4C6;
+}
+
 /*contenedor padre*/
 main {
     display: flex;

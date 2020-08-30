@@ -3,6 +3,10 @@ const router = express.Router();
 const path = require('path');
 const multer = require('multer');
 const controlAcceso = require('../middlewares/controlAcceso');
+const validacionCreateAdmin = require('../middlewares/validacionCreateAdmin');
+const {check,validationResult,body} = require('express-validator');
+const db = require('../database/models/');
+const Article = db.Article;
 
 //Aquí dispongo lo referido al nombre del arhivo y a donde se va a guardar
 const storage = multer.diskStorage({
@@ -21,7 +25,10 @@ const adminController = require(path.resolve(__dirname,'..','controllers','admin
 router.get('/administrador', controlAcceso, adminController.admin);
 router.get('/administrador/search_results', controlAcceso, adminController.search);
 router.get('/administrador/create', controlAcceso, adminController.create);
-router.post("/administrador/create", upload.single('imagen'), adminController.save);
+
+
+router.post("/administrador/create", upload.single('imagen'), validacionCreateAdmin,adminController.save);
+
 router.get('/administrador/detalleAdmin/:id', controlAcceso, adminController.show);
 router.get('/administrador/edit/:id', controlAcceso, adminController.edit);
 router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
