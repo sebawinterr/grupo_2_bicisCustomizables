@@ -74,7 +74,7 @@ module.exports = {
         
           if (req.body.recuerdame){
             let mailUsuarioLogueado = usuarioLogueado.email;
-            res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24*7});
+            res.cookie('galletita', mailUsuarioLogueado, {maxAge: 1000*60*60*24});
           }
           res.redirect('/');
 
@@ -83,12 +83,6 @@ module.exports = {
        else {
         return res.render(path.resolve(__dirname, '..','views','usuarios','login'), { errors: errors.mapped(), old: req.body});
       }
-    },
-
-    logout: (req,res) =>{
-      req.session.destroy();
-      res.cookie('galletita',null,{maxAge: -1});
-      res.redirect('/register')
     },
     usuarios: function(req,res){ 
       const usuarios = User.findAll();
@@ -206,5 +200,11 @@ module.exports = {
       })
       .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'usuarios', 'listadoUsuarios'),{usuarios: resultado});})
       .catch(error => res.send(error))
-    }
+    },
+    logout: (req,res) =>{
+      req.session.destroy();
+      res.cookie('galletita',null,{maxAge: -1});
+      res.redirect('/login')
+    },
+
 }
