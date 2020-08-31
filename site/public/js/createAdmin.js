@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-    let formulario = document.getElementById('edicionProductos');
+    let formulario = document.getElementById('createAdmin');
     let ulErrores = document.getElementById('errores');
 
     formulario.addEventListener('submit', function(evento){
@@ -11,19 +11,29 @@ window.addEventListener('load', function(){
     })
     function validaciones(evento){
         //con destructuring de codigo se declaran todas las variables y se igualan al elemento capturado (formulario), las variables usan el name del formulario y se colocan de manera ordenada a como estan en los inputs del form
-        let {colores, talle, rodado, marca, modelo, precio, descuento, cuotas, cantCuotas, estilo, descripcion, descripcionTecnica, imagen} = formulario.elements;
+        let {colores, imagen, talle, rodado, marca, modelo, precio, cuotas, cantCuotas, estilo, descripcion, descripcionTecnica} = formulario.elements;
         let errores = []; //se declara array de errores
-        ulErrores.classList.add('alert-danger');
+        //ulErrores.classList.add('alert-danger');
     
-        //validar el color
+        //validar los colores
         if(colores.value == ''){
-            errores.push('Indique el color');
+            errores.push('Indique los colores');
             colores.classList.add('is-invalid');
             colores.classList.remove('is-valid');
         }else{
             colores.classList.add('is-valid');
             colores.classList.remove('is-invalid');
         }
+
+        //! validar imagen
+        /*if(imagen.value == ''){
+            errores.push('Ingrese una imagen valida para el producto');
+            imagen.classList.add('is-invalid');
+            imagen.classList.remove('is-valid');
+        }else{
+            imagen.classList.add('is-valid');
+            imagen.classList.remove('is-invalid');
+        }*/
 
         //validar talle
         if(talle.value == ''){
@@ -75,17 +85,9 @@ window.addEventListener('load', function(){
             precio.classList.remove('is-invalid');
         }
 
-        if(descuento.value == ''){
-            errores.push('Indique el descuento en caso de corresponder');
-            descuento.classList.add('is-invalid');
-            descuento.classList.remove('is-valid');
-        }else{
-            descuento.classList.add('is-valid');
-            descuento.classList.remove('is-invalid');
-        }
-
+        //validar cuotas
         if(cuotas.value == ''){
-            errores.push('Indique si tiene cuotas');
+            errores.push('Indique si se puede pagar en cuotas');
             cuotas.classList.add('is-invalid');
             cuotas.classList.remove('is-valid');
         }else{
@@ -93,9 +95,21 @@ window.addEventListener('load', function(){
             cuotas.classList.remove('is-invalid');
         }
 
+        //validar cantidad de cuotas
+        if(cuotas.value == 'si'){
+            if(cantCuotas.value == undefined || cantCuotas.value > 2){
+                errores.push('Indique la cantidad de cuotas');
+                cantCuotas.classList.add('is-invalid');
+                cantCuotas.classList.remove('is-valid');
+            }
+        }else{
+            cantCuotas.classList.add('is-valid');
+            cantCuotas.classList.remove('is-invalid');
+        }
+
         //validar estilo
         if(estilo.value == ''){
-            errores.push('Indique el estilo de la bicicleta');
+            errores.push('Indique el estilo');
             estilo.classList.add('is-invalid');
             estilo.classList.remove('is-valid');
         }else{
@@ -103,9 +117,9 @@ window.addEventListener('load', function(){
             estilo.classList.remove('is-invalid');
         }
 
-        //validar descripción
+        //validar descripcion
         if(descripcion.value == ''){
-            errores.push('Indique la descripción de la bicicleta');
+            errores.push('Introduzca una descripción válida');
             descripcion.classList.add('is-invalid');
             descripcion.classList.remove('is-valid');
         }else{
@@ -113,24 +127,15 @@ window.addEventListener('load', function(){
             descripcion.classList.remove('is-invalid');
         }
 
-        //validar descripción técnica
+        //validar descripcion tecnica
         if(descripcionTecnica.value == ''){
-            errores.push('Indique su descripción técnica');
+            errores.push('Introduzca una descripción técnica válida');
             descripcionTecnica.classList.add('is-invalid');
             descripcionTecnica.classList.remove('is-valid');
         }else{
             descripcionTecnica.classList.add('is-valid');
             descripcionTecnica.classList.remove('is-invalid');
         }
-
-        /*if(image.value == ''){
-            errores.push('Indique el domicilio del usuario');
-            image.classList.add('is-invalid');
-            image.classList.remove('is-valid');
-        }else{
-            image.classList.add('is-valid');
-            image.classList.remove('is-invalid');
-        }*/
 
         if(errores.length > 0){
             ulErrores.innerHTML = ''; //LIMPIO LOS ERRORES Y LUEGO LO LLENO

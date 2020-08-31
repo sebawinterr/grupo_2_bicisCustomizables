@@ -17,6 +17,13 @@
           <br><br><br>
         <section class="seccion row">
 
+          <!--errores del FRONT END-->
+          <div>
+            <ul id="errores">
+
+            </ul>
+          </div>
+
           <article class="titulo d-flex justify-content-center">
             <h1 class="border-bottom border-dark col-12">CARGA DE PRODUCTO</h1>
           </article>
@@ -24,7 +31,7 @@
           <br><br>
           
           <article class="formulario col-12">
-            <form action="/administrador/create" method="POST" enctype="multipart/form-data">
+            <form id="createAdmin" action="/administrador/create" method="POST" enctype="multipart/form-data">
               <h6>Carga de imagen:</h4>
                 <br>
 
@@ -167,5 +174,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/js/createAdmin.js"></script>
 </body>
 </html>
