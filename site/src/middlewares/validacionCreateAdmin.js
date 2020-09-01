@@ -1,4 +1,4 @@
-const {check,validationResult,body} = require('express-validator');
+/*const {check,validationResult,body} = require('express-validator');
 
 module.exports = (req, res, next) => {
     [
@@ -42,4 +42,4 @@ module.exports = (req, res, next) => {
         }).withMessage('Debe elegir la imagen del producto en formato .JPG ó .JPEG ó .PNG')
       ]
       next();
-}
+}*/
