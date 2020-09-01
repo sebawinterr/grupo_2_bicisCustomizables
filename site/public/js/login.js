@@ -27,15 +27,15 @@ window.addEventListener('load',()=>{
                 email.classList.add('is-valid');
                 email.classList.remove('is-invalid');
             }
-            // Validacion contraseña
-            if(!reEmail.test(password.value)){
+            // Validacion contraseña // BUSCAR EXPRESION REGULAR 
+            /*if(!reEmail.test(password.value)){
                 errores.push('El password es inválido...');
                 password.classList.add('is-invalid');
                 password.classList.remove('is-valid');   
             }else{
                 password.classList.add('is-valid');
                 password.classList.remove('is-invalid');
-            }
+            }*/
             if(errores.length > 0){
                 evento.preventDefault();
                 divErrores.innerHTML = "";

@@ -3,6 +3,7 @@ const fs = require('fs');
 const db = require('../database/models');
 const Article = db.Article;
 const Style = db.Style;
+const {check,validationResult,body} = require('express-validator');
 //const Address = db.Address;
 //const Neighbourhood = db.Neighbourhood;
 //const User = db.User;
@@ -22,29 +23,35 @@ module.exports = {
         res.render(path.resolve(__dirname, '..','views','administrador','create'));
     },
     save: (req,res)=>{
-        let nuevaBici = {
-            brand: req.body.marca,
-            model: req.body.modelo,
-            styleId: req.body.estilo,
-            description: req.body.descripcion,
-            techDescription: req.body.descripcionTecnica,
-            colors: req.body.colores,
-            size: req.body.talle,
-            shot: req.body.rodado,
-            price: req.body.precio,
-            discount: req.body.descuento,
-            financing: req.body.cuotas,
-            financingSize: req.body.cantCuotas,
-            image: req.file.filename
-        };
-        Article.create(nuevaBici, {
-            include: ['style']
-        })
-        .then( bici =>{
-            res.redirect('/administrador');
-        })
-        .catch(error => res.send(error))
-
+        let errors = validationResult(req);
+       
+        if (errors.isEmpty()) {
+            let nuevaBici = {
+                brand: req.body.marca,
+                model: req.body.modelo,
+                styleId: req.body.estilo,
+                description: req.body.descripcion,
+                techDescription: req.body.descripcionTecnica,
+                colors: req.body.colores,
+                size: req.body.talle,
+                shot: req.body.rodado,
+                price: req.body.precio,
+                discount: req.body.descuento,
+                financing: req.body.cuotas,
+                financingSize: req.body.cantCuotas,
+                image: req.file ? req.file.filename : '',
+            };
+            Article.create(nuevaBici, {
+                include: ['style']
+            })
+            .then( bici =>{
+                res.redirect('/administrador');
+            })
+        }else{
+            return res.render(path.resolve(__dirname, '../views/administrador/create'), {
+                errors: errors.mapped(),  old: req.body
+              });
+        }        
     },
     show: (req,res)=>{
         Article.findByPk(req.params.id, {

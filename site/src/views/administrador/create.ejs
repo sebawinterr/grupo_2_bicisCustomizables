@@ -43,7 +43,7 @@
                 <%}%>
               <br>
               <div class="custom-file mb-3">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen"value="">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= typeof old != 'undefined' ? old.imagen : '' %>">
                 <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
                 <% if(typeof errors != 'undefined' && errors.imagen){%>
                   <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.imagen.msg %></span>
@@ -76,9 +76,6 @@
                   <input type="checkbox" id="customRadio4" name="talle" class="custom-control-input" value="XL">
                   <label class="custom-control-label" for="customRadio4">Extra Large</label>
                 </div>
-                <% if(typeof errors != 'undefined' && errors.talle){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.talle.msg %></span>
-                  <%}%>
               </div>
                 
               <div class="talle d-flex">
@@ -92,9 +89,6 @@
                   <input type="checkbox" id="29" name="rodado" value="29" class="custom-control-input">
                   <label class="custom-control-label" for="29">29 "</label>
                 </div>
-                <% if(typeof errors != 'undefined' && errors.rodado){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.rodado.msg %></span>
-                  <%}%>
                 <br>
               </div>
               </div>
@@ -103,22 +97,22 @@
               <br>
 
               <div class="marca-modelo">
-                <input type="text" placeholder="Marca" name="marca" class="col-5 form-control"value="">
+                <input type="text" placeholder="Marca" name="marca" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.marca : '' %>">
                 <% if(typeof errors != 'undefined' && errors.marca){%>
                   <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.marca.msg %></span>
                   <%}%>
-                <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control"value="">
+                <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.modelo : '' %>">
                 <% if(typeof errors != 'undefined' && errors.modelo){%>
                   <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.modelo.msg %></span>
                   <%}%>
               </div>
               <br>
               <div class="marca-modelo">
-                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control"value="">
+                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.precio : '' %>">
                 <% if(typeof errors != 'undefined' && errors.precio){%>
                   <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.precio.msg %></span>
                   <%}%>
-                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control"value="">
+                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
               </div>
               <br>
               <div class="marca-modelo">
@@ -127,13 +121,7 @@
                   <option value="si">Sí</option>
                   <option value="no">No</option>
                 </select>
-                <% if(typeof errors != 'undefined' && errors.cuotas){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.cuotas.msg %></span>
-                  <%}%>
                 <input type="text" placeholder="Cantidad de cuotas" name="cantCuotas" class="col-5 form-control">
-                <% if(typeof errors != 'undefined' && errors.cantCuotas){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.cantCuotas.msg %></span>
-                  <%}%>
               </div>
               <br>
               <div class="marca-modelo">
@@ -176,6 +164,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="/js/createAdmin.js"></script>
+    <!--<script src="/js/createAdmin.js"></script>-->
 </body>
 </html>
