@@ -39,14 +39,14 @@
 
               <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores" value="<%= typeof old != 'undefined' ? old.colores : '' %>">
               <% if(typeof errors != 'undefined' && errors.colores){%>
-                <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.colores.msg %></span>
+                <span class="text-danger p-0.8" style="font-weight: 800" > <%= errors.colores.msg %></span>
                 <%}%>
               <br>
               <div class="custom-file mb-3">
                 <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen" value="<%= typeof old != 'undefined' ? old.imagen : '' %>">
                 <label class="custom-file-label" for="validatedCustomFile">Archivo de imagen</label>
                 <% if(typeof errors != 'undefined' && errors.imagen){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.imagen.msg %></span>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.imagen.msg %></span>
                   <%}%>
               </div>
 
@@ -99,18 +99,18 @@
               <div class="marca-modelo">
                 <input type="text" placeholder="Marca" name="marca" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.marca : '' %>">
                 <% if(typeof errors != 'undefined' && errors.marca){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.marca.msg %></span>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.marca.msg %></span>
                   <%}%>
                 <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.modelo : '' %>">
                 <% if(typeof errors != 'undefined' && errors.modelo){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.modelo.msg %></span>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.modelo.msg %></span>
                   <%}%>
               </div>
               <br>
               <div class="marca-modelo">
                 <input type="number" placeholder="Precio" name="precio" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.precio : '' %>">
                 <% if(typeof errors != 'undefined' && errors.precio){%>
-                  <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.precio.msg %></span>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.precio.msg %></span>
                   <%}%>
                 <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
               </div>
@@ -125,7 +125,6 @@
               </div>
               <br>
               <div class="marca-modelo">
-                <!--<input type="text" placeholder="Estilo" name="estilo" class="col-5 form-control">-->
                 <select name="estilo" class="form-control col-5">
                   <option value="">Estilo</option>
                   <option value="1">1- Fixie</option>
@@ -138,9 +137,15 @@
               <!--Descripciones-->
               <div class="mb-3">
                 <br>
-                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto"value=""></textarea>
+                <textarea class="form-control" name="descripcion" id="validationTextarea" placeholder="Descripción del producto"value="<%= typeof old != 'undefined' ? old.descripcion : '' %>"></textarea>
+                <% if(typeof errors != 'undefined' && errors.descripcion){%>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.descripcion.msg %></span>
+                  <%}%>
                 <br>
-                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"value=""></textarea>
+                <textarea class="form-control" name="descripcionTecnica" id="validationTextarea" placeholder="Descripción Tecnica"value="<%= typeof old != 'undefined' ? old.descripcionTecnica : '' %>"></textarea>
+                <% if(typeof errors != 'undefined' && errors.descripcionTecnica){%>
+                  <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.descripcionTecnica.msg %></span>
+                  <%}%>
               </div>
               
 
@@ -164,6 +169,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <!--<script src="/js/createAdmin.js"></script>-->
+    <script src="/js/createAdmin.js"></script>
 </body>
 </html>

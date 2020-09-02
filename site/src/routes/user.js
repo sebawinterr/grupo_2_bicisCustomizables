@@ -8,6 +8,7 @@ const {check,validationResult,body} = require('express-validator');
 const db = require('../database/models/');
 const User = db.User;
 const controlAcceso = require('../middlewares/controlAcceso');
+const validEditUsuarios = require('../middlewares/validEditUsuarios');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -140,7 +141,7 @@ router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
 });*/
 
 
-router.put('/usuarios/edit/:id', upload.single('image'),userController.updateUsuarios);
+router.put('/usuarios/edit/:id', upload.single('image'), validEditUsuarios, userController.updateUsuarios);
 router.get('/usuarios/detalle/:id', controlAcceso, userController.show);
 router.get('/usuarios/delete/:id', controlAcceso, userController.destroy);
 
