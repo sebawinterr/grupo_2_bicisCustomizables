@@ -107,7 +107,13 @@ module.exports = {
       })
     },
     updateUsuarios: (req,res) =>{
+<<<<<<< HEAD
       //return res.send(req.body)
+=======
+<<<<<<< HEAD
+      let usuarioAEditar = {
+=======
+>>>>>>> dbb952a9d3074de84fa904ae4a6fbac7f0633199
 
       const errors = validationResult(req);
       if(errors.isEmpty()) {
@@ -158,6 +164,7 @@ module.exports = {
       }
       //console.log(usuarioEditar.id)
       /*let usuarioAEditar = {
+>>>>>>> db857f615613a37519529263f7683a1bcf932072
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         dni: req.body.dni,
