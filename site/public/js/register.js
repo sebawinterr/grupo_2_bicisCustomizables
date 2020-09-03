@@ -96,7 +96,8 @@ window.addEventListener('load', function(){
         }
 
         //validar email
-        if(email.value == ''){
+        let reEmail  = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(!reEmail.test(email.value)){
             errores.push('Introduzca un email válido');
             email.classList.add('is-invalid');
             email.classList.remove('is-valid');

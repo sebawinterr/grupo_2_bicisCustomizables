@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-    let formulario = document.getElementById('createAdmin');
+    let formulario = document.getElementById('create');
     let ulErrores = document.getElementById('errores');
 
     formulario.addEventListener('submit', function(evento){
