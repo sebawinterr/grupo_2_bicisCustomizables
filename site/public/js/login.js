@@ -19,6 +19,7 @@ window.addEventListener('load',()=>{
 
             // Validacion email
             let reEmail  = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            let rePassword = /^(?=.*[a-zA-Z0-9]).{8,}$/
             if(!reEmail.test(email.value)){
                 errores.push('El email es inválido...');
                 email.classList.add('is-invalid');
@@ -27,15 +28,20 @@ window.addEventListener('load',()=>{
                 email.classList.add('is-valid');
                 email.classList.remove('is-invalid');
             }
+<<<<<<< HEAD
             // Validacion contraseña // BUSCAR EXPRESION REGULAR /^(?=.*[a-zA-Z0-9]).{8,}$/
             /*if(!reEmail.test(password.value)){
+=======
+            // Validacion contraseña // BUSCAR EXPRESION REGULAR 
+            if(!rePassword.test(password.value)){
+>>>>>>> db58c8c339155811944f2c7cda3cc55531f2fd37
                 errores.push('El password es inválido...');
                 password.classList.add('is-invalid');
                 password.classList.remove('is-valid');   
             }else{
                 password.classList.add('is-valid');
                 password.classList.remove('is-invalid');
-            }*/
+            }
             if(errores.length > 0){
                 evento.preventDefault();
                 divErrores.innerHTML = "";

@@ -107,9 +107,17 @@ module.exports = {
       })
     },
     updateUsuarios: (req,res) =>{
-      /*let errors = validationResult(req);
-      if (errors.isEmpty()) {
-        let usuarioAEditar = {
+<<<<<<< HEAD
+      //return res.send(req.body)
+=======
+<<<<<<< HEAD
+      let usuarioAEditar = {
+=======
+>>>>>>> dbb952a9d3074de84fa904ae4a6fbac7f0633199
+
+      const errors = validationResult(req);
+      if(errors.isEmpty()) {
+        const usuarioAEditar = {
           firstName: req.body.firstName,
           lastName: req.body.lastName,
           dni: req.body.dni,
@@ -118,19 +126,20 @@ module.exports = {
           image: req.file ? req.file.filename : req.body.oldImagen,
           category: req.body.category
         };
-        let direccionAEditar = {
+        const direccionAEditar = {
           streetName: req.body.streetName,
           additionalNumbers: req.body.additionalNumbers,
           zipCode: req.body.zipCode,
           province: req.body.province,
           neighbourhood: req.body.neighbourhood
         };
+        
   
         User.findAll({where: {id: req.params.id}
         })
         .then(usuarioConsultado =>{
           const direccionId = usuarioConsultado[0].idAddress;
-          console.log(usuarioConsultado[0].idAddress);
+          
           Address.update(direccionAEditar,{
             where: {id: direccionId}
           })
@@ -141,13 +150,21 @@ module.exports = {
         .then(updatedUser =>{      
           res.redirect('/usuarios')
         })
-        //.catch(error=> res.send(error));
+        .catch(error=> res.send(error));
       }else{
-        return res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), { errors: errors.mapped(), old: req.body});
+        User.findByPk(req.params.id,{
+          include: ['addresses']
+        })
+        .then( usuarioEditar=>{
+          return res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), { errors: errors.mapped(), old: req.body, usuarioEditar});
 
-      }*/
+        })
+        
+
+      }
       //console.log(usuarioEditar.id)
-      let usuarioAEditar = {
+      /*let usuarioAEditar = {
+>>>>>>> db857f615613a37519529263f7683a1bcf932072
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         dni: req.body.dni,
@@ -179,7 +196,7 @@ module.exports = {
       .then(updatedUser =>{      
         res.redirect('/usuarios')
       })
-      .catch(error=> res.send(error));
+      .catch(error=> res.send(error));*/
     },    
     destroy: (req,res) => {
       User.destroy({

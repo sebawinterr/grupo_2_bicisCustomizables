@@ -112,6 +112,34 @@ module.exports = {
         })        
     }
     },
+    /*update: (req,res) =>{
+        const _body = req.body;
+        //return res.send(_body);
+        _body.brand = req.body.marca,
+        _body.model = req.body.modelo,
+        _body.styleId = req.body.estilo,
+        _body.description = req.body.descripcion,
+        _body.techDescription = req.body.descripcionTecnica,
+        _body.colors =  req.body.colores,
+        _body.size =  req.body.talle,
+        _body.shot =  req.body.rodado,
+        _body.price =  req.body.precio,
+        _body.discount = req.body.descuento,
+        _body.financing = req.body.cuotas,
+        _body.financingSize = req.body.cantCuotas,
+        _body.image = req.file ? req.file.filename : req.body.oldImagen    // if ternario       
+
+        Article.update(_body ,{
+            where : {
+                id : req.params.id
+            },
+            include: ['style']
+        })
+        .then(bicicleta =>{
+            res.redirect('/administrador')
+        })
+        .catch(error => res.send(error));     //error de Base de Datos*/
+    
     destroy: (req,res) => {
         Article.destroy({
                 where : {

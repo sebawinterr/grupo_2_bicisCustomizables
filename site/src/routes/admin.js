@@ -46,7 +46,13 @@ Article.findAll()
       }).withMessage('El modelo es obligatorio'),
       check('precio').isLength({
         min: 1
-      }).withMessage('El precio es obligatorio'),            
+      }).withMessage('El precio es obligatorio'), 
+      check('descripcion').isLength({
+        min: 1
+      }).withMessage('La descripción del producto es obligatoria'), 
+      check('descripcionTecnica').isLength({
+        min: 1
+      }).withMessage('La descripción técnica del producto es obligatoria'),       
       /*check('talle').isLength({
         min: 0
       }).withMessage('El talle es obligatorio'),
@@ -90,6 +96,12 @@ Article.findAll()
   })
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> db58c8c339155811944f2c7cda3cc55531f2fd37
 router.get('/administrador/delete/:id', controlAcceso, adminController.destroy);
 router.get('/administrador/search_results', controlAcceso, adminController.search);
 

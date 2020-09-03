@@ -28,10 +28,13 @@ ___
 
     - Utilizamos trello para realizar nuestro tablero. El mismo puede observarse [aquí](https://trello.com/b/axTK8Uqn).
 
-    - Para mayor claridad, colocamos a continuación captura con los avances en el tablero correspondiente al Sprint 5:
+    - Para mayor claridad, colocamos a continuación captura con los avances en el tablero correspondiente al Sprint 6:
 
          - __Foto 1:__
-         ![capturastablero](/capturastablero/tabs5a.PNG)
+         ![capturastablero](/capturastablero/tab6a)
+
+         - __Foto 2:__
+         ![capturastablero](/capturastablero/tab6b)
 
          
 ___
