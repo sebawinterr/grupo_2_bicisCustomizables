@@ -70,6 +70,12 @@ module.exports = {
         })
     },
     update: (req,res) =>{
+
+        let errors = validationResult(req);
+
+        if(errors.isEmpty()){
+
+        
         const _body = req.body;
         //return res.send(_body);
         _body.brand = req.body.marca,
@@ -96,6 +102,15 @@ module.exports = {
             res.redirect('/administrador')
         })
         .catch(error => res.send(error));     //error de Base de Datos
+        
+    }else{
+        Article.findByPk(req.params.id,{
+            include: ['style']
+        })
+        .then(biciEditar=>{
+            return res.render(path.resolve(__dirname, '..','views','administrador','edit'), {errors: errors.errors, biciEditar})
+        })        
+    }
     },
     destroy: (req,res) => {
         Article.destroy({

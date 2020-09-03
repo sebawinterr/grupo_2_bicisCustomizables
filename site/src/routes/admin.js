@@ -72,7 +72,24 @@ Article.findAll()
 
 router.get('/administrador/detalleAdmin/:id', controlAcceso, adminController.show);
 router.get('/administrador/edit/:id', controlAcceso, adminController.edit);
-router.put('/administrador/edit/:id', upload.single('imagen'), adminController.update);
+
+Article.findAll()
+  .then((articles) =>{
+    router.put('/administrador/edit/:id', upload.single('imagen'), [
+      check('colores').isLength({min: 2})
+      .withMessage('Debe colocar un color'),
+      check('talle').isLength({min: 1})
+      .withMessage('Debe colocar un talle'),
+      check('rodado').isLength({min: 2})
+      .withMessage('Debe colocar un rodado'),
+      check('marca').isLength({min: 2})
+      .withMessage('Debe colocar un marca'),
+      check('modelo').isLength({min: 2})
+      .withMessage('Debe colocar un modelo')
+    ], adminController.update);
+  })
+
+
 router.get('/administrador/delete/:id', controlAcceso, adminController.destroy);
 router.get('/administrador/search_results', controlAcceso, adminController.search);
 

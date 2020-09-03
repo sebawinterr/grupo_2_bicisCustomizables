@@ -27,7 +27,7 @@ window.addEventListener('load',()=>{
                 email.classList.add('is-valid');
                 email.classList.remove('is-invalid');
             }
-            // Validacion contraseña // BUSCAR EXPRESION REGULAR 
+            // Validacion contraseña // BUSCAR EXPRESION REGULAR /^(?=.*[a-zA-Z0-9]).{8,}$/
             /*if(!reEmail.test(password.value)){
                 errores.push('El password es inválido...');
                 password.classList.add('is-invalid');
