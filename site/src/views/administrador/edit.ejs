@@ -31,6 +31,14 @@
 
               </ul>
             </div>
+
+            <% if (typeof errors != 'undefined') { %>
+              <ul>
+                <% for(var i = 0; i < errors.length; i++) { %>
+                <li> <%= errors[i].msg %> </li>
+                <% } %>
+                </ul>
+              <% } %>  
             <form id="edicionProductos" action="/administrador/edit/<%= biciEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
               <label for="colores">Color:</label>
               <input type="text" placeholder="Nombre del color" class="col-5 form-control" name="colores" value="<%= biciEditar.colors%>">
