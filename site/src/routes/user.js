@@ -8,7 +8,7 @@ const {check,validationResult,body} = require('express-validator');
 const db = require('../database/models/');
 const User = db.User;
 const controlAcceso = require('../middlewares/controlAcceso');
-const validEditUsuarios = require('../middlewares/validEditUsuarios');
+
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -127,21 +127,44 @@ router.get('/usuarios', controlAcceso, userController.usuarios);
 router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
 
 
-/*User.findAll()
+User.findAll()
     .then((users) => {
-        router.put('/usuarios/edit/:id', upload.single('imagen'), [
+        router.put('/usuarios/edit/:id', upload.single('imagen'), controlAcceso, [
             // VALIDACIONES
            // NOMBRE
         check('firstName').isLength({
             min: 1
         }).withMessage('El nombre es obligatorio'),
+        check('lastName').isLength({min: 1
+        }).withMessage('El apellido es obligatorio'),
+        check('email').isEmail().withMessage('Agregar un email válido'),
+        // Validacion para saber si existe el email del usuario
+        body('email').custom( (value) =>{
+            for (let i = 0; i < users.length; i++) {
+                if (users[i].email == value) {
+                    return false
+                }
+            }
+            return true
+        }).withMessage('Este email ya se encuentra registrado'),
+        check('streetName').isLength({min: 1}).withMessage('Debe colocar una dirección válida'),
+            //CP
+        check('zipCode').isLength({min: 4
+        }).withMessage('Coloque su Código Postal'),
+            //PROVINCIA
+        check('province').isLength({min: 1
+        }).withMessage('Debe colocar una provincia'),
+            //LOCALIDAD
+        check('neighbourhood').isLength({min: 1
+        }).withMessage('La localidad es obligatoria'),
+
 
         ],userController.updateUsuarios);
    
-});*/
+});
 
 
-router.put('/usuarios/edit/:id', upload.single('image'), validEditUsuarios, userController.updateUsuarios);
+
 router.get('/usuarios/detalle/:id', controlAcceso, userController.show);
 router.get('/usuarios/delete/:id', controlAcceso, userController.destroy);
 

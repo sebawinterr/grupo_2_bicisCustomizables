@@ -107,6 +107,7 @@ module.exports = {
       })
     },
     updateUsuarios: (req,res) =>{
+      //return res.send(req.body)
 
       const errors = validationResult(req);
       if(errors.isEmpty()) {
@@ -145,7 +146,14 @@ module.exports = {
         })
         .catch(error=> res.send(error));
       }else{
-        return res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), { errors: errors.mapped(), old: req.body});
+        User.findByPk(req.params.id,{
+          include: ['addresses']
+        })
+        .then( usuarioEditar=>{
+          return res.render(path.resolve(__dirname, '..','views','usuarios','editUsuarios'), { errors: errors.mapped(), old: req.body, usuarioEditar});
+
+        })
+        
 
       }
       //console.log(usuarioEditar.id)

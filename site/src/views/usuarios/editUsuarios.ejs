@@ -35,12 +35,20 @@
             <div class="marca-modelo col-12">
                 <label for="nombre">Nombre:</label>
               <input type="text" placeholder="Nombre" class="col-5 form-control" name="firstName" value="<%= usuarioEditar.firstName%>">
+              <br>
               <% if(typeof errors != 'undefined' && errors.firstName){%>
                 <span class="text-danger" style="font-weight: 800;" > <%= errors.firstName.msg %></span>
                 <%}%>
+                <br>
               <label for="apellido">Apellido:</label>
               <input type="text" placeholder="Apellido" class="col-5 form-control" name="lastName" value="<%= usuarioEditar.lastName%>">
+              <br>
+              <% if(typeof errors != 'undefined' && errors.lastName){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.lastName.msg %></span>
+                <%}%>
             </div> 
+              <br>
+              <br>
               <br>
 
             <div class="marca-modelo col-12">               
@@ -48,7 +56,10 @@
                 <h6>Email:</h6>
 
                 <div class="custom-control">
-                  <input type="email" name="email" class="form-control" value="<%= usuarioEditar.email%>">
+                  <input type="email" name="email" class="form-control" value="<%= usuarioEditar.email%>"><br>
+                  <% if(typeof errors != 'undefined' && errors.email){%>
+                    <span class="text-danger" style="font-weight: 800;" > <%= errors.email.msg %></span>
+                    <%}%>
                 </div>
               </div>
                 
@@ -81,6 +92,10 @@
                 <div class="col-5">
                   <label for="">Dirección:</label>
                   <input type="text" placeholder="Dirección" name="streetName" class="col-12 form-control" value="<%= usuarioEditar.addresses.streetName%>">
+                  <br>
+              <% if(typeof errors != 'undefined' && errors.streetName){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.streetName.msg %></span>
+                <%}%>
                 </div>
                 <div class="col-5">
                   <label for="">Piso y Departamento:</label>
@@ -93,10 +108,18 @@
                 <div class="col-5">
                   <label for="">Código Postal:</label>
                   <input type="number" placeholder="Código Postal" name="zipCode" class="col-12 form-control" value="<%= usuarioEditar.addresses.zipCode%>">
+                  <br>
+              <% if(typeof errors != 'undefined' && errors.zipCode){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.zipCode.msg %></span>
+                <%}%>
                 </div>
                 <div class="col-5">
                   <label for="">Provincia:</label>
                   <input type="text" placeholder="Provincia" name="province" class="col-12 form-control" value="<%= usuarioEditar.addresses.province%>">
+                  <br>
+              <% if(typeof errors != 'undefined' && errors.province){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.province.msg %></span>
+                <%}%>
                 </div>
               </div>
               
@@ -104,6 +127,10 @@
               <div>
                 <label for="">Localidad:</label>
                 <input type="text" placeholder="Localidad" name="neighbourhood" class="col-5 form-control" value="<%= usuarioEditar.addresses.neighbourhood%>">
+                <br>
+              <% if(typeof errors != 'undefined' && errors.neighbourhood){%>
+                <span class="text-danger" style="font-weight: 800;" > <%= errors.neighbourhood.msg %></span>
+                <%}%>
               </div>
               
             <article class="fotoProducto col-12 col-sm-12 col-md-12 col-lg-12   col-xl-12 d-flex justify-content-center mt-2">
@@ -144,6 +171,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <!--<script src="/js/editUsuarios.js"></script>-->
+    <script src="/js/editUsuarios.js"></script>
 </body>
 </html>
