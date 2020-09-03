@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
         //con destructuring de codigo se declaran todas las variables y se igualan al elemento capturado (formulario), las variables usan el name del formulario y se colocan de manera ordenada a como estan en los inputs del form
         let {colores, imagen, talle, rodado, marca, modelo, precio, cuotas, cantCuotas, estilo, descripcion, descripcionTecnica} = formulario.elements;
         let errores = []; //se declara array de errores
-        //ulErrores.classList.add('alert-danger');
+        ulErrores.classList.add('alert-danger');
     
         //validar los colores
         if(colores.value == ''){
@@ -36,24 +36,24 @@ window.addEventListener('load', function(){
         }*/
 
         //validar talle
-        if(talle.value == ''){
+        /*if(talle.value == ''){
             errores.push('Indique el talle');
             talle.classList.add('is-invalid');
             talle.classList.remove('is-valid');
         }else{
             talle.classList.add('is-valid');
             talle.classList.remove('is-invalid');
-        }
+        }*/
 
         //validar rodado
-        if(rodado.value == ''){
+        /*if(rodado.value == ''){
             errores.push('Indique el rodado');
             rodado.classList.add('is-invalid');
             rodado.classList.remove('is-valid');
         }else{
             rodado.classList.add('is-valid');
             rodado.classList.remove('is-invalid');
-        }
+        }*/
 
         //validar marca
         if(marca.value == ''){
@@ -86,36 +86,34 @@ window.addEventListener('load', function(){
         }
 
         //validar cuotas
-        if(cuotas.value == ''){
+        /*if(cuotas.value == ''){
             errores.push('Indique si se puede pagar en cuotas');
             cuotas.classList.add('is-invalid');
             cuotas.classList.remove('is-valid');
         }else{
             cuotas.classList.add('is-valid');
             cuotas.classList.remove('is-invalid');
-        }
+        }*/
 
         //validar cantidad de cuotas
-        if(cuotas.value == 'si'){
-            if(cantCuotas.value == undefined || cantCuotas.value > 2){
-                errores.push('Indique la cantidad de cuotas');
-                cantCuotas.classList.add('is-invalid');
-                cantCuotas.classList.remove('is-valid');
-            }
+        if(cuotas.value == ''){
+            errores.push('Indique la cantidad de cuotas');
+            cantCuotas.classList.add('is-invalid');
+            cantCuotas.classList.remove('is-valid');
         }else{
             cantCuotas.classList.add('is-valid');
             cantCuotas.classList.remove('is-invalid');
         }
 
         //validar estilo
-        if(estilo.value == ''){
+        /*if(estilo.value == ''){
             errores.push('Indique el estilo');
             estilo.classList.add('is-invalid');
             estilo.classList.remove('is-valid');
         }else{
             estilo.classList.add('is-valid');
             estilo.classList.remove('is-invalid');
-        }
+        }*/
 
         //validar descripcion
         if(descripcion.value == ''){
