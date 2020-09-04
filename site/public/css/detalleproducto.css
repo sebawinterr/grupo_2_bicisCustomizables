@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    
 
 }
 
@@ -111,6 +112,9 @@ header {
     height: 65vh;
     background-color: black;
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 div figure img {

@@ -33,19 +33,28 @@
             </div>
             <form id="edicionUsuarios" action="/usuarios/edit/<%= usuarioEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="marca-modelo col-12">
+              <div class="col-5">
                 <label for="nombre">Nombre:</label>
-              <input type="text" placeholder="Nombre" class="col-5 form-control" name="firstName" value="<%= usuarioEditar.firstName%>">
-              <br>
+                <input type="text" placeholder="Nombre" class="col-12 form-control" name="firstName" value="<%= usuarioEditar.firstName%>"><br>
               <% if(typeof errors != 'undefined' && errors.firstName){%>
                 <span class="text-danger" style="font-weight: 800;" > <%= errors.firstName.msg %></span>
                 <%}%>
-                <br>
-              <label for="apellido">Apellido:</label>
-              <input type="text" placeholder="Apellido" class="col-5 form-control" name="lastName" value="<%= usuarioEditar.lastName%>">
-              <br>
+
+              </div>
+
+              <div class="col-5">
+                <label for="apellido">Apellido:</label>
+                <input type="text" placeholder="Apellido" class="col-12 form-control" name="lastName" value="<%= usuarioEditar.lastName%>"><br>
               <% if(typeof errors != 'undefined' && errors.lastName){%>
                 <span class="text-danger" style="font-weight: 800;" > <%= errors.lastName.msg %></span>
                 <%}%>
+
+              </div>
+                
+
+
+                
+
             </div> 
               <br>
               <br>
