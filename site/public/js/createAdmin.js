@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-    let formulario = document.getElementById('create');
+    let formulario = document.getElementById('createAdmin');
     let ulErrores = document.getElementById('errores');
 
     formulario.addEventListener('submit', function(evento){
@@ -86,14 +86,14 @@ window.addEventListener('load', function(){
         }
 
         //validar cuotas
-        /*if(cuotas.value == ''){
+        if(cuotas.value == ''){
             errores.push('Indique si se puede pagar en cuotas');
             cuotas.classList.add('is-invalid');
             cuotas.classList.remove('is-valid');
         }else{
             cuotas.classList.add('is-valid');
             cuotas.classList.remove('is-invalid');
-        }*/
+        }
 
         //validar cantidad de cuotas
         if(cuotas.value == ''){
@@ -106,14 +106,14 @@ window.addEventListener('load', function(){
         }
 
         //validar estilo
-        /*if(estilo.value == ''){
+        if(estilo.value == ''){
             errores.push('Indique el estilo');
             estilo.classList.add('is-invalid');
             estilo.classList.remove('is-valid');
         }else{
             estilo.classList.add('is-valid');
             estilo.classList.remove('is-invalid');
-        }*/
+        }
 
         //validar descripcion
         if(descripcion.value == ''){

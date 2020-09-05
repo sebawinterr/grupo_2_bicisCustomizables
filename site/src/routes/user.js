@@ -36,10 +36,10 @@ User.findAll()
         // VALIDACIONES
         // NOMBRE
         check('nombre').isLength({
-            min: 1
+            min: 3
         }).withMessage('El nombre es obligatorio'),
         // APELLIDO
-        check('apellido').isLength({min: 1
+        check('apellido').isLength({min: 3
         }).withMessage('El apellido es obligatorio'),
         // DNI
         check('dni').isLength({min: 7, max:14
@@ -53,15 +53,15 @@ User.findAll()
             return true
         }).withMessage('Este dni ya se encuentra registrado'),   
             //DIRECCION
-        check('direccion').isLength({min: 1}).withMessage('Debe colocar una dirección válida'),
+        check('direccion').isLength({min: 3}).withMessage('Debe colocar una dirección válida'),
             //CP
         check('cp').isLength({min: 4
         }).withMessage('Coloque su Código Postal'),
             //PROVINCIA
-        check('provincia').isLength({min: 1
+        check('provincia').isLength({min: 3
         }).withMessage('Debe colocar una provincia'),
             //LOCALIDAD
-        check('localidad').isLength({min: 1
+        check('localidad').isLength({min: 3
         }).withMessage('La localidad es obligatoria'),
             //EMAIL  
         check('email').isEmail().withMessage('Agregar un email válido'),
@@ -133,9 +133,9 @@ User.findAll()
             // VALIDACIONES
            // NOMBRE
         check('firstName').isLength({
-            min: 1
+            min: 3
         }).withMessage('El nombre es obligatorio'),
-        check('lastName').isLength({min: 1
+        check('lastName').isLength({min: 3
         }).withMessage('El apellido es obligatorio'),
         check('email').isEmail().withMessage('Agregar un email válido'),
         // Validacion para saber si existe el email del usuario
@@ -152,10 +152,10 @@ User.findAll()
         check('zipCode').isLength({min: 4
         }).withMessage('Coloque su Código Postal'),
             //PROVINCIA
-        check('province').isLength({min: 1
+        check('province').isLength({min: 3
         }).withMessage('Debe colocar una provincia'),
             //LOCALIDAD
-        check('neighbourhood').isLength({min: 1
+        check('neighbourhood').isLength({min: 3
         }).withMessage('La localidad es obligatoria'),
 
 

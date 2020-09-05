@@ -18,7 +18,7 @@
     <section class="row cuerpo">
 
         <article class="titulo col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <h5><%= miBiciDetalle.model%></h5>
+          <h5><%= miBiciDetalle.brand%> - <%= miBiciDetalle.model%></h5>
         </article>
 
           <article class="fotoProducto col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
@@ -41,13 +41,7 @@
             <div class="form-group">
               <select  name="descuento" class="custom-select" id="validationCustom04" required>
                 <option selected disabled value="#">Talle</option>
-                <option value="0">27.5" S</option>
-                <option value="15">27.5" M</option>
-                <option value="30">27.5" L</option>
-                <option value="0">29" S</option>
-                <option value="15">29" M</option>
-                <option value="30">29" L</option>
-                <option value="30">29" XL</option>
+                <option value="0"><%= miBiciDetalle.shot%>" <%= miBiciDetalle.size%></option>
               </select>
             </div>
           </article>

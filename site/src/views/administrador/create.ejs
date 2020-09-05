@@ -27,9 +27,6 @@
           <br><br>
           
           <article class="formulario col-12">
-<<<<<<< HEAD
-            <form id="create" action="/administrador/create" method="POST" enctype="multipart/form-data">
-=======
             <!--errores del FRONT END-->
             <div>
               <ul id="errores">
@@ -37,7 +34,11 @@
               </ul>
             </div>
             <form id="createAdmin" action="/administrador/create" method="POST" enctype="multipart/form-data">
->>>>>>> db857f615613a37519529263f7683a1bcf932072
+              <div>
+                <ul id="errores">
+    
+                </ul>
+              </div>
               <h6>Carga de imagen:</h4>
                 <br>
 
@@ -100,23 +101,36 @@
               <br>
               <br>
 
-              <div class="marca-modelo">
-                <input type="text" placeholder="Marca" name="marca" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.marca : '' %>">
+              <div class="marca-modelo col-12">
+                <div class="col-5">
+                  <input type="text" placeholder="Marca" name="marca" class="col-12 form-control"value="<%= typeof old != 'undefined' ? old.marca : '' %>">
                 <% if(typeof errors != 'undefined' && errors.marca){%>
                   <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.marca.msg %></span>
                   <%}%>
-                <input type="text" placeholder="Modelo" name="modelo" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.modelo : '' %>">
+                </div>
+
+                <div class="col-5">
+                  <input type="text" placeholder="Modelo" name="modelo" class="col-12 form-control"value="<%= typeof old != 'undefined' ? old.modelo : '' %>">
                 <% if(typeof errors != 'undefined' && errors.modelo){%>
                   <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.modelo.msg %></span>
                   <%}%>
+                </div>
+                
+                
               </div>
               <br>
-              <div class="marca-modelo">
-                <input type="number" placeholder="Precio" name="precio" class="col-5 form-control"value="<%= typeof old != 'undefined' ? old.precio : '' %>">
+              <div class="marca-modelo col-12">
+                <div class="col-5">
+                  <input type="number" placeholder="Precio" name="precio" class="col-12 form-control"value="<%= typeof old != 'undefined' ? old.precio : '' %>">
                 <% if(typeof errors != 'undefined' && errors.precio){%>
                   <span class="text-danger p-0.8" style="font-weight: 800;" > <%= errors.precio.msg %></span>
                   <%}%>
-                <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
+                </div>
+                
+                <div class="col-5">
+                  <input type="number" placeholder="Descuento" name="descuento" class="col-5 form-control">
+                </div>
+                
               </div>
               <br>
               <div class="marca-modelo">
