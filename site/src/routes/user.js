@@ -129,7 +129,7 @@ router.get('/usuarios/edit/:id', controlAcceso, userController.edit);
 
 User.findAll()
     .then((users) => {
-        router.put('/usuarios/edit/:id', upload.single('imagen'), controlAcceso, [
+        router.put('/usuarios/edit/:id', upload.single('image'), controlAcceso, [
             // VALIDACIONES
            // NOMBRE
         check('firstName').isLength({
