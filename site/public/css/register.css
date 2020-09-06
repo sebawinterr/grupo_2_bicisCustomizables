@@ -9,6 +9,8 @@ body{
 
 form{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 2px;
 }
 
 header{
