@@ -4,9 +4,6 @@ const db = require('../database/models');
 const Article = db.Article;
 const Style = db.Style;
 const {check,validationResult,body} = require('express-validator');
-//const Address = db.Address;
-//const Neighbourhood = db.Neighbourhood;
-//const User = db.User;
 
 const Op = db.Sequelize.Op;
 
@@ -133,8 +130,10 @@ module.exports = {
         .catch(error => res.send(error))
     },
     
+
+
+    //------------------------CUSTOM----------------------
     listadoCustom: function (req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','administrador','custom.html'));
         let biciscustom = JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','biciscustom.json')));
         res.render(path.resolve(__dirname, '..','views','administrador','custom','listadoCustom'),{biciscustom});
     },
