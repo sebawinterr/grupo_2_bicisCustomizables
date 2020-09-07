@@ -4,8 +4,10 @@ const User = db.User;
 
 module.exports = (req,res,next) =>{
     //Los administradores == 9
-    let perfil = req.session.user.category;
-    if(perfil != 9){  
+    if(req.session.user == undefined){
+        return res.render(path.resolve(__dirname, '..','views','web','accesoDenegado'));
+    }
+    if(req.session.user.category != 9){
         return res.render(path.resolve(__dirname, '..','views','web','accesoDenegado'));
     }
     next();
