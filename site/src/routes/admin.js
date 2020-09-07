@@ -96,12 +96,9 @@ Article.findAll()
   })
 
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> db58c8c339155811944f2c7cda3cc55531f2fd37
 router.get('/administrador/delete/:id', controlAcceso, adminController.destroy);
 router.get('/administrador/search_results', controlAcceso, adminController.search);
 
