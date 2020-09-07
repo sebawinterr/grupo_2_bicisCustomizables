@@ -12,11 +12,9 @@ module.exports = {
         .catch(error => res.send(error))
     },
     contacto : function(req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','web','contacto.html'));
         res.render(path.resolve(__dirname, '..','views','web','contacto'));
     },
     quienesSomos : function(req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','web','quienesSomos.html'));
         res.render(path.resolve(__dirname, '..','views','web','quienesSomos')); 
     }
 }

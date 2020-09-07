@@ -10,12 +10,8 @@ const Address = db.Address;
 const Op = db.Sequelize.Op;
 
 
-
-//const users =  JSON.parse(fs.readFileSync(path.resolve(__dirname,'..','data','users.json')));
-
 module.exports = {
     index : function(req, res){
-        //res.sendFile(path.resolve(__dirname, '..','views','usuarios','register.html'));
         res.render(path.resolve(__dirname, '..','views','usuarios','register'));
     },
     processRegister: (req, res) => {
