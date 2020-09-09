@@ -9,7 +9,6 @@ module.exports = (sequelize,DataTypes) =>{
         },
         brand: DataTypes.STRING,
         model: DataTypes.STRING,
-        //style: DataTypes.STRING, //styleId: DataTypes.INTEGER //asociacion con styles
         description: DataTypes.STRING,
         techDescription: DataTypes.STRING,
         colors: DataTypes.STRING,

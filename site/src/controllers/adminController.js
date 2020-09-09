@@ -123,7 +123,7 @@ module.exports = {
     search: ( req, res) =>{
         Article.findAll({
             where:{
-                model: {[Op.like]: `%${req.query.search}%`}
+                brand: {[Op.like]: `%${req.query.search}%`}
             }
         })
         .then(resultado => { res.render(path.resolve(__dirname, '..', 'views', 'administrador', 'listadoProductos'),{bicicletas: resultado});})
