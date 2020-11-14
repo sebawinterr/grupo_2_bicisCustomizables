@@ -1,17 +1,17 @@
 [
   {
-    "id": 1,
-    "estilo": "Fixie",
-    "nombre": "Martina",
     "colores": "Rosa",
-    "colores2": "",
     "talle": "M",
     "rodado": "29",
-    "descripcionTecnica": "Bicicleta estilo Fixie, de cuadro color rosa y horquilla en color negro. Rodado 29 y talle M.",
-    "precio": 30000,
-    "descuento": 0,
+    "nombre": "Martina",
+    "precio": "35000",
+    "descuento": "0",
     "cuotas": "si",
     "cantCuotas": "12",
+    "estilo": "Fixie",
+    "descripcionTecnica": "Bicicleta estilo Fixie, de cuadro color rosa y horquilla en color negro. Rodado 29 y talle M.",
+    "oldImagen": "custom1.jpg",
+    "id": "1",
     "imagen": "custom1.jpg"
   },
   {

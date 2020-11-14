@@ -69,7 +69,12 @@
                 <div class="card-body">
                   <h6 class="card-title">Precio: $<%= miBiciDetalle.price%></h6>
                   <p class="card-text">12 cuotas sin interes con Visa y Mastercard.</p>
-                  <a href="/carrito/lista" class="comprar"><button type="button" class="btn btn-dark btn-lg" style="background-color: black">COMPRAR</button></a>
+
+                  <form action="/carrito/agregar" method="POST">
+                    <input type="hidden" name="idArticle" value="<%= miBiciDetalle.id%>">
+                    <button type="submit" class="btn btn-dark btn-lg" style="background-color: black">AGREGAR AL CARRITO</button>
+                  </form>
+                  
                 </div>
               </div>
             </div>

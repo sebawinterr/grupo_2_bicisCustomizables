@@ -4,6 +4,7 @@ const path = require('path');
 
 const carritoController = require(path.resolve(__dirname,'..','controllers','carritoController'));
 
+router.post('/carrito/agregar', carritoController.addCart);
 router.get('/carrito/lista', carritoController.lista);
 router.get('/carrito/envio', carritoController.envio);
 router.get('/carrito/pago', carritoController.pago);
