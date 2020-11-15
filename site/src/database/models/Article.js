@@ -33,8 +33,16 @@ module.exports = (sequelize,DataTypes) =>{
             
 
         });
+
+        Article.hasMany(models.Item, {
+            as: "items",
+            foreignKey: "idArticle",
+        });
+
+
     }
 
+    
 
 
 

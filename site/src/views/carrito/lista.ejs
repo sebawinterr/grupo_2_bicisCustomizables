@@ -36,6 +36,7 @@
       <% cartArticle.forEach(item => { %>
       <div class="col-6">
         <img src="/images/bicicletas/<%= item.article.image%>" class="card-img" alt="Imagen bici">
+        
       </div>
       <div class="col-6">
         <div class="card-body">
@@ -45,9 +46,13 @@
           <h5 class="card-title  font-italic"><small class="text-muted">Precio:</small>$<%= item.salePrice; %></h5>
           <h5 class="card-title  font-italic"><small class="text-muted">Descuento:</small><%= item.article.discount %></h5>
           <h5 class="card-title  font-italic"><small class="text-muted">Cuotas</small><%= item.article.financingSize %></h5>
+          <form action="/carrito/lista/borrarProducto" method="POST">
+            <input type="hidden" name="itemId" value="<%= item.id %>">
+            <button type="submit" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></a>
+          </form>
         </div>
       </div>
-    <% }); %>
+      <% }); %>
     </div>
   </section>
 
@@ -67,22 +72,19 @@
       <h6>Envío</h6>      
     </div>  
     <div class="col-6">
-      <h6>$<%= item.salePrice; %></h6>
+      <h6>$<%= total %></h6>
       <br>
-      <h6><%= item.article.discount %></h6>
+      <h6>%<%=  %></h6>
       <br>
       <h6>$0</h6>      
     </div>
   </article>
   <article class="row border-top border-dark">
     <div class="col-6">
-      <h2>TOTAL: $ <%= total %></h2>
-    </div>
-
-    <div class="col-6">
       <h2>Precio Final: $ <%= total %></h2>
     </div>
   </article>
+  
 </div>
 <a type="submit" href="/carrito/envio" class="btn btn-dark btn-lg btn-block" style="background-color: #000000">PROCEDER A COMPRA</a>
 <br>
@@ -96,7 +98,7 @@
   <div class="col-12 justify-content-center">
     <h1 class="text-center">No tenes Productos en el carrito</h1>
   </div>
-<% } %>
+<% }; %>
 </div>
 
 

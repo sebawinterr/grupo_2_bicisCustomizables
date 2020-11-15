@@ -29,9 +29,19 @@ module.exports = (sequelize,DataTypes) =>{
             foreignKey: "idAddress"
 
         });
+
+        User.hasMany(models.Item, {
+            foreignKey: "idUser",
+            as: "items",
+          });
+      
+          // associate with carts
+          User.hasMany(models.Cart, {
+            foreignKey: "idUser",
+            as: "carts",
+          });
+
     }
-
-
 
     return User;
 }

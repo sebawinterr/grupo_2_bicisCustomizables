@@ -21,14 +21,13 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.INTEGER,
             allowNull: false
         },
-    }
+    };
     
-   // let config = {
-   //     tableName: "carts",
-   //     timestamps: false
-   // }
+    let config = {
+      tableName: "carts",
+    };
     
-    let Cart = sequelize.define(alias, cols);
+    const Cart = sequelize.define(alias, cols, config);
     
     Cart.associate = function (models){
         Cart.hasMany(models.Item, {

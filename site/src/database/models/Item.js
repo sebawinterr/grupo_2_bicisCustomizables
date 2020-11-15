@@ -37,16 +37,16 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.INTEGER,
         },
 
-    }
+    };
     
 
     //Esto lo coloco en comentarios ya que poseo mi base de datos sequelizada
-    //let config = {
-    //    tableName: "cartProduct",
-    //    timestamps: false
-    //}
+    let config = {
+        tableName: "items",
+    };
     
-    let Item = sequelize.define(alias, cols);
+    const Item = sequelize.define(alias, cols, config);
+    
     Item.associate = function (models){
         Item.belongsTo(models.Cart, {
             as: "cart",

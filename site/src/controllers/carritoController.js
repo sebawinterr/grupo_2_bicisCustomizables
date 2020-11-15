@@ -55,12 +55,23 @@ module.exports = {
         })
         .then((cartArticle)=>{
             //return res.send(cartProducto)
+            
             let total = cartArticle.reduce((total, item)=>(total = total + (Number(item.subtotal))),0)
             return res.render(path.resolve(__dirname, '..','views','carrito','lista'), {
                 cartArticle, total})
+            
         })
         //res.render(path.resolve(__dirname, '..','views','carrito','lista'));
         
+    },
+    deleteArt: (req,res) =>{
+        Item.destroy({
+            where: {
+                id : req.body.itemId
+            }
+        })
+        .then(()=> res.redirect('/carrito/lista'))
+        .catch(error => console.log(error))
     },
     envio : function(req, res){
         //res.sendFile(path.resolve(__dirname, '..','views','carrito','envio.html'));
